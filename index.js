@@ -175,6 +175,8 @@ bot.on("callback_query", async (msg) => {
       await getUniquePack(bot, msg);
     } else if (msg.data ===  "ratingmatch"){
       processCallback(bot, msg)
+    }else if (msg.data === 'removeadmin'){
+      removeAdmin(bot, msg)
     }else {
       await bot.sendMessage(msg.message.chat.id, "Таких данных не существует");
     }

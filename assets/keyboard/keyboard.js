@@ -75,7 +75,7 @@ module.exports = {
         [{ text: "Добавить карту пользователю", callback_data: "addCardToUser"}],
         [{ text: "Добавить карту", callback_data: "addcard" }],
         [{ text: "Добавить админа", callback_data: "setAdmin" }],
-        [{text: "Убрать админа", callback_data: "removeadmin"}],
+        [{ text: "Убрать админа", callback_data: "removeadmin"}],
         [{ text: "Добавить текст для магазина", callback_data: "addshoptext" }],
       ],
     }),
