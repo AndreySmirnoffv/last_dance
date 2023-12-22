@@ -1,0 +1,8 @@
+[
+  { "command": "/start", "description": "Начать" },
+  { "command": "/profile", "description": "Профиль" },
+  { "command": "/arenas", "description": "Arenas" },
+  { "command": "/shop", "description": "Магазин" },
+  { "command": "/getcard", "description": "карточку" },
+  { "command": "/top", "description": "Топ" }
+]
