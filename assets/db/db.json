@@ -55,7 +55,7 @@
 		],
 		"matchInventory": [],
 		"isAdmin": true,
-		"isWaiting": true,
+		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
@@ -139,7 +139,7 @@
 			}
 		],
 		"matchInventory": [],
-		"isAdmin": false,
+		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
