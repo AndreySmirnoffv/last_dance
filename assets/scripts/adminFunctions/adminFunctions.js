@@ -2,7 +2,7 @@ const fs = require("fs");
 const users = require("../../db/db.json");
 const cards = require("../../db/images/images.json");
 const path = require("path");
-
+const shopTextPath = require('../../db/shop/shop.json')
 const shopPath = path.join(__dirname, "../../db/shop/shop.json");
 const shopData = require(shopPath);
 
