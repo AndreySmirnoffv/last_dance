@@ -9,13 +9,12 @@ async function sendProfileData(bot, msg) {
   
   if (filteredUsers.length > 0) {
     const user = filteredUsers[0];
-    const allCards = cardsData; // cardsData уже должен быть объектом JSON
+    const allCards = cardsData;
 
     const userInventory = user.inventory || [];
     const userCardsCount = userInventory.length;
     const allCardsCount = allCards.length;
-
-    await bot.sendMessage(msg.chat.id, `${userCardsCount} из ${allCardsCount}`);
+    
     await bot.sendMessage(msg.chat.id, `Имя пользователя: ${user.username}\nID: ${user.id}\nИмя: ${user.first_name}\nФамилия: ${user.last_name}\nБаланс: ${user.balance}\nРейтинг: ${user.rating}\nИнвентарь: ${userCardsCount} из ${allCardsCount}\n`, profileKeyboard);
   } else {
     await bot.sendMessage(msg.chat.id, 'Пользователь не найден.');

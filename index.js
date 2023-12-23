@@ -1,6 +1,6 @@
 require("dotenv").config({ path: "./assets/modules/.env" });
 const TelegramBot = require("node-telegram-bot-api");
-const bot = new TelegramBot("6444174240:AAGxeM1ho9sLG6CXOCjRFh96NUp4ChHcxYI", {
+const bot = new TelegramBot("6960004050:AAG8sukhWpyK0X4qu_i9EcMRkvMWrFUORio", {
   polling: true,
 });
 const db = require("./assets/db/db.json");
@@ -23,7 +23,6 @@ const {
   createPromo,
   showAllUsers,
   askCardDetails,
-  addCardToJson,
   addShopText,
   removeAdmin,
 } = require("./assets/scripts/adminFunctions/adminFunctions");
@@ -45,25 +44,24 @@ const commands = JSON.parse(require("fs").readFileSync("./assets/db/commands/com
 
 bot.setMyCommands(commands);
 
-
 bot.on("message", async (msg) => {
-  const chatId = msg.chat.id;
-  const userId = msg.from.id;
-  const channelUsername = '@MCLPodPivomTournament';
+  // const chatId = msg.chat.id;
+  // const userId = msg.from.id;
+  // const channelUsername = '@MCLPodPivomTournament';
 
-  try {
-      const chatMember = await bot.getChatMember(channelUsername, userId);
+  // try {
+  //     const chatMember = await bot.getChatMember(channelUsername, userId);
 
-      if (chatMember && (chatMember.status === 'member' || chatMember.status === 'administrator' || chatMember.status === 'creator')) {
-        console.log()
-      } else {
-          bot.sendMessage(chatId, 'Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament');
-          return;
-      }
-  } catch (error) {
-      console.error('Ошибка при проверке подписки:', error.message);
-      bot.sendMessage(chatId, 'Произошла ошибка при проверке подписки. Попробуйте позже.');
-  }
+  //     if (chatMember && (chatMember.status === 'member' || chatMember.status === 'administrator' || chatMember.status === 'creator')) {
+  //       console.log()
+  //     } else {
+  //         bot.sendMessage(chatId, 'Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament');
+  //         return;
+  //     }
+  // } catch (error) {
+  //     console.error('Ошибка при проверке подписки:', error.message);
+  //     bot.sendMessage(chatId, 'Произошла ошибка при проверке подписки. Попробуйте позже.');
+  // }
   let user = db.find((user) => user.username === msg.from.username);
 
   if (msg.text === "/start") {
@@ -123,8 +121,6 @@ bot.on("callback_query", async (msg) => {
 
     if (msg.data.startsWith("createPromo_")) {
       await addToMatchInventory(bot, msg);
-    } else if (msg.data === "cardAmount") {
-      askCardDetails(bot, msg);
     } else if (msg.data === "createPromo") {
       createPromo(bot, msg);
     } else if (msg.data === "showAllUsers") {
@@ -166,7 +162,7 @@ bot.on("callback_query", async (msg) => {
         adminStartKeyboard
       );
     } else if (msg.data === "addcard") {
-      addCardToJson(bot, msg);
+      askCardDetails(bot, msg)
     } else if (msg.data === "myteam") {
       myCards(bot, msg);
     } else if (msg.data === "addshoptext") {

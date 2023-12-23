@@ -1,5 +1,6 @@
 const fs = require("fs");
 const users = require("../../db/db.json");
+const cards = require("../../db/images/images.json");
 const path = require("path");
 
 const shopPath = path.join(__dirname, "../../db/shop/shop.json");
@@ -89,6 +90,7 @@ async function updateShopText(bot, msg) {
 
 async function setAdmin(bot, msg) {
   const isCommand = msg.text.startsWith("/");
+  const user = users.find((user) => user.username === msg.text);
 
   if (isCommand) {
     const isCommand = msg.text.startsWith("/");
@@ -96,7 +98,6 @@ async function setAdmin(bot, msg) {
     if (isCommand) {
       return;
     }
-    const user = users.find((user) => user.username === msg.text);
 
     if (!user) {
       await bot.sendMessage(
@@ -107,9 +108,10 @@ async function setAdmin(bot, msg) {
     }
 
     user.isAdmin = true;
+    users.push(user);
 
     fs.writeFileSync("./assets/db/db.json", JSON.stringify(users, null, "\t"));
-
+    await bot.removeListener(setAdmin);
     await bot.sendMessage(
       msg.chat.id,
       `Пользователь @${msg.text} теперь админ.`
@@ -141,47 +143,58 @@ async function removeAdmin(bot, msg) {
     user.isAdmin = false;
 
     fs.writeFileSync("./assets/db/db.json", JSON.stringify(users, null, "\t"));
-
+    bot.removeListener(removeAdmin);
     await bot.sendMessage(
       msg.chat.id,
       `Пользователь @${msg.text} больше не админ.`
     );
   }
 
-  await bot.sendMessage(msg.chat.id, `Пользователь @${msg.text} больше не админ.`);
+  await bot.sendMessage(
+    msg.chat.id,
+    `Пользователь @${msg.text} больше не админ.`
+  );
 }
 
 async function askCardDetails(bot, msg) {
   try {
-    await bot.sendMessage(msg.chat.id, "Введите название карты:");
-    const cardNameMessage = await waitForText(bot, msg.chat.id);
+    await bot.sendMessage(msg.message.chat.id, "Введите название карты:");
+    const cardNameMessage = await waitForText(bot, msg.from.username);
 
-    await bot.sendMessage(msg.chat.id, "Прикрепите фото карты:");
-    const cardPhotoMessage = await waitForPhoto(bot, msg.chat.id);
+    await bot.sendMessage(msg.message.chat.id, "Прикрепите фото карты:");
+    const cardPhotoMessage = await waitForPhoto(bot, msg.from.username);
 
-    await bot.sendMessage(msg.chat.id, "Введите силу карты:");
-    const cardPowerMessage = await waitForText(bot, msg.chat.id);
+    await bot.sendMessage(msg.message.chat.id, "Введите силу карты:");
+    const cardPowerMessage = await waitForText(bot, msg.from.username);
 
-    await bot.sendMessage(msg.chat.id, "Введите раздел карты:");
-    const cardSectionMessage = await waitForText(bot, msg.chat.id);
+    await bot.sendMessage(msg.message.chat.id, "Введите раздел карты:");
+    const cardSectionMessage = await waitForText(bot, msg.from.username);
+
+    await bot.sendMessage(msg.message.chat.id, "Введите редкость карты");
+    const cardRarityMessage = await waitForText(bot, msg.from.username);
+
+    await bot.sendMessage(msg.message.chat.id, "Введите шанс выпадения карты");
+    const cardDropChance = await waitForText(bot, msg.from.username);
 
     const cardDetails = {
       cardName: cardNameMessage.text,
       cardPhoto: cardPhotoMessage.photo[0].file_id,
       cardPower: parseInt(cardPowerMessage.text),
       cardSection: cardSectionMessage.text,
+      cardRarity: cardRarityMessage.text,
+      cardDropChance: cardDropChance.text,
     };
 
-    saveToJson(cardDetails);
-
+    cards.push(cardDetails);
+    saveToJson(cards);
     bot.sendMessage(
-      msg.chat.id,
-      "Данные карты успешно получены и сохранены в JSON!"
+      msg.message.chat.id,
+      "Карта успешно добавлена в базу данных!"
     );
   } catch (error) {
     console.error("Ошибка при запросе данных от админа:", error);
     bot.sendMessage(
-      msg.chat.id,
+      msg.message.chat.id,
       "Произошла ошибка. Пожалуйста, повторите попытку."
     );
   }
@@ -190,7 +203,7 @@ async function askCardDetails(bot, msg) {
 async function waitForText(bot, chatId) {
   return new Promise((resolve) => {
     bot.onText(/.*/, (msg) => {
-      if (msg.chat.id === chatId) {
+      if (msg.from.username === chatId) {
         resolve(msg);
       }
     });
@@ -200,7 +213,7 @@ async function waitForText(bot, chatId) {
 async function waitForPhoto(bot, chatId) {
   return new Promise((resolve) => {
     bot.on("photo", (msg) => {
-      if (msg.chat.id === chatId) {
+      if (msg.from.username === chatId) {
         resolve(msg);
       }
     });
@@ -208,8 +221,9 @@ async function waitForPhoto(bot, chatId) {
 }
 
 function saveToJson(data) {
+  const dbPath = path.join(__dirname, "../../db/images/images.json");
   const jsonData = JSON.stringify(data, null, "\t");
-  fs.writeFileSync("../../db/images/images.json", jsonData);
+  fs.writeFileSync(dbPath, jsonData);
 }
 
 async function giveCardToUser(bot, msg) {
@@ -228,6 +242,8 @@ async function giveCardToUser(bot, msg) {
     cardPower: cardDetails.cardPower,
   });
 
+  bot.removeListener(giveCardToUser);
+
   await bot.sendMessage(
     msg.chat.id,
     `Карта успешно присвоена пользователю ${msg.text}.`
@@ -236,16 +252,18 @@ async function giveCardToUser(bot, msg) {
 
 async function findUser(bot, msg) {
   if (msg.chat && msg.chat.id) {
-    const username = msg.text.replace(/[^a-zA-Z0-9_]/g, ""); //регулярное выражение чтобы фильтровать текст который приходит
+    const username = msg.text.replace(/[^a-zA-Z0-9_]/g, "");
 
     let user = users.find((user) => user.username === username);
     if (!user) {
       await bot.sendMessage(msg.chat.id, "Такого пользователя не существует");
+      bot.removeListener(findUser);
     } else {
       await bot.sendMessage(
         msg.chat.id,
         `id: ${user.id}\nusername: ${user.username}\nfirst_name: ${user.first_name}\nlast_name: ${user.last_name}\nbalance: ${user.balance}\nrating: ${user.rating}\n${user.inventory}\nadmin: ${user.isAdmin}`
       );
+      bot.removeListener(findUser);
     }
   } else {
     console.error("Invalid message structure:", msg);
@@ -265,67 +283,6 @@ async function showAllUsers(bot, msg) {
       }\n---------------------`
     );
   }
-}
-
-async function addCardToJson(bot, msg) {
-  const directoryPath = "../../db/images/";
-  fs.mkdirSync(path.resolve(__dirname, directoryPath), { recursive: true });
-
-  await bot.sendMessage(
-    msg.message.chat.id,
-    "Пожалуйста, отправьте фото для карты:"
-  );
-  const photo = await new Promise((resolve) => {
-    bot.once("photo", (msg) => resolve(msg.photo[0].file_id));
-  });
-
-  await bot.sendMessage(
-    msg.message.chat.id,
-    "Введите значение power для карты:"
-  );
-  const power = await new Promise((resolve) => {
-    bot.once("text", (msg) => resolve(msg.text));
-  });
-
-  await bot.sendMessage(msg.message.chat.id, "Введите имя для карты:");
-  const name = await new Promise((resolve) => {
-    bot.once("text", (msg) => resolve(msg.text));
-  });
-
-  await bot.sendMessage(msg.message.chat.id, "Введите редкость для карты:");
-  const rarity = await new Promise((resolve) => {
-    bot.once("text", (msg) => resolve(msg.text));
-  });
-
-  await bot.sendMessage(msg.message.chat.id, "Введите защиту карты");
-  const deffence = await new Promise((resolve) => {
-    bot.once("text", (msg) => resolve(msg.text));
-  });
-  const cards =
-    JSON.parse(
-      fs.readFileSync(
-        path.resolve(__dirname, directoryPath, "images.json"),
-        "utf-8"
-      )
-    ) || [];
-
-  cards.push({
-    fileId: photo,
-    chatId: msg.message.chat.id,
-    power: power,
-    name: name,
-    rarity: rarity,
-    deffence: deffence,
-  });
-
-  fs.writeFileSync(
-    path.resolve(__dirname, directoryPath, "images.json"),
-    JSON.stringify(cards, null, "\t")
-  );
-
-  await bot.sendMessage(msg.message.chat.id, "Карта успешно добавлена!");
-
-  return cards;
 }
 
 async function addShopText(bot, msg) {
@@ -408,7 +365,6 @@ module.exports = {
   findUser: findUser,
   createPromo: createPromo,
   showAllUsers: showAllUsers,
-  addCardToJson: addCardToJson,
   addShopText: addShopText,
   removeAdmin: removeAdmin,
 };

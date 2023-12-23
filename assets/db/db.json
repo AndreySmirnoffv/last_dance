@@ -4,9 +4,27 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 952,
+		"balance": 940,
 		"rating": null,
 		"inventory": [
+			{
+				"fileId": "AgACAgIAAxkBAAIGKmV85IG3IdfeOw75bYwOzK7DusrVAAIZ2DEbUAXgS76Gtp0IUIS4AQADAgADcwADMwQ",
+				"chatId": 1425448286,
+				"power": "12",
+				"name": "12",
+				"rarity": "12",
+				"deffence": "12",
+				"dropChance": 0
+			},
+			{
+				"fileId": "AgACAgIAAxkBAAIGKmV85IG3IdfeOw75bYwOzK7DusrVAAIZ2DEbUAXgS76Gtp0IUIS4AQADAgADcwADMwQ",
+				"chatId": 1425448286,
+				"power": "12",
+				"name": "12",
+				"rarity": "12",
+				"deffence": "12",
+				"dropChance": 0
+			},
 			{
 				"fileId": "AgACAgIAAxkBAAIGKmV85IG3IdfeOw75bYwOzK7DusrVAAIZ2DEbUAXgS76Gtp0IUIS4AQADAgADcwADMwQ",
 				"chatId": 1425448286,
@@ -42,7 +60,7 @@
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"cardUses": null,
-		"lastCardUseTime": 1702920861683
+		"lastCardUseTime": 1703260583806
 	},
 	{
 		"username": "imworsse",
