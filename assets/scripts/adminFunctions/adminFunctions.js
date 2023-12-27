@@ -69,36 +69,31 @@ async function updateShopText(bot, msg) {
 
 async function setAdmin(bot, msg) {
   const isCommand = msg.text.startsWith("/");
-  const user = users.find((user) => user.username === msg.text);
 
   if (isCommand) {
-    const isCommand = msg.text.startsWith("/");
-
-    if (isCommand) {
-      return;
-    }
-
-    if (!user) {
-      await bot.sendMessage(
-        msg.chat.id,
-        `Пользователя с именем ${msg.text} не существует.`
-      );
-      return;
-    }
-
-    user.isAdmin = true;
-    users.push(user.isAdmin);
-
-    fs.writeFileSync("./assets/db/db.json", JSON.stringify(users, null, "\t"));
-    await bot.removeListener(setAdmin);
-    await bot.sendMessage(
-      msg.chat.id,
-      `Пользователь @${msg.text} теперь админ.`
-    );
+    return;
   }
 
-  await bot.sendMessage(msg.chat.id, `Пользователь @${msg.text} теперь админ.`);
+  const user = users.find((user) => user.username === msg.text);
+
+  if (!user) {
+    await bot.sendMessage(
+      msg.chat.id,
+      `Пользователя с именем ${msg.text} не существует.`
+    );
+    return;
+  }
+
+  user.isAdmin = true;
+
+  fs.writeFileSync("./assets/db/db.json", JSON.stringify(users, null, "\t"));
+
+  await bot.sendMessage(
+    msg.chat.id,
+    `Пользователь @${msg.text} теперь админ.`
+  );
 }
+
 
 async function removeAdmin(bot, msg) {
   const isCommand = msg.text.startsWith("/");
