@@ -66,9 +66,6 @@ module.exports = {
   adminOptionsKeyboard: {
     reply_markup: JSON.stringify({
       inline_keyboard: [
-        [{ text: "Создать раздел", callback_data: "createChapter" }],
-        [{ text: "Описать карты в разделе", callback_data: "describeCardInChapter"}],
-        [{ text: "Назначить стоимость карты", callback_data: "cardAmount" }],
         [{ text: "Создать промокод", callback_data: "createPromo" }],
         [{ text: "Вывести всех пользователей", callback_data: "showAllUsers" }],
         [{ text: "Найти конкретного пользователя", callback_data: "findUser" }],
