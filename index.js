@@ -1,7 +1,7 @@
 require("dotenv").config({ path: "./assets/modules/.env" });
 const TelegramBot = require("node-telegram-bot-api");
 const fs = require("fs");
-const bot = new TelegramBot("6960004050:AAG8sukhWpyK0X4qu_i9EcMRkvMWrFUORio", {
+const bot = new TelegramBot("6444174240:AAGxeM1ho9sLG6CXOCjRFh96NUp4ChHcxYI", {
   polling: true,
 });
 
@@ -54,30 +54,30 @@ bot.on("message", async (msg) => {
   const userId = msg.from.id;
   const channelUsername = "@MCLPodPivomTournament";
 
-  // try {
-  //   const chatMember = await bot.getChatMember(channelUsername, userId);
+  try {
+    const chatMember = await bot.getChatMember(channelUsername, userId);
 
-  //   if (
-  //     chatMember &&
-  //     (chatMember.status === "member" ||
-  //       chatMember.status === "administrator" ||
-  //       chatMember.status === "creator")
-  //   ) {
-  //     console.log();
-  //   } else {
-  //     bot.sendMessage(
-  //       chatId,
-  //       "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament"
-  //     );
-  //     return;
-  //   }
-  // } catch (error) {
-  //   bot.sendMessage(
-  //     chatId,
-  //     "Произошла ошибка при проверке подписки. Попробуйте позже."
-  //   );
-  //   return;
-  // }
+    if (
+      chatMember &&
+      (chatMember.status === "member" ||
+        chatMember.status === "administrator" ||
+        chatMember.status === "creator")
+    ) {
+      console.log();
+    } else {
+      bot.sendMessage(
+        chatId,
+        "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament"
+      );
+      return;
+    }
+  } catch (error) {
+    bot.sendMessage(
+      chatId,
+      "Произошла ошибка при проверке подписки. Попробуйте позже."
+    );
+    return;
+  }
 
   let user = db.find((user) => user.username === msg.from.username);
 
