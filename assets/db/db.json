@@ -78,5 +78,33 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0
+	},
+	{
+		"username": "lemurlee",
+		"first_name": "𝐥𝐞𝐦𝐮𝐫𝐥𝐞𝐞™",
+		"id": 373186260,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "arts_holv",
+		"first_name": "Artsem (Art$)",
+		"id": 749635133,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": true,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
 	}
 ]
