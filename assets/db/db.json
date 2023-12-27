@@ -32,54 +32,6 @@
 		"looseMatches": 0
 	},
 	{
-		"username": "hashfuc",
-		"first_name": "В легких больше дыма , чем воздуха",
-		"last_name": "⁤",
-		"id": 1425448286,
-		"balance": 0,
-		"rating": null,
-		"inventory": [
-			{
-				"cardName": "12",
-				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
-				"cardPower": 12,
-				"cardSection": "12",
-				"cardRarity": "12",
-				"cardDropChance": "12"
-			},
-			{
-				"cardName": "12",
-				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
-				"cardPower": 12,
-				"cardSection": "12",
-				"cardRarity": "12",
-				"cardDropChance": "12"
-			},
-			{
-				"cardName": "12",
-				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
-				"cardPower": 12,
-				"cardSection": "12",
-				"cardRarity": "12",
-				"cardDropChance": "12"
-			},
-			{
-				"cardName": "12",
-				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
-				"cardPower": 12,
-				"cardSection": "12",
-				"cardRarity": "12",
-				"cardDropChance": "12"
-			}
-		],
-		"matchInventory": [],
-		"isAdmin": false,
-		"isWaiting": false,
-		"isMatch": false,
-		"wonMatches": 0,
-		"looseMatches": 0
-	},
-	{
 		"username": "lemurlee",
 		"first_name": "𝐥𝐞𝐦𝐮𝐫𝐥𝐞𝐞™",
 		"id": 373186260,
@@ -87,7 +39,7 @@
 		"rating": null,
 		"inventory": [],
 		"matchInventory": [],
-		"isAdmin": false,
+		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
