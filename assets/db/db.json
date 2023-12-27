@@ -4,157 +4,76 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 940,
+		"balance": 0,
 		"rating": null,
 		"inventory": [
 			{
-				"fileId": "AgACAgIAAxkBAAIGKmV85IG3IdfeOw75bYwOzK7DusrVAAIZ2DEbUAXgS76Gtp0IUIS4AQADAgADcwADMwQ",
-				"chatId": 1425448286,
-				"power": "12",
-				"name": "12",
-				"rarity": "12",
-				"deffence": "12",
-				"dropChance": 0
+				"cardName": "🀄️ Получить карточку",
+				"cardPhoto": "AgACAgIAAxkBAAIKbWWHWu6Q39d8U-rjbWUdbNQ0h0eyAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
+				"cardPower": 12,
+				"cardSection": "12",
+				"cardRarity": "12",
+				"cardDropChance": "12"
 			},
 			{
-				"fileId": "AgACAgIAAxkBAAIGKmV85IG3IdfeOw75bYwOzK7DusrVAAIZ2DEbUAXgS76Gtp0IUIS4AQADAgADcwADMwQ",
-				"chatId": 1425448286,
-				"power": "12",
-				"name": "12",
-				"rarity": "12",
-				"deffence": "12",
-				"dropChance": 0
-			},
-			{
-				"fileId": "AgACAgIAAxkBAAIGKmV85IG3IdfeOw75bYwOzK7DusrVAAIZ2DEbUAXgS76Gtp0IUIS4AQADAgADcwADMwQ",
-				"chatId": 1425448286,
-				"power": "12",
-				"name": "12",
-				"rarity": "12",
-				"deffence": "12",
-				"dropChance": 0
-			},
-			{
-				"fileId": "AgACAgIAAxkBAAIGKmV85IG3IdfeOw75bYwOzK7DusrVAAIZ2DEbUAXgS76Gtp0IUIS4AQADAgADcwADMwQ",
-				"chatId": 1425448286,
-				"power": "12",
-				"name": "12",
-				"rarity": "12",
-				"deffence": "12",
-				"dropChance": 0
-			},
-			{
-				"fileId": "AgACAgIAAxkBAAIGKmV85IG3IdfeOw75bYwOzK7DusrVAAIZ2DEbUAXgS76Gtp0IUIS4AQADAgADcwADMwQ",
-				"chatId": 1425448286,
-				"power": "12",
-				"name": "12",
-				"rarity": "12",
-				"deffence": "12",
-				"dropChance": 0
+				"cardName": "12",
+				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
+				"cardPower": 12,
+				"cardSection": "12",
+				"cardRarity": "12",
+				"cardDropChance": "12"
 			}
 		],
 		"matchInventory": [],
 		"isAdmin": true,
-		"isWaiting": false,
-		"isMatch": false,
-		"wonMatches": 0,
-		"looseMatches": 0,
-		"cardUses": null,
-		"lastCardUseTime": 1703260583806
-	},
-	{
-		"username": "imworsse",
-		"first_name": "[His Name Is]",
-		"last_name": "Satoru Gojo",
-		"id": 1794587510,
-		"balance": 0,
-		"rating": null,
-		"inventory": [],
-		"matchInventory": [],
-		"isAdmin": false,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0
 	},
 	{
-		"username": "hollydad02",
-		"first_name": "Danger",
-		"last_name": "Gacha",
-		"id": 5511294629,
+		"username": "hashfuc",
+		"first_name": "В легких больше дыма , чем воздуха",
+		"last_name": "⁤",
+		"id": 1425448286,
 		"balance": 0,
 		"rating": null,
 		"inventory": [
 			{
-				"fileId": "AgACAgIAAxkBAAIEvmV4V-GnoWSc5A5EPiGeQkIS11l2AALH2zEbzKzBS4-mnt8AAeq1NgEAAwIAA3MAAzME",
-				"chatId": 1425448286,
-				"power": "123",
-				"name": "123",
-				"rarity": "123",
-				"deffence": "123",
-				"dropChance": 0
+				"cardName": "12",
+				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
+				"cardPower": 12,
+				"cardSection": "12",
+				"cardRarity": "12",
+				"cardDropChance": "12"
 			},
 			{
-				"fileId": "AgACAgIAAxkBAAIEvmV4V-GnoWSc5A5EPiGeQkIS11l2AALH2zEbzKzBS4-mnt8AAeq1NgEAAwIAA3MAAzME",
-				"chatId": 1425448286,
-				"power": "123",
-				"name": "123",
-				"rarity": "123",
-				"deffence": "123",
-				"dropChance": 0
+				"cardName": "12",
+				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
+				"cardPower": 12,
+				"cardSection": "12",
+				"cardRarity": "12",
+				"cardDropChance": "12"
+			},
+			{
+				"cardName": "12",
+				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
+				"cardPower": 12,
+				"cardSection": "12",
+				"cardRarity": "12",
+				"cardDropChance": "12"
+			},
+			{
+				"cardName": "12",
+				"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
+				"cardPower": 12,
+				"cardSection": "12",
+				"cardRarity": "12",
+				"cardDropChance": "12"
 			}
 		],
 		"matchInventory": [],
 		"isAdmin": false,
-		"isWaiting": false,
-		"isMatch": false,
-		"wonMatches": 0,
-		"looseMatches": 0,
-		"lastCardUseTime": 1702633015703
-	},
-	{
-		"username": "lemurlee",
-		"first_name": "𝐥𝐞𝐦𝐮𝐫𝐥𝐞𝐞™",
-		"id": 373186260,
-		"balance": 0,
-		"rating": null,
-		"inventory": [
-			{
-				"fileId": "AgACAgIAAxkBAAIEvmV4V-GnoWSc5A5EPiGeQkIS11l2AALH2zEbzKzBS4-mnt8AAeq1NgEAAwIAA3MAAzME",
-				"chatId": 1425448286,
-				"power": "123",
-				"name": "123",
-				"rarity": "123",
-				"deffence": "123",
-				"dropChance": 0
-			},
-			{
-				"fileId": "AgACAgIAAxkBAAIEvmV4V-GnoWSc5A5EPiGeQkIS11l2AALH2zEbzKzBS4-mnt8AAeq1NgEAAwIAA3MAAzME",
-				"chatId": 1425448286,
-				"power": "123",
-				"name": "123",
-				"rarity": "123",
-				"deffence": "123",
-				"dropChance": 0
-			}
-		],
-		"matchInventory": [],
-		"isAdmin": true,
-		"isWaiting": false,
-		"isMatch": false,
-		"wonMatches": 0,
-		"looseMatches": 0,
-		"lastCardUseTime": 1702658913128
-	},
-	{
-		"username": "arts_holv",
-		"first_name": "Artsem (Art$)",
-		"id": 749635133,
-		"balance": 0,
-		"rating": null,
-		"inventory": [],
-		"matchInventory": [],
-		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,

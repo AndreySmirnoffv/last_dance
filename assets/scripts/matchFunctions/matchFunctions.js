@@ -18,7 +18,6 @@ async function showAllUsers(bot, msg) {
 
     await bot.sendMessage(msg.chat.id, userText);
   } catch (error) {
-    console.error('Error showing all users:', error);
     throw error;
   }
 }
@@ -28,7 +27,6 @@ async function sendAllCards(bot, userId, userInventory) {
     const cardData = await fs.promises.readFile('cards.json', 'utf-8');
     const cards = JSON.parse(cardData);
 
-    // Создаем matchInventoryOptions на основе инвентаря пользователя
     const matchInventoryOptions = userInventory.map((card) => ({
       name: card.name,
       power: card.power,
@@ -50,7 +48,6 @@ async function sendAllCards(bot, userId, userInventory) {
       media: `https://example.com/cards/${card.name}`, // Замените на реальный URL картинки
     })), options);
   } catch (error) {
-    console.error('Error sending images of cards:', error);
     throw error;
   }
 }
@@ -65,7 +62,6 @@ async function addToMatchInventory(bot, msg) {
     );
 
     if (userIndex === -1) {
-      console.error("Пользователь не найден.");
       return bot.sendMessage(userId, "Пользователь не найден.");
     }
 
@@ -90,7 +86,6 @@ async function addToMatchInventory(bot, msg) {
     bot.sendMessage(userId, "Выберите карту для добавления в инвентарь матча:", options);
   } catch (error) {
     bot.sendMessage(userId, "Произошла ошибка при обработке вашего запроса.");
-    console.error("Произошла ошибка:", error);
     throw error;
   }
 }
@@ -105,7 +100,6 @@ async function addToMatchInventoryCallback(bot, msg) {
     );
 
     if (userIndex === -1) {
-      console.error("User not found.");
       return bot.sendMessage(userId, "User not found.");
     }
 
@@ -117,7 +111,6 @@ async function addToMatchInventoryCallback(bot, msg) {
     const card = findCardByNameAndPower(user.inventory, cardName, cardPower);
 
     if (!card) {
-      console.error("Card not found.");
       return bot.sendMessage(userId, "Card not found.");
     }
 
@@ -135,7 +128,6 @@ async function addToMatchInventoryCallback(bot, msg) {
     await checkAndCreateMatch(bot, msg);
   } catch (error) {
     bot.sendMessage(userId, "Произошла ошибка при обработке вашего запроса.");
-    console.error("Произошла ошибка:", error);
     throw error;
   }
 }
@@ -152,7 +144,7 @@ async function addToWaitingRoom(bot, msg) {
       await checkAndCreateMatch(bot, msg);
     }
   } catch (error) {
-    console.error('Error adding user to waiting room:', error);
+    return;
   }
 }
 
@@ -172,12 +164,10 @@ async function checkAndCreateMatch(bot, msg) {
 
       fs.writeFileSync(filePath, JSON.stringify(currentUsers, null, "\t"));
 
-      console.log(`матч был создан между @${userId1} и @${userId2}`);
       await bot.sendMessage(msg.message.chat.id, `Match created between @${userId1} and @${userId2}`);
     }
   } catch (error) {
     await bot.sendMessage(msg.chat.id, "Не мог создать матч:\n" + error,)
-    console.error('Error checking and creating match:', error);
   }
     try {
         const currentUsers = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
@@ -194,12 +184,10 @@ async function checkAndCreateMatch(bot, msg) {
 
             fs.writeFileSync(filePath, JSON.stringify(currentUsers, null, '\t'));
 
-            console.log(`матч был создан между @${userId1} и @${userId2}`);
             await bot.sendMessage(msg.message.chat.id, `Match created between @${userId1} and @${userId2}`);
         }
     } catch (error) {
         await bot.sendMessage(msg.chat.id, 'Не мог создать матч:\n' + error);
-        console.error('Error checking and creating match:', error);
     }
 }
 
@@ -228,7 +216,6 @@ async function processCallback(bot, msg) {
         }
         await checkAndCreateMatch(bot, msg);
     } catch (error) {
-        console.error('Ошибка при обработке колбэка:', error);
         await bot.sendMessage(userId, 'Произошла ошибка при обработке колбэка.');
     }
 }
@@ -243,7 +230,6 @@ async function matchInventory(bot, msg) {
     );
 
     if (userIndex === -1) {
-      console.error("Пользователь не найден.");
       return bot.sendMessage(userId, "Пользователь не найден.");
     }
 
@@ -270,7 +256,6 @@ async function matchInventory(bot, msg) {
     }
   } catch (error) {
     bot.sendMessage(msg.from.id, "Произошла ошибка при обработке вашего запроса.");
-    console.error("Произошла ошибка:", error);
     throw error;
   }
 }

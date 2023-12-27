@@ -1,17 +1,14 @@
 const fs = require("fs");
+const path = require("path");
 const users = require("../../db/db.json");
 const cards = require("../../db/images/images.json");
-const path = require("path");
-const shopTextPath = require('../../db/shop/shop.json')
+const shopTextPath = require("../../db/shop/shop.json");
 const shopPath = path.join(__dirname, "../../db/shop/shop.json");
 const shopData = require(shopPath);
-
 const promosPath = path.resolve(__dirname, "../../db/promos/promos.json");
 
 async function createPromo(bot, msg) {
   try {
-    console.log("Сообщение от пользователя:", msg);
-
     await bot.sendMessage(msg.message.chat.id, "Пришлите мне промокод");
 
     const responseMsg = await new Promise((resolve) => {
@@ -20,25 +17,12 @@ async function createPromo(bot, msg) {
 
     const promoText = responseMsg.text;
 
-    console.log("Текст сообщения:", promoText);
-
-    console.log("Путь к файлу:", promosPath);
-
-    console.log("Чтение файла...");
     let promos = JSON.parse(fs.readFileSync(promosPath, "utf-8"));
-
-    console.log("Содержимое файла promos.json перед обновлением:", promos);
-
-    console.log("Ищем промокод с именем:", promoText);
 
     const promo = promos.find((promo) => promo.name === promoText);
 
     if (!promo) {
-      console.log("Промокод не найден. Добавляем новый промокод.");
-
       promos.push({ name: promoText });
-
-      console.log("Запись файла...");
 
       fs.writeFileSync(promosPath, JSON.stringify(promos, null, 2), "utf-8");
 
@@ -54,11 +38,7 @@ async function createPromo(bot, msg) {
         "Промокод с таким именем уже существует"
       );
     }
-
-    console.log("Содержимое файла promos.json после обновления:", promos);
   } catch (error) {
-    console.error("Произошла ошибка:", error.message);
-
     await bot.sendMessage(
       msg.message.chat.id,
       "Произошла ошибка при обработке промокода"
@@ -78,13 +58,12 @@ async function updateShopText(bot, msg) {
         "текст для шопа был успешно добавлен"
       );
     } else {
-      console.error("JSON-файл не содержит ожидаемую структуру");
       return;
     }
 
     fs.writeFileSync(shopTextPath, JSON.stringify(shopData, null, 2));
   } catch (error) {
-    console.error("Ошибка при обновлении данных в JSON-файле:", error);
+    return;
   }
 }
 
@@ -108,7 +87,7 @@ async function setAdmin(bot, msg) {
     }
 
     user.isAdmin = true;
-    users.push(user);
+    users.push(user.isAdmin);
 
     fs.writeFileSync("./assets/db/db.json", JSON.stringify(users, null, "\t"));
     await bot.removeListener(setAdmin);
@@ -192,11 +171,7 @@ async function askCardDetails(bot, msg) {
       "Карта успешно добавлена в базу данных!"
     );
   } catch (error) {
-    console.error("Ошибка при запросе данных от админа:", error);
-    bot.sendMessage(
-      msg.message.chat.id,
-      "Произошла ошибка. Пожалуйста, повторите попытку."
-    );
+    return;
   }
 }
 
@@ -227,27 +202,73 @@ function saveToJson(data) {
 }
 
 async function giveCardToUser(bot, msg) {
-  const cardDetails = await askCardDetails(bot, msg.chat.id);
+  try {
+    const usersData = fs.readFileSync(dbFilePath, "utf8");
+    const users = JSON.parse(usersData);
 
-  const targetUser = users.find((user) => user.username === msg.text);
+    users.forEach(async () => {
+      for (const card of cards) {
+        const keyboard = {
+          inline_keyboard: [
+            [
+              {
+                text: card.cardName,
+                callback_data: `selectCard:${card.cardName}`,
+              },
+            ],
+          ],
+        };
 
-  if (!targetUser) {
-    await bot.sendMessage(msg.chat.id, "Пользователь не найден.");
-    return;
+        await bot.sendPhoto(msg.message.chat.id, card.cardPhoto, {
+          caption: "Выберите карточку:",
+          reply_markup: keyboard,
+        });
+      }
+    });
+
+    bot.on("callback_query", async (callbackQuery) => {
+      const { data, message } = callbackQuery;
+      const [action, selectedCardName] = data.split(":");
+
+      if (action === "selectCard") {
+        const selectedCard = cards.find(
+          (card) => card.cardName === selectedCardName
+        );
+
+        if (selectedCard) {
+          await bot.sendMessage(msg.message.chat.id, "Введите имя пользователя:");
+
+          bot.once("text", async (response) => {
+            const username = response.text;
+
+            const targetUser = users.find((user) => user.username === username);
+
+            if (!targetUser) {
+              await bot.sendMessage(
+                msg.message.chat.id,
+                "Пользователь не найден."
+              );
+              return;
+            }
+
+            targetUser.inventory.push(selectedCard);
+
+            delete callbackQuery.data;
+            delete callbackQuery.message;
+
+            fs.writeFileSync(dbFilePath, JSON.stringify(users, null, "\t"));
+
+            await bot.sendMessage(
+              msg.message.chat.id,
+              `Карта добавлена в инвентарь пользователя ${username}.`
+            );
+          });
+        }
+      }
+    });
+  } catch (error) {
+    console.error(error);
   }
-
-  targetUser.inventory.push({
-    cardName: cardDetails.cardName,
-    cardPhoto: cardDetails.cardPhoto,
-    cardPower: cardDetails.cardPower,
-  });
-
-  bot.removeListener(giveCardToUser);
-
-  await bot.sendMessage(
-    msg.chat.id,
-    `Карта успешно присвоена пользователю ${msg.text}.`
-  );
 }
 
 async function findUser(bot, msg) {
@@ -266,7 +287,7 @@ async function findUser(bot, msg) {
       bot.removeListener(findUser);
     }
   } else {
-    console.error("Invalid message structure:", msg);
+    return;
   }
 }
 
@@ -307,10 +328,7 @@ async function addShopText(bot, msg) {
 
     bot.sendMessage(msg.from.id, "Текст успешно добавлен в магазин!");
   } catch (error) {
-    console.error(
-      "Произошла ошибка при добавлении текста в shop.json:",
-      error.message
-    );
+    return;
   }
 }
 
@@ -353,7 +371,7 @@ async function removeAdmin(bot, msg) {
       );
     }
   } catch (error) {
-    console.error("Error in removeAdmin:", error);
+    return;
   }
 }
 

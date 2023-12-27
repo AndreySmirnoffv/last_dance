@@ -10,7 +10,6 @@ const imagesData = require(imagesPath);
 async function giveRandomCardToUser(bot, msg) {
   try {
     if (!Array.isArray(imagesData)) {
-      console.error("Ошибка: imagesData не является массивом.");
       return bot.sendMessage(
         msg.chat.id,
         "Произошла ошибка при выдаче карты. Попробуйте еще раз."
@@ -20,7 +19,6 @@ async function giveRandomCardToUser(bot, msg) {
     const userIndex = db.findIndex((user) => user.username === msg.from.username);
 
     if (userIndex === -1) {
-      console.error("Ошибка: Пользователь не найден.");
       return bot.sendMessage(
         msg.chat.id,
         "Произошла ошибка при выдаче карты. Попробуйте еще раз."
@@ -41,7 +39,6 @@ async function giveRandomCardToUser(bot, msg) {
       const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
       const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
 
-      console.error("Функция недоступна из-за таймера охлаждения.");
       return bot.sendMessage(
         msg.chat.id,
         `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`
@@ -51,7 +48,6 @@ async function giveRandomCardToUser(bot, msg) {
     const randomIndex = Math.floor(Math.random() * imagesData.length);
 
     if (randomIndex < 0 || randomIndex >= imagesData.length) {
-      console.error("Ошибка: Некорректный индекс для массива imagesData.");
       return bot.sendMessage(
         msg.chat.id,
         "Произошла ошибка при выдаче карты. Попробуйте еще раз."
@@ -61,7 +57,6 @@ async function giveRandomCardToUser(bot, msg) {
     const randomCard = imagesData[randomIndex];
 
     if (!randomCard || !randomCard.fileId || !randomCard.chatId || !randomCard.power || !randomCard.name) {
-      console.error("Ошибка: Некорректные данные для карты в массиве imagesData.");
       return bot.sendMessage(
         msg.chat.id,
         "Произошла ошибка при выдаче карты. Попробуйте еще раз."
@@ -80,7 +75,6 @@ async function giveRandomCardToUser(bot, msg) {
     });
     
   } catch (error) {
-    console.error("Произошла ошибка при выдаче карты:", error.message);
     await bot.sendMessage(
       msg.chat.id,
       "Произошла ошибка при выдаче карты. Попробуйте еще раз."

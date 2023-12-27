@@ -20,7 +20,6 @@ function getPack(bot, msg, packCount) {
     );
 
     if (userIndex === -1) {
-      console.error("Пользователь не найден.");
       return bot.sendMessage(userId, "Пользователь не найден.");
     }
 
@@ -34,7 +33,6 @@ function getPack(bot, msg, packCount) {
     }
 
     if (user.balance < totalCost) {
-      console.error("У вас недостаточно баланса для открытия паков.");
       return bot.sendMessage(
         userId,
         `У вас недостаточно баланса для открытия ${packCount} паков.`
@@ -50,9 +48,6 @@ function getPack(bot, msg, packCount) {
         (card) => card.name === randomCard.name
       );
 
-      console.log("Random Card:", randomCard);
-      console.log("Existing Card:", existingCard);
-
       if (existingCard && typeof existingCard.power === "number") {
         updatedBalance += 0.5 * existingCard.power;
       } else if (typeof randomCard.power === "number") {
@@ -60,15 +55,11 @@ function getPack(bot, msg, packCount) {
         openedCards.push(randomCard);
         updatedBalance += 0.5 * randomCard.power;
       } else {
-        console.error("Invalid card power:", randomCard.power);
+        return;
       }
     }
 
     if (isNaN(updatedBalance) || updatedBalance < 0) {
-      console.error(
-        "Invalid updated balance. Updated Balance:",
-        updatedBalance
-      );
       throw new Error("Invalid updated balance");
     }
 
@@ -79,7 +70,6 @@ function getPack(bot, msg, packCount) {
     const shopMessage = (
       shopText.message || "Текст не найден в магазине."
     ).trim();
-    console.log("openedcards", openedCards);
     bot.sendMessage(
       userId,
       `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards
@@ -93,14 +83,12 @@ function getPack(bot, msg, packCount) {
       msg.message.from.id,
       "Произошла ошибка при обработке вашего запроса."
     );
-    console.error("Произошла ошибка:", error);
     throw error;
   }
 }
 
 async function getUniquePack(bot, msg) {
   try {
-    console.log("Username from message:", msg.from.username);
     const userId = msg.message.chat.id;
 
     const userIndex = users.findIndex((x) => x.username === msg.from.username);
@@ -131,14 +119,10 @@ async function getUniquePack(bot, msg) {
     }
 
     if (isNaN(updatedBalance) || updatedBalance < 0) {
-      console.error("Некорректный баланс после обновления:", updatedBalance);
       throw new Error("Некорректный баланс");
     }
 
     if (users[userIndex].balance < updatedBalance) {
-      console.error(
-        "У вас недостаточно баланса для открытия уникального пака."
-      );
       return bot.sendMessage(
         userId,
         "У вас недостаточно баланса для открытия уникального пака."
@@ -151,13 +135,11 @@ async function getUniquePack(bot, msg) {
     fs.writeFileSync(dbFilePath, JSON.stringify(users, null, "\t"));
 
     for (const card of openedCards) {
-      console.log("FileId:", card.fileId);
       await bot.sendPhoto(userId, card.fileId, {
         caption: `🦠 ${card.name}\n\n💬 ${users[userIndex].username}, поздравляем, вы получили карту героя ${users[userIndex].name}!\n🎭 Класс: ${card.class}\n🔮 Редкость: ${card.rarity}\nАтака: ${card.power}\n❤️ Защита: ${card.deffence}\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${users[userIndex].balance}`,
       });
     }
   } catch (error) {
-    console.error("Произошла ошибка:", error);
     bot.sendMessage(
       msg.message.chat.id,
       "Произошла ошибка при обработке вашего запроса."

@@ -29,7 +29,6 @@ async function myCards(bot, msg) {
     );
 
     if (userIndex === -1 || !db[userIndex].hasOwnProperty("inventory")) {
-      console.error("Ошибка: Пользователь не найден или у него нет инвентаря.");
       return bot.sendMessage(
         msg.chat.id,
         "У вас нет карт в инвентаре. Попробуйте получить карты сначала."
@@ -53,11 +52,7 @@ async function myCards(bot, msg) {
       });
     }
   } catch (error) {
-    console.error(
-      "Произошла ошибка при выводе карт пользователя:",
-      error.message
-    );
-    await bot.sendMessage(
+    return bot.sendMessage(
       msg.chat.id,
       "Произошла ошибка при выводе ваших карт. Попробуйте еще раз."
     );
