@@ -1,11 +1,9 @@
-require("dotenv").config({ path: "./assets/modules/.env" });
-const TelegramBot = require("node-telegram-bot-api");
-const fs = require("fs");
-const bot = new TelegramBot("6444174240:AAGxeM1ho9sLG6CXOCjRFh96NUp4ChHcxYI", {
+require('dotenv').config({ path: './assets/modules/.env' });
+const TelegramBot = require('node-telegram-bot-api');
+const fs = require('fs');
+const bot = new TelegramBot('6444174240:AAGxeM1ho9sLG6CXOCjRFh96NUp4ChHcxYI', {
   polling: true,
 });
-
-const db = require("./assets/db/db.json");
 
 const {
   adminStartKeyboard,
@@ -13,12 +11,12 @@ const {
   arenaKeyboard,
   adminOptionsKeyboard,
   shopKeyboard,
-} = require("./assets/keyboard/keyboard");
+} = require('./assets/keyboard/keyboard');
 const {
   sendProfileData,
   changeName,
   myCards,
-} = require("./assets/scripts/userFunctions/userFunctions");
+} = require('./assets/scripts/userFunctions/userFunctions');
 const {
   setAdmin,
   giveCardToUser,
@@ -28,28 +26,31 @@ const {
   askCardDetails,
   addShopText,
   removeAdmin,
-} = require("./assets/scripts/adminFunctions/adminFunctions");
+} = require('./assets/scripts/adminFunctions/adminFunctions');
 const {
   addToWaitingRoom,
   matchInventory,
   processCallback,
   checkAndCreateMatch,
-} = require("./assets/scripts/matchFunctions/matchFunctions");
+  addToMatchInventory,
+} = require('./assets/scripts/matchFunctions/matchFunctions');
 const {
   getPack,
   getUniquePack,
-} = require("./assets/scripts/shopFunctions/shopFunctions");
-const { giveRandomCardToUser } = require("./assets/scripts/getCard/getCard");
-const { top } = require("./assets/scripts/top/top");
+} = require('./assets/scripts/shopFunctions/shopFunctions');
+const { giveRandomCardToUser } = require('./assets/scripts/getCard/getCard');
+const { top } = require('./assets/scripts/top/top');
 
-const shopText = require("./assets/db/shop/shop.json");
+const shopText = require('./assets/db/shop/shop.json');
+const db = require('./assets/db/db.json');
+
 const commands = JSON.parse(
-  fs.readFileSync("./assets/db/commands/commands.json")
+  fs.readFileSync('./assets/db/commands/commands.json'),
 );
 
 bot.setMyCommands(commands);
 
-bot.on("message", async (msg) => {
+bot.on('message', async msg => {
   const chatId = msg.chat.id;
   const userId = msg.from.id;
   const channelUsername = "@MCLPodPivomTournament";
@@ -79,12 +80,12 @@ bot.on("message", async (msg) => {
     return;
   }
 
-  let user = db.find((user) => user.username === msg.from.username);
+  let user = db.find(user => user.username === msg.from.username);
 
-  if (msg.text === "/start") {
+  if (msg.text === '/start') {
     if (!user) {
       db.push({
-        username: msg.from.username,
+        username: msg?.from.username,
         first_name: msg.from.first_name,
         last_name: msg.from.last_name,
         id: msg.chat.id,
@@ -98,103 +99,100 @@ bot.on("message", async (msg) => {
         wonMatches: 0,
         looseMatches: 0,
       });
-      fs.writeFileSync("./assets/db/db.json", JSON.stringify(db, null, "\t"));
+      fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
       await bot.sendMessage(
         msg.chat.id,
         `Привет ${msg.from.username}`,
-        userStartKeyboard
+        userStartKeyboard,
       );
     } else {
-      const isAdminMessage = user.isAdmin ? "Вы админ!" : "";
+      const isAdminMessage = user.isAdmin ? 'Вы админ!' : '';
       await bot.sendMessage(
         msg.chat.id,
         `Привет ${msg.from.username}. ${isAdminMessage}`,
-        user.isAdmin ? adminStartKeyboard : userStartKeyboard
+        user.isAdmin ? adminStartKeyboard : userStartKeyboard,
       );
     }
-  } else if (msg.text === "/profile" || msg.text == "👤 Личный профиль") {
+  } else if (msg.text === '/profile' || msg.text == '👤 Личный Профиль') {
     sendProfileData(bot, msg);
-  } else if (msg.text === "/arenas" || msg.text == "⚔️ Арены") {
-    await bot.sendMessage(msg.chat.id, "Список Арен", arenaKeyboard);
-  } else if (msg.text === "/shop" || msg.text === "🛒 Магазин паков") {
+  } else if (msg.text === '/arenas' || msg.text == '⚔️ Арены') {
+    await bot.sendMessage(msg.chat.id, 'Список Арен', arenaKeyboard);
+  } else if (msg.text === '/shop' || msg.text === '🛒 Магазин паков') {
     await bot.sendMessage(msg.chat.id, shopText[0].message, shopKeyboard);
-  } else if (msg.text === "/getcard" || msg.text == "🀄️ Получить карточку") {
+  } else if (msg.text === '/getcard' || msg.text == '🀄️ Получить карточку') {
     giveRandomCardToUser(bot, msg);
-  } else if (msg.text === "⚙️ Админ панель" && user.isAdmin) {
+  } else if (msg.text === '⚙️ Админ панель' && user.isAdmin) {
     await bot.sendMessage(
       msg.chat.id,
-      "вот что ты можешь сделать",
-      adminOptionsKeyboard
+      'вот что ты можешь сделать',
+      adminOptionsKeyboard,
     );
   } else if (
-    msg.text === "🀄️ Добавить карту в инвентарь матчей" ||
-    msg.text === "/addcardtomatch"
+    msg.text === '🀄️ Добавить карту в инвентарь матчей' ||
+    msg.text === '/addcardtomatch'
   ) {
     matchInventory(bot, msg);
-  } else if (msg.text === "/top") {
+  } else if (msg.text === '/top') {
     top(bot, msg);
-  } else {
-    await bot.sendMessage(msg.chat.id, "Выберите существующую команду");
   }
 });
 
-bot.on("callback_query", async (msg) => {
-  if (msg.data.startsWith("createPromo_")) {
+bot.on('callback_query', async msg => {
+  if (msg.data.startsWith('createPromo_')) {
     await addToMatchInventory(bot, msg);
-  } else if (msg.data === "createPromo") {
+  } else if (msg.data === 'createPromo') {
     createPromo(bot, msg);
-  } else if (msg.data === "showAllUsers") {
+  } else if (msg.data === 'showAllUsers') {
     showAllUsers(bot, msg);
-  } else if (msg.data === "findUser") {
+  } else if (msg.data === 'findUser') {
     await bot.sendMessage(
       msg.message.chat.id,
-      "Пришлите мне username пользователя"
+      'Пришлите мне username пользователя',
     );
     await findUser(bot, msg);
-  } else if (msg.data === "addCardToUser") {
+  } else if (msg.data === 'addCardToUser') {
     giveCardToUser(bot, msg);
-  } else if (msg.data === "setAdmin") {
-    await bot.sendMessage(msg.message.chat.id, "Пришлите мне имя пользователя");
-    bot.once("message", (msg) => setAdmin(bot, msg));
-  } else if (msg.data === "usualmatch") {
+  } else if (msg.data === 'setAdmin') {
+    await bot.sendMessage(msg.message.chat.id, 'Пришлите мне имя пользователя');
+    bot.once('message', msg => setAdmin(bot, msg));
+  } else if (msg.data === 'usualmatch') {
     await addToWaitingRoom(bot, msg);
-  } else if (msg.data === "getonepack") {
+  } else if (msg.data === 'getonepack') {
     getPack(bot, msg, 1);
-  } else if (msg.data === "getfivepacks") {
+  } else if (msg.data === 'getfivepacks') {
     getPack(bot, msg, 5);
-  } else if (msg.data === "gettenpacks") {
+  } else if (msg.data === 'gettenpacks') {
     getPack(bot, msg, 10);
-  } else if (msg.data === "rating") {
+  } else if (msg.data === 'rating') {
     processCallback(bot, msg);
-  } else if (msg.data === "usual") {
+  } else if (msg.data === 'usual') {
     checkAndCreateMatch(bot, msg);
-  } else if (msg.data === "changename") {
-    changeName(bot, msg);
-  } else if (msg.data === "mycards") {
-    myCards(bot, msg);
-  } else if (msg.data === "closewindow") {
+  } else if (msg.data === 'changename') {
     await bot.sendMessage(
-      msg.chat.id,
-      "Привет админ вот что ты можешь сделать",
-      adminStartKeyboard
+      msg.message.chat.id,
+      'напишите имя на которое хотите изменить ваш username',
     );
-  } else if (msg.data === "addcard") {
-    askCardDetails(bot, msg);
-  } else if (msg.data === "myteam") {
+    bot.once('message', msg => changeName(bot, msg))
+  } else if (msg.data === 'mycards') {
     myCards(bot, msg);
-  } else if (msg.data === "addshoptext") {
+  } else if (msg.data === 'closewindow') {
+    await bot.deleteMessage(msg.message.chat.id, msg.message.message_id);
+    await bot.sendMessage(msg.message.chat.id, 'Привет админ вот что ты можешь сделать', adminStartKeyboard);
+  } else if (msg.data === 'addcard') {
+    askCardDetails(bot, msg);
+  } else if (msg.data === 'myteam') {
+    myCards(bot, msg);
+  } else if (msg.data === 'addshoptext') {
     addShopText(bot, msg);
-  } else if (msg.data === "getuniquepack") {
+  } else if (msg.data === 'getuniquepack') {
     await getUniquePack(bot, msg);
-  } else if (msg.data === "ratingmatch") {
-    processCallback(bot, msg);
-  } else if (msg.data === "removeadmin") {
+  } else if (msg.data === 'ratingmatch') {
+    processCallback(bot, msg)
+  } else if (msg.data === 'removeadmin') {
     removeAdmin(bot, msg);
-  }else if ("selectCard" in msg.data){
-    console.log()
   } else {
-    await bot.sendMessage(msg.message.chat.id, "Таких данных не существует");
+    await bot.sendMessage(msg.message.chat.id, 'Таких данных не существует');
   }
 });
 
-bot.on("polling_error", console.log);
+bot.on('polling_error', console.log);

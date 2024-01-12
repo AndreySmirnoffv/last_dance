@@ -150,6 +150,9 @@ async function askCardDetails(bot, msg) {
     await bot.sendMessage(msg.message.chat.id, "Введите шанс выпадения карты");
     const cardDropChance = await waitForText(bot, msg.from.username);
 
+    await bot.sendMessage(msg.message.chat.id, "Введите силу защиты карты")
+    const cardDeffence = await waitForText(bot, msg.from.username)
+
     const cardDetails = {
       cardName: cardNameMessage.text,
       cardPhoto: cardPhotoMessage.photo[0].file_id,
@@ -157,6 +160,7 @@ async function askCardDetails(bot, msg) {
       cardSection: cardSectionMessage.text,
       cardRarity: cardRarityMessage.text,
       cardDropChance: cardDropChance.text,
+      cardDeffence: cardDeffence.text
     };
 
     cards.push(cardDetails);

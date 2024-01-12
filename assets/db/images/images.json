@@ -1,42 +1,11 @@
 [
 	{
-		"cardName": "🀄️ Получить карточку",
-		"cardPhoto": "AgACAgIAAxkBAAIKbWWHWu6Q39d8U-rjbWUdbNQ0h0eyAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
-		"cardPower": 12,
-		"cardSection": "12",
-		"cardRarity": "12",
-		"cardDropChance": "12"
-	},
-	{
 		"cardName": "12",
-		"cardPhoto": "AgACAgIAAxkBAAIKh2WHW0TDaNe0x9CyfkbJTn1wD1pzAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
+		"cardPhoto": "AgACAgIAAxkBAAINtmWWBIz8Rb-PtYAVHJ9JJkCnZpm8AAIn2DEb4IOwSGtdT7Fqrn_WAQADAgADcwADNAQ",
 		"cardPower": 12,
-		"cardSection": "12",
-		"cardRarity": "12",
-		"cardDropChance": "12"
-	},
-	{
-		"cardName": "12",
-		"cardPhoto": "AgACAgIAAxkBAAIKn2WHW3AOPDVflIGn1PuRabnrn6a_AALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
-		"cardPower": 12,
-		"cardSection": "12",
-		"cardRarity": "12",
-		"cardDropChance": "12"
-	},
-	{
-		"cardName": "12",
-		"cardPhoto": "AgACAgIAAxkBAAIKtWWHW9QLEWxuj_VaA-5PoQqDFWxtAALd0jEbl0tASM3jfifqdVUzAQADAgADcwADMwQ",
-		"cardPower": 12,
-		"cardSection": "12",
-		"cardRarity": "12",
-		"cardDropChance": "12"
-	},
-	{
-		"cardName": "12",
-		"cardPhoto": "AgACAgIAAxkBAAIKy2WHW_0isQOTuG24Bj-uaRkmaQqpAALe0jEbl0tASL4ZYggn4TKJAQADAgADcwADMwQ",
-		"cardPower": 12,
-		"cardSection": "12",
-		"cardRarity": "12",
-		"cardDropChance": "12"
+		"cardSection": "Magic",
+		"cardRarity": "Rare",
+		"cardDropChance": "20",
+		"cardDeffence": "10"
 	}
 ]
