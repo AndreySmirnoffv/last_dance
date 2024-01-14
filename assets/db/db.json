@@ -1,19 +1,5 @@
 [
 	{
-		"username": "lemurlee",
-		"first_name": "𝐥𝐞𝐦𝐮𝐫𝐥𝐞𝐞™",
-		"id": 373186260,
-		"balance": 0,
-		"rating": null,
-		"inventory": [],
-		"matchInventory": [],
-		"isAdmin": true,
-		"isWaiting": false,
-		"isMatch": false,
-		"wonMatches": 0,
-		"looseMatches": 0
-	},
-	{
 		"username": "arts_holv",
 		"first_name": "Artsem (Art$)",
 		"id": 749635133,
@@ -26,5 +12,32 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0
+	},
+	{
+		"username": "hashfuck",
+		"first_name": "В легких больше дыма , чем воздуха",
+		"last_name": "⁤",
+		"id": 1425448286,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "12",
+				"cardPhoto": "AgACAgIAAxkBAAINtmWWBIz8Rb-PtYAVHJ9JJkCnZpm8AAIn2DEb4IOwSGtdT7Fqrn_WAQADAgADcwADNAQ",
+				"cardPower": 12,
+				"cardSection": "Magic",
+				"cardRarity": "Rare",
+				"cardDropChance": "20",
+				"cardDeffence": "10",
+				"rarity": "Не указано"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": true,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1705244280434
 	}
 ]

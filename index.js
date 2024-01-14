@@ -1,52 +1,18 @@
 require('dotenv').config({ path: './assets/modules/.env' });
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
-const bot = new TelegramBot('6444174240:AAGxeM1ho9sLG6CXOCjRFh96NUp4ChHcxYI', {
-  polling: true,
-});
-
-const {
-  adminStartKeyboard,
-  userStartKeyboard,
-  arenaKeyboard,
-  adminOptionsKeyboard,
-  shopKeyboard,
-} = require('./assets/keyboard/keyboard');
-const {
-  sendProfileData,
-  changeName,
-  myCards,
-} = require('./assets/scripts/userFunctions/userFunctions');
-const {
-  setAdmin,
-  giveCardToUser,
-  findUser,
-  createPromo,
-  showAllUsers,
-  askCardDetails,
-  addShopText,
-  removeAdmin,
-} = require('./assets/scripts/adminFunctions/adminFunctions');
-const {
-  addToWaitingRoom,
-  matchInventory,
-  processCallback,
-  checkAndCreateMatch,
-  addToMatchInventory,
-} = require('./assets/scripts/matchFunctions/matchFunctions');
-const {
-  getPack,
-  getUniquePack,
-} = require('./assets/scripts/shopFunctions/shopFunctions');
+const bot = new TelegramBot('6960004050:AAG8sukhWpyK0X4qu_i9EcMRkvMWrFUORio', { polling: true });
+const { adminStartKeyboard, userStartKeyboard, arenaKeyboard, adminOptionsKeyboard, shopKeyboard } = require('./assets/keyboard/keyboard');
+const { sendProfileData, changeName, myCards } = require('./assets/scripts/userFunctions/userFunctions');
+const { setAdmin, giveCardToUser, findUser, createPromo, showAllUsers, askCardDetails, addShopText, removeAdmin } = require('./assets/scripts/adminFunctions/adminFunctions');
+const { addToWaitingRoom, matchInventory, processCallback, checkAndCreateMatch, addToMatchInventory } = require('./assets/scripts/matchFunctions/matchFunctions');
+const { getPack, getUniquePack } = require('./assets/scripts/shopFunctions/shopFunctions');
 const { giveRandomCardToUser } = require('./assets/scripts/getCard/getCard');
 const { top } = require('./assets/scripts/top/top');
 
 const shopText = require('./assets/db/shop/shop.json');
 const db = require('./assets/db/db.json');
-
-const commands = JSON.parse(
-  fs.readFileSync('./assets/db/commands/commands.json'),
-);
+const commands = JSON.parse(fs.readFileSync('./assets/db/commands/commands.json'));
 
 bot.setMyCommands(commands);
 
@@ -58,29 +24,18 @@ bot.on('message', async msg => {
   try {
     const chatMember = await bot.getChatMember(channelUsername, userId);
 
-    if (
-      chatMember &&
-      (chatMember.status === "member" ||
-        chatMember.status === "administrator" ||
-        chatMember.status === "creator")
-    ) {
+    if (chatMember && (chatMember.status === "member" || chatMember.status === "administrator" || chatMember.status === "creator")) {
       console.log();
     } else {
-      bot.sendMessage(
-        chatId,
-        "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament"
-      );
+      bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
       return;
     }
   } catch (error) {
-    bot.sendMessage(
-      chatId,
-      "Произошла ошибка при проверке подписки. Попробуйте позже."
-    );
+    bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
     return;
   }
 
-  let user = db.find(user => user.username === msg.from.username);
+  let user = db.find(user => user.id === msg.from.id);
 
   if (msg.text === '/start') {
     if (!user) {
@@ -100,18 +55,10 @@ bot.on('message', async msg => {
         looseMatches: 0,
       });
       fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
-      await bot.sendMessage(
-        msg.chat.id,
-        `Привет ${msg.from.username}`,
-        userStartKeyboard,
-      );
+      await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}`, userStartKeyboard);
     } else {
       const isAdminMessage = user.isAdmin ? 'Вы админ!' : '';
-      await bot.sendMessage(
-        msg.chat.id,
-        `Привет ${msg.from.username}. ${isAdminMessage}`,
-        user.isAdmin ? adminStartKeyboard : userStartKeyboard,
-      );
+      await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}. ${isAdminMessage}`, user.isAdmin ? adminStartKeyboard : userStartKeyboard);
     }
   } else if (msg.text === '/profile' || msg.text == '👤 Личный Профиль') {
     sendProfileData(bot, msg);
@@ -122,15 +69,8 @@ bot.on('message', async msg => {
   } else if (msg.text === '/getcard' || msg.text == '🀄️ Получить карточку') {
     giveRandomCardToUser(bot, msg);
   } else if (msg.text === '⚙️ Админ панель' && user.isAdmin) {
-    await bot.sendMessage(
-      msg.chat.id,
-      'вот что ты можешь сделать',
-      adminOptionsKeyboard,
-    );
-  } else if (
-    msg.text === '🀄️ Добавить карту в инвентарь матчей' ||
-    msg.text === '/addcardtomatch'
-  ) {
+    await bot.sendMessage(msg.chat.id, 'вот что ты можешь сделать', adminOptionsKeyboard,);
+  } else if (msg.text === '🀄️ Добавить карту в инвентарь матчей' || msg.text === '/addcardtomatch') {
     matchInventory(bot, msg);
   } else if (msg.text === '/top') {
     top(bot, msg);
@@ -145,10 +85,7 @@ bot.on('callback_query', async msg => {
   } else if (msg.data === 'showAllUsers') {
     showAllUsers(bot, msg);
   } else if (msg.data === 'findUser') {
-    await bot.sendMessage(
-      msg.message.chat.id,
-      'Пришлите мне username пользователя',
-    );
+    await bot.sendMessage(msg.message.chat.id, 'Пришлите мне username пользователя');
     await findUser(bot, msg);
   } else if (msg.data === 'addCardToUser') {
     giveCardToUser(bot, msg);
@@ -168,10 +105,7 @@ bot.on('callback_query', async msg => {
   } else if (msg.data === 'usual') {
     checkAndCreateMatch(bot, msg);
   } else if (msg.data === 'changename') {
-    await bot.sendMessage(
-      msg.message.chat.id,
-      'напишите имя на которое хотите изменить ваш username',
-    );
+    await bot.sendMessage(msg.message.chat.id, 'напишите имя на которое хотите изменить ваш username');
     bot.once('message', msg => changeName(bot, msg))
   } else if (msg.data === 'mycards') {
     myCards(bot, msg);
