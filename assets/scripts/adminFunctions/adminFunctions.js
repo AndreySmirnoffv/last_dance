@@ -153,7 +153,7 @@ async function askCardDetails(bot, msg) {
     await bot.sendMessage(msg.message.chat.id, "Введите силу защиты карты")
     const cardDeffence = await waitForText(bot, msg.from.username)
 
-    const cardDetails = {
+    let cardDetails = {
       cardName: cardNameMessage.text,
       cardPhoto: cardPhotoMessage.photo[0].file_id,
       cardPower: parseInt(cardPowerMessage.text),
@@ -165,6 +165,7 @@ async function askCardDetails(bot, msg) {
 
     cards.push(cardDetails);
     saveToJson(cards);
+    cardDetails = {}
     bot.sendMessage(
       msg.message.chat.id,
       "Карта успешно добавлена в базу данных!"
@@ -294,12 +295,9 @@ async function showAllUsers(bot, msg) {
   for (const user of users) {
     await bot.sendMessage(
       msg.message.chat.id,
-      `Имя пользователя: ${user.username}\nИмя: ${user.first_name}\nФамилия: ${
-        user.last_name
-      }\nID: ${user.id}\nБаланс: ${user.balance}\nРейтинг: ${
-        user.rating === null ? "N/A" : user.rating
-      }\nАдминистратор: ${user.isAdmin}\nПодходит: ${user.isMatch}\nОжидает: ${
-        user.isWaiting
+      `Имя пользователя: ${user.username}\nИмя: ${user.first_name}\nФамилия: ${user.last_name
+      }\nID: ${user.id}\nБаланс: ${user.balance}\nРейтинг: ${user.rating === null ? "N/A" : user.rating
+      }\nАдминистратор: ${user.isAdmin}\nПодходит: ${user.isMatch}\nОжидает: ${user.isWaiting
       }\n---------------------`
     );
   }

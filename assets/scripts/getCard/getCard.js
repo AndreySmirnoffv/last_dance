@@ -9,7 +9,6 @@ const imagesData = require(imagesPath);
 
 async function giveRandomCardToUser(bot, msg) {
   try {
-    console.log('Начало giveRandomCardToUser');
 
     if (!Array.isArray(imagesData)) {
       console.error('Ошибка: imagesData не является массивом.');
@@ -47,13 +46,13 @@ async function giveRandomCardToUser(bot, msg) {
       const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
       const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
 
-    console.error(
-      `Ошибка: Функция недоступна. Осталось ждать ${remainingHours} часов и ${remainingMinutes} минут.`,
-    );
-    return bot.sendMessage(
-      msg.chat.id,
-      `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
-    );
+      console.error(
+        `Ошибка: Функция недоступна. Осталось ждать ${remainingHours} часов и ${remainingMinutes} минут.`,
+      );
+      return bot.sendMessage(
+        msg.chat.id,
+        `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
+      );
     }
 
     console.log('Прошло проверку времени ожидания');
@@ -84,21 +83,16 @@ async function giveRandomCardToUser(bot, msg) {
     console.log('Данные успешно обновлены в файле');
 
     await bot.sendPhoto(msg.chat.id, randomCard.cardPhoto, {
-      caption: `🦠 ${randomCard.name}\n\n💬 ${
-        msg.from.username
-      }, поздравляем, вы получили карту героя ${randomCard.name}!\n🎭 Класс: ${
-        randomCard.class
-      }\n🔮 Редкость: ${randomCard.rarity}\nАтака: ${
-        randomCard.power || 'Не указана'
-      }\n❤️ Защита: ${
-        randomCard.deffence
-      }\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${
-        db[userIndex].balance - randomCard.power
-      }`,
+      caption: `🦠 ${randomCard.name}\n\n💬 ${msg.from.username
+        }, поздравляем, вы получили карту героя ${randomCard.name}!\n🎭 Класс: ${randomCard.class
+        }\n🔮 Редкость: ${randomCard.rarity}\nАтака: ${randomCard.power || 'Не указана'
+        }\n❤️ Защита: ${randomCard.deffence
+        }\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${db[userIndex].balance - randomCard.power
+        }`,
     });
 
     console.log('Успешно отправлено сообщение с фото');
-    if (randomCard.name === db[userIndex].inventory){
+    if (randomCard.name === db[userIndex].inventory) {
       db[userIndex].balance = randomCard.power / 2
       fs.writeFileSync('../../db/db.json', JSON.stringify(db, null, '\t'))
     }
