@@ -5,18 +5,7 @@
 		"id": 749635133,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Валентина",
-				"cardPhoto": "AgACAgIAAxkBAAIQSWWq9t75Qp3s8_ry5i-debewTzq7AALt3TEbUA1ZSTIwuyyVcdPDAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "5",
-				"cardDeffence": "350",
-				"rarity": "Не указано"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
@@ -32,25 +21,14 @@
 		"id": 1425448286,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Валир",
-				"cardPhoto": "AgACAgIAAxkBAAIQWmWq9zs_MPE1qcRbh3S1LHAAAWv4AgAC7t0xG1ANWUl4O3NvrqX5KgEAAwIAA3MAAzQE",
-				"cardPower": 550,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "5",
-				"cardDeffence": "450",
-				"rarity": "Не указано"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1705704052787
+		"lastCardUseTime": 1705804727745
 	},
 	{
 		"username": "Andrey_Smirnoffv",
@@ -59,24 +37,12 @@
 		"id": 6822709019,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIQJWWq9Sg7xqM_KCL6Y-eWySbGoAgoAALq3TEbUA1ZSW0c8KJwv3E4AQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "5",
-				"cardDeffence": "750",
-				"rarity": "Не указано"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
-		"isAdmin": true,
+		"isAdmin": false,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
-		"looseMatches": 0,
-		"lastCardUseTime": 1705704101359
+		"looseMatches": 0
 	}
 ]

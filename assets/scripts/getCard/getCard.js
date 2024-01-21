@@ -46,9 +46,6 @@ async function giveRandomCardToUser(bot, msg) {
       const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
       const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
 
-      console.error(
-        `Ошибка: Функция недоступна. Осталось ждать ${remainingHours} часов и ${remainingMinutes} минут.`,
-      );
       return bot.sendMessage(
         msg.chat.id,
         `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
@@ -73,25 +70,20 @@ async function giveRandomCardToUser(bot, msg) {
 
     console.log(`Выбрана случайная карта: ${randomCard.name}`);
 
-    randomCard.rarity = randomCard.rarity || 'Не указано';
+    randomCard.rarity = randomCard.rarity
 
     db[userIndex].inventory.push(randomCard);
     db[userIndex].lastCardUseTime = currentTime;
 
-    fs.writeFileSync(dbPath, JSON.stringify(db, null, '\t'));
-
-    console.log('Данные успешно обновлены в файле');
-
+   // fs.writeFileSync(dbPath, JSON.stringify(db, null, '\t')); 
     await bot.sendPhoto(msg.chat.id, randomCard.cardPhoto, {
-      caption: `🦠 ${randomCard.name}\n\n💬 ${msg.from.username
-        }, поздравляем, вы получили карту героя ${randomCard.name}!\n🎭 Класс: ${randomCard.class
-        }\n🔮 Редкость: ${randomCard.rarity}\nАтака: ${randomCard.power || 'Не указана'
-        }\n❤️ Защита: ${randomCard.deffence
-        }\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${db[userIndex].balance - randomCard.power
+      caption: `🦠 ${randomCard.cardName}\n\n💬 ${msg.from.username
+        }, поздравляем, вы получили карту героя ${randomCard.cardName}!\n🎭 Класс: ${randomCard.cardSection
+        }\n🔮 Редкость: ${randomCard.cardRarity}\nАтака: ${randomCard.cardPower || 'Не указана'
+        }\n❤️ Защита: ${randomCard.cardDeffence
+        }\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${db[userIndex].balance - randomCard.cardPower
         }`,
     });
-
-    console.log('Успешно отправлено сообщение с фото');
     if (randomCard.name === db[userIndex].inventory) {
       db[userIndex].balance = randomCard.power / 2
       fs.writeFileSync('../../db/db.json', JSON.stringify(db, null, '\t'))

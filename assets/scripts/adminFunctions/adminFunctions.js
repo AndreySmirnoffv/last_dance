@@ -165,7 +165,6 @@ async function askCardDetails(bot, msg) {
 
     cards.push(cardDetails);
     saveToJson(cards);
-    cardDetails = {}
     bot.sendMessage(
       msg.message.chat.id,
       "Карта успешно добавлена в базу данных!"
