@@ -251,7 +251,6 @@ async function giveCardToUser(bot, msg) {
             }
 
             targetUser.inventory.push(selectedCard);
-
             delete callbackQuery.data;
             delete callbackQuery.message;
 
