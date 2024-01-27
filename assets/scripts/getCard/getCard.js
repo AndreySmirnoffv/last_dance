@@ -68,7 +68,7 @@ async function giveRandomCardToUser(bot, msg) {
 
     const randomCard = imagesData[randomIndex];
 
-    console.log(`Выбрана случайная карта: ${randomCard.name}`);
+    console.log(`Выбрана случайная карта: ${randomCard.cardName}`);
 
     randomCard.rarity = randomCard.rarity
 

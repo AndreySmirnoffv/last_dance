@@ -2,22 +2,21 @@ const fs = require('fs');
 const { profileKeyboard } = require('../../keyboard/keyboard');
 const promos = require('../../db/promos/promos.json');
 const db = require('../../db/db.json');
-const cardsData = require('../../db/images/images.json');
 const path = require('path');
 const userDb = path.join(__dirname, '../../db/db.json');
 const users = require(userDb);
+const cards = path.join(__dirname,  "../../images/images.json")
 
 async function sendProfileData(bot, msg) {
   const filteredUsers = db.filter(user => user?.id === msg.from.id);
 
   if (filteredUsers.length > 0) {
     const user = filteredUsers[0];
-    const allCards = cardsData;
+    let allCards = JSON.parse(cards)
 
     const userInventory = user.inventory || [];
     const userCardsCount = userInventory.length;
     const allCardsCount = allCards.length;
-
     await bot.sendMessage(
       msg.chat.id,
       `Имя пользователя: ${user.username}\nID: ${user.id}\nИмя: ${user.first_name}\nФамилия: ${user.last_name}\nБаланс: ${user.balance}\nРейтинг: ${user.rating}\nИнвентарь: ${userCardsCount} из ${allCardsCount}\n`,

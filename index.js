@@ -1,7 +1,7 @@
 require('dotenv').config({ path: './assets/modules/.env' });
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
-const bot = new TelegramBot("", { polling: true });
+const bot = new TelegramBot("6444174240:AAGxeM1ho9sLG6CXOCjRFh96NUp4ChHcxYI", { polling: true });
 const { adminStartKeyboard, userStartKeyboard, arenaKeyboard, adminOptionsKeyboard, shopKeyboard } = require('./assets/keyboard/keyboard');
 const { sendProfileData, changeName, myCards } = require('./assets/scripts/userFunctions/userFunctions');
 const { setAdmin, giveCardToUser, findUser, createPromo, showAllUsers, askCardDetails, addShopText, removeAdmin } = require('./assets/scripts/adminFunctions/adminFunctions');
@@ -17,22 +17,22 @@ const commands = JSON.parse(fs.readFileSync('./assets/db/commands/commands.json'
 bot.setMyCommands(commands);
 
 bot.on('message', async msg => {
-  const chatId = msg.chat.id;
-  const userId = msg.from.id;
-  const channelUsername = "@MCLPodPivomTournament";
+  // const chatId = msg.chat.id;
+  // const userId = msg.from.id;
+  // const channelUsername = "@MCLPodPivomTournament";
 
-  try {
-    const chatMember = await bot.getChatMember(channelUsername, userId);
-    if (chatMember && (chatMember.status === "member" || chatMember.status === "administrator" || chatMember.status === "creator")) {
-      console.log();
-    } else {
-      bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
-      return;
-    }
-  } catch (error) {
-    bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
-    return;
-  }
+  // try {
+  //   const chatMember = await bot.getChatMember(channelUsername, userId);
+  //   if (chatMember && (chatMember.status === "member" || chatMember.status === "administrator" || chatMember.status === "creator")) {
+  //     console.log();
+  //   } else {
+  //     bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
+  //     return;
+  //   }
+  // } catch (error) {
+  //   bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
+  //   return;
+  // }
 
   let user = db.find(user => user.id === msg.from.id);
 
