@@ -49,14 +49,33 @@
 		"id": 1425448286,
 		"balance": 0,
 		"rating": null,
-		"inventory": [],
+		"inventory": [
+			{
+				"cardName": "Иксия",
+				"cardPhoto": "AgACAgIAAxkBAAITbWWuiPrFtbr_F2MHfCufozhKpnZtAAIw1zEbbfl5SRbTY5Il70PbAQADAgADcwADNAQ",
+				"cardPower": 695,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "305"
+			},
+			{
+				"cardName": "Вэйл",
+				"cardPhoto": "AgACAgIAAxkBAAITGGWuhdX5gZhm6uzPqJqEi2tvdhK3AAIo0zEbyWdxSXFS34Bkkzq5AQADAgADcwADNAQ",
+				"cardPower": 755,
+				"cardSection": "Маг",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "245"
+			}
+		],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1705804727745
+		"lastCardUseTime": 1706454106529
 	},
 	{
 		"username": "Andrey_Smirnoffv",

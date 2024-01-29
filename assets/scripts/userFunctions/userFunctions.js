@@ -4,19 +4,18 @@ const promos = require('../../db/promos/promos.json');
 const db = require('../../db/db.json');
 const path = require('path');
 const userDb = path.join(__dirname, '../../db/db.json');
-const users = require(userDb);
-const cards = path.join(__dirname,  "../../images/images.json")
+const cardsPath = path.join(__dirname, "../../db/images/images.json")
+const cards = require(cardsPath)
 
 async function sendProfileData(bot, msg) {
   const filteredUsers = db.filter(user => user?.id === msg.from.id);
 
   if (filteredUsers.length > 0) {
     const user = filteredUsers[0];
-    let allCards = JSON.parse(cards)
 
     const userInventory = user.inventory || [];
     const userCardsCount = userInventory.length;
-    const allCardsCount = allCards.length;
+    const allCardsCount = cards.length;
     await bot.sendMessage(
       msg.chat.id,
       `Имя пользователя: ${user.username}\nID: ${user.id}\nИмя: ${user.first_name}\nФамилия: ${user.last_name}\nБаланс: ${user.balance}\nРейтинг: ${user.rating}\nИнвентарь: ${userCardsCount} из ${allCardsCount}\n`,
