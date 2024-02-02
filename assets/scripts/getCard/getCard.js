@@ -1,11 +1,9 @@
-const fs = require('fs');
+const fs = require("fs")
 const path = require('path');
 
 const dbPath = path.join(__dirname, '../../db/db.json');
 const db = require(dbPath);
-
-const imagesPath = path.join(__dirname, '../../db/images/images.json');
-const imagesData = require(imagesPath);
+const imagesData = require("C:/Users/nikky/Documents/kwork/last_dance/assets/db/images/images.json")
 
 async function giveRandomCardToUser(bot, msg) {
   try {
@@ -17,7 +15,6 @@ async function giveRandomCardToUser(bot, msg) {
         'Произошла ошибка при выдаче карты. Попробуйте еще раз.',
       );
     }
-
     const userIndex = db.findIndex(user => user.username === msg.from.username);
 
     if (userIndex === -1) {
@@ -36,21 +33,21 @@ async function giveRandomCardToUser(bot, msg) {
       db[userIndex].inventory = [];
     }
 
-    // const lastUseTime = db[userIndex].lastCardUseTime || 0;
-    // const currentTime = Date.now();
-    // const timeDiff = currentTime - lastUseTime;
-    // const coolDownTime = 2 * 60 * 60 * 1000;
+    const lastUseTime = db[userIndex].lastCardUseTime || 0;
+    const currentTime = Date.now();
+    const timeDiff = currentTime - lastUseTime;
+    const coolDownTime = 2 * 60 * 60 * 1000;
 
-    // if (timeDiff < coolDownTime) {
-    //   const remainingTime = coolDownTime - timeDiff;
-    //   const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
-    //   const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
+    if (timeDiff < coolDownTime) {
+      const remainingTime = coolDownTime - timeDiff;
+      const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
+      const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
 
-    //   return bot.sendMessage(
-    //     msg.chat.id,
-    //     `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
-    //   );
-    // }
+      return bot.sendMessage(
+        msg.chat.id,
+        `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
+      );
+    }
 
     console.log('Прошло проверку времени ожидания');
 
@@ -68,14 +65,13 @@ async function giveRandomCardToUser(bot, msg) {
 
     const randomCard = imagesData[randomIndex];
 
-    console.log(`Выбрана случайная карта: ${randomCard.cardName}`);
-
     randomCard.rarity = randomCard.rarity
 
     db[userIndex].inventory.push(randomCard);
     // db[userIndex].lastCardUseTime = currentTime;
 
-   fs.writeFileSync(dbPath, JSON.stringify(db, null, '\t')); 
+   fs.writeFileSync(dbPath, JSON.stringify(db, null, '\t'));
+   console.log(imagesData)
     await bot.sendPhoto(msg.chat.id, randomCard.cardPhoto, {
       caption: `🦠 ${randomCard.cardName}\n\n💬 ${msg.from.username
         }, поздравляем, вы получили карту героя ${randomCard.cardName}!\n🎭 Класс: ${randomCard.cardSection
@@ -98,5 +94,5 @@ async function giveRandomCardToUser(bot, msg) {
 }
 
 module.exports = {
-  giveRandomCardToUser: giveRandomCardToUser,
+  giveRandomCardToUser: giveRandomCardToUser
 };

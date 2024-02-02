@@ -67,6 +67,69 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "245"
+			},
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "280"
+			},
+			{
+				"cardName": "/start",
+				"cardPhoto": "AgACAgIAAxkBAAIRsmWtiYavcONncEENm9QimMdf6PFFAAJX0jEbtQ5xSZt6O8CH8XhgAQADAgADcwADNAQ",
+				"cardPower": 500,
+				"cardSection": "Маг",
+				"cardRarity": "5",
+				"cardDropChance": "1",
+				"cardDeffence": "1000"
+			},
+			{
+				"cardName": "ВанВан",
+				"cardPhoto": "AgACAgIAAxkBAAIP_WWtXPgbD4qSiZ8LDaFtMKuzZeRaAAJV2DEbtY5oScuQ0nPi36ESAQADAgADcwADNAQ",
+				"cardPower": 710,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "290"
+			},
+			{
+				"cardName": "Ангела",
+				"cardPhoto": "AgACAgIAAxkBAAIQHGWtX4IsoCM-7Hmo9ehTMOIShIWNAAK_1TEbF7hpSVDm2Q1PevSMAQADAgADcwADNAQ",
+				"cardPower": 210,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "790"
+			},
+			{
+				"cardName": "Беатрис",
+				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
+				"cardPower": 780,
+				"cardSection": "5",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "220"
+			},
+			{
+				"cardName": "Иксия",
+				"cardPhoto": "AgACAgIAAxkBAAITbWWuiPrFtbr_F2MHfCufozhKpnZtAAIw1zEbbfl5SRbTY5Il70PbAQADAgADcwADNAQ",
+				"cardPower": 695,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "305"
+			},
+			{
+				"cardName": "Грейнджер",
+				"cardPhoto": "AgACAgIAAxkBAAITQGWuh9lLw0ahLQpggjLB0KC4pnUsAAIt1zEbbfl5SUhZrJEOicx0AQADAgADcwADNAQ",
+				"cardPower": 750,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "250"
 			}
 		],
 		"matchInventory": [],
