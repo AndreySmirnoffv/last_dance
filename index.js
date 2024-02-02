@@ -1,7 +1,7 @@
 require('dotenv').config({ path: './assets/modules/.env' });
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs')
-const bot = new TelegramBot(process.env.devStatus ? process.env.TEST_TOKEN : process.env.DEFAULT_TOKEN, { polling: true });
+const bot = new TelegramBot('6444174240:AAGxeM1ho9sLG6CXOCjRFh96NUp4ChHcxYI', { polling: true });
 const { adminStartKeyboard, userStartKeyboard, arenaKeyboard, adminOptionsKeyboard, shopKeyboard } = require('./assets/keyboard/keyboard');
 const { sendProfileData, changeName, myCards } = require('./assets/scripts/userFunctions/userFunctions');
 const { setAdmin, giveCardToUser, findUser, createPromo, showAllUsers, askCardDetails, addShopText, removeAdmin } = require('./assets/scripts/adminFunctions/adminFunctions');
