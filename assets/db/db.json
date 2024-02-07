@@ -3,41 +3,13 @@
 		"username": "arts_holv",
 		"first_name": "Artsem (Art$)",
 		"id": 749635133,
-		"balance": 0,
-		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			},
-			{
-				"cardName": "Аврора",
-				"cardPhoto": "AgACAgIAAxkBAAIP7GWtXGSYtDOUhiptA6zMMwhMSt2gAAKu1TEbF7hpSeLxgZv2ayXcAQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
-			},
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			}
-		],
+		"balance": 3,
+		"rating": 30,
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
-		"isMatch": false,
+		"isMatch": true,
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1705933177792
@@ -47,27 +19,9 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 0,
+		"balance": 375,
 		"rating": null,
 		"inventory": [
-			{
-				"cardName": "Иксия",
-				"cardPhoto": "AgACAgIAAxkBAAITbWWuiPrFtbr_F2MHfCufozhKpnZtAAIw1zEbbfl5SRbTY5Il70PbAQADAgADcwADNAQ",
-				"cardPower": 695,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "305"
-			},
-			{
-				"cardName": "Вэйл",
-				"cardPhoto": "AgACAgIAAxkBAAITGGWuhdX5gZhm6uzPqJqEi2tvdhK3AAIo0zEbyWdxSXFS34Bkkzq5AQADAgADcwADNAQ",
-				"cardPower": 755,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "245"
-			},
 			{
 				"cardName": "Бруно",
 				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
@@ -78,22 +32,13 @@
 				"cardDeffence": "280"
 			},
 			{
-				"cardName": "/start",
-				"cardPhoto": "AgACAgIAAxkBAAIRsmWtiYavcONncEENm9QimMdf6PFFAAJX0jEbtQ5xSZt6O8CH8XhgAQADAgADcwADNAQ",
-				"cardPower": 500,
+				"cardName": "Ив",
+				"cardPhoto": "AgACAgIAAxkBAAITVWWuiCzs7QuP1zdTnnwcH7Q9IrhKAAKC2zEbM9B5SU2XxMlRBqKbAQADAgADcwADNAQ",
+				"cardPower": 550,
 				"cardSection": "Маг",
 				"cardRarity": "5",
-				"cardDropChance": "1",
-				"cardDeffence": "1000"
-			},
-			{
-				"cardName": "ВанВан",
-				"cardPhoto": "AgACAgIAAxkBAAIP_WWtXPgbD4qSiZ8LDaFtMKuzZeRaAAJV2DEbtY5oScuQ0nPi36ESAQADAgADcwADNAQ",
-				"cardPower": 710,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
 				"cardDropChance": "50",
-				"cardDeffence": "290"
+				"cardDeffence": "450"
 			},
 			{
 				"cardName": "Ангела",
@@ -103,33 +48,6 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "790"
-			},
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
-				"cardPower": 780,
-				"cardSection": "5",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "220"
-			},
-			{
-				"cardName": "Иксия",
-				"cardPhoto": "AgACAgIAAxkBAAITbWWuiPrFtbr_F2MHfCufozhKpnZtAAIw1zEbbfl5SRbTY5Il70PbAQADAgADcwADNAQ",
-				"cardPower": 695,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "305"
-			},
-			{
-				"cardName": "Грейнджер",
-				"cardPhoto": "AgACAgIAAxkBAAITQGWuh9lLw0ahLQpggjLB0KC4pnUsAAIt1zEbbfl5SUhZrJEOicx0AQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
 			}
 		],
 		"matchInventory": [],
@@ -138,7 +56,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1706454106529
+		"lastCardUseTime": 1707168373114
 	},
 	{
 		"username": "Andrey_Smirnoffv",
@@ -161,17 +79,7 @@
 		"id": 558671030,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -186,35 +94,7 @@
 		"id": 1257659017,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			},
-			{
-				"cardName": "Бруно",
-				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			},
-			{
-				"cardName": "Аврора",
-				"cardPhoto": "AgACAgIAAxkBAAIP7GWtXGSYtDOUhiptA6zMMwhMSt2gAAKu1TEbF7hpSeLxgZv2ayXcAQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -230,35 +110,7 @@
 		"id": 5701336508,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			},
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
-				"cardPower": 780,
-				"cardSection": "5",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "220"
-			},
-			{
-				"cardName": "Ангела",
-				"cardPhoto": "AgACAgIAAxkBAAIQHGWtX4IsoCM-7Hmo9ehTMOIShIWNAAK_1TEbF7hpSVDm2Q1PevSMAQADAgADcwADNAQ",
-				"cardPower": 210,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "790"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -274,17 +126,7 @@
 		"id": 795155179,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
-				"cardPower": 780,
-				"cardSection": "5",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "220"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -299,17 +141,7 @@
 		"id": 5928179910,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Валир",
-				"cardPhoto": "AgACAgIAAxkBAAIQj2WtaUgrAAEK5b1s0koIHJ-IESL8jQAC_tUxGxe4aUlozG1N3iB55QEAAwIAA3MAAzQE",
-				"cardPower": 550,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "450"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -324,17 +156,7 @@
 		"id": 1285885703,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
-				"cardPower": 780,
-				"cardSection": "5",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "220"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -349,17 +171,7 @@
 		"id": 1478726383,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
-				"cardPower": 780,
-				"cardSection": "5",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "220"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -374,44 +186,7 @@
 		"id": 1397942376,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "ВанВан",
-				"cardPhoto": "AgACAgIAAxkBAAIP_WWtXPgbD4qSiZ8LDaFtMKuzZeRaAAJV2DEbtY5oScuQ0nPi36ESAQADAgADcwADNAQ",
-				"cardPower": 710,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "290"
-			},
-			{
-				"cardName": "Аврора",
-				"cardPhoto": "AgACAgIAAxkBAAIP7GWtXGSYtDOUhiptA6zMMwhMSt2gAAKu1TEbF7hpSeLxgZv2ayXcAQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
-			},
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
-				"cardPower": 780,
-				"cardSection": "5",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "220"
-			},
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -427,26 +202,7 @@
 		"id": 5116606689,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			},
-			{
-				"cardName": "Бруно",
-				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -461,26 +217,7 @@
 		"id": 2066792816,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Валир",
-				"cardPhoto": "AgACAgIAAxkBAAIQj2WtaUgrAAEK5b1s0koIHJ-IESL8jQAC_tUxGxe4aUlozG1N3iB55QEAAwIAA3MAAzQE",
-				"cardPower": 550,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "450"
-			},
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
-				"cardPower": 780,
-				"cardSection": "5",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "220"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -496,17 +233,7 @@
 		"id": 6558441168,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Бруно",
-				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -522,17 +249,7 @@
 		"id": 5511294629,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -547,26 +264,7 @@
 		"id": 1431177347,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Бруно",
-				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			},
-			{
-				"cardName": "Аврора",
-				"cardPhoto": "AgACAgIAAxkBAAIP7GWtXGSYtDOUhiptA6zMMwhMSt2gAAKu1TEbF7hpSeLxgZv2ayXcAQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -582,26 +280,7 @@
 		"id": 6211582171,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAIP2WWtW6Srisk1RijIWUEdiJ7XZD3-AAJf4DEbzmZpSecdw9692l8iAQADAgADcwADNAQ",
-				"cardPower": 250,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "750"
-			},
-			{
-				"cardName": "Броуаи",
-				"cardPhoto": "AgACAgIAAxkBAAIQMmWtYBDAuCB4GK_CHet8V0GoF0jjAALB1TEbF7hpScmh8v-n_L6JAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -616,17 +295,7 @@
 		"id": 371143259,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Броуаи",
-				"cardPhoto": "AgACAgIAAxkBAAIQMmWtYBDAuCB4GK_CHet8V0GoF0jjAALB1TEbF7hpScmh8v-n_L6JAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -642,17 +311,7 @@
 		"id": 5107954846,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Валир",
-				"cardPhoto": "AgACAgIAAxkBAAIQj2WtaUgrAAEK5b1s0koIHJ-IESL8jQAC_tUxGxe4aUlozG1N3iB55QEAAwIAA3MAAzQE",
-				"cardPower": 550,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "450"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -667,17 +326,7 @@
 		"id": 5482098680,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Аврора",
-				"cardPhoto": "AgACAgIAAxkBAAIP7GWtXGSYtDOUhiptA6zMMwhMSt2gAAKu1TEbF7hpSeLxgZv2ayXcAQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -692,17 +341,7 @@
 		"id": 6294189490,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "ВанВан",
-				"cardPhoto": "AgACAgIAAxkBAAIP_WWtXPgbD4qSiZ8LDaFtMKuzZeRaAAJV2DEbtY5oScuQ0nPi36ESAQADAgADcwADNAQ",
-				"cardPower": 710,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "290"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -718,17 +357,7 @@
 		"id": 1007319038,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Ангела",
-				"cardPhoto": "AgACAgIAAxkBAAIQHGWtX4IsoCM-7Hmo9ehTMOIShIWNAAK_1TEbF7hpSVDm2Q1PevSMAQADAgADcwADNAQ",
-				"cardPower": 210,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "790"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -743,17 +372,7 @@
 		"id": 681172133,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Ангела",
-				"cardPhoto": "AgACAgIAAxkBAAIQHGWtX4IsoCM-7Hmo9ehTMOIShIWNAAK_1TEbF7hpSVDm2Q1PevSMAQADAgADcwADNAQ",
-				"cardPower": 210,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "790"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -768,26 +387,7 @@
 		"id": 2048169737,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Аврора",
-				"cardPhoto": "AgACAgIAAxkBAAIP7GWtXGSYtDOUhiptA6zMMwhMSt2gAAKu1TEbF7hpSeLxgZv2ayXcAQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
-			},
-			{
-				"cardName": "ВанВан",
-				"cardPhoto": "AgACAgIAAxkBAAIP_WWtXPgbD4qSiZ8LDaFtMKuzZeRaAAJV2DEbtY5oScuQ0nPi36ESAQADAgADcwADNAQ",
-				"cardPower": 710,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "290"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -802,17 +402,7 @@
 		"id": 1431682212,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Валир",
-				"cardPhoto": "AgACAgIAAxkBAAIQj2WtaUgrAAEK5b1s0koIHJ-IESL8jQAC_tUxGxe4aUlozG1N3iB55QEAAwIAA3MAAzQE",
-				"cardPower": 550,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "450"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -827,17 +417,7 @@
 		"id": 1733156800,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Бруно",
-				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -852,17 +432,7 @@
 		"id": 440623058,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "ВанВан",
-				"cardPhoto": "AgACAgIAAxkBAAIP_WWtXPgbD4qSiZ8LDaFtMKuzZeRaAAJV2DEbtY5oScuQ0nPi36ESAQADAgADcwADNAQ",
-				"cardPower": 710,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "290"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -877,17 +447,7 @@
 		"id": 1028402021,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Бруно",
-				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -902,17 +462,7 @@
 		"id": 1624538062,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
-				"cardPower": 780,
-				"cardSection": "5",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "220"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -927,26 +477,7 @@
 		"id": 790893082,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Бруно",
-				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			},
-			{
-				"cardName": "Иксия",
-				"cardPhoto": "AgACAgIAAxkBAAITbWWuiPrFtbr_F2MHfCufozhKpnZtAAIw1zEbbfl5SRbTY5Il70PbAQADAgADcwADNAQ",
-				"cardPower": 695,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "305"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -961,17 +492,7 @@
 		"id": 1505933528,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Ангела",
-				"cardPhoto": "AgACAgIAAxkBAAIQHGWtX4IsoCM-7Hmo9ehTMOIShIWNAAK_1TEbF7hpSVDm2Q1PevSMAQADAgADcwADNAQ",
-				"cardPower": 210,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "790"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -987,21 +508,11 @@
 		"id": 851531555,
 		"balance": 2,
 		"rating": 20,
-		"inventory": [
-			{
-				"cardName": "Ив",
-				"cardPhoto": "AgACAgIAAxkBAAITVWWuiCzs7QuP1zdTnnwcH7Q9IrhKAAKC2zEbM9B5SU2XxMlRBqKbAQADAgADcwADNAQ",
-				"cardPower": 550,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "450"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
-		"isWaiting": true,
-		"isMatch": false,
+		"isWaiting": false,
+		"isMatch": true,
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1705937195533
@@ -1034,5 +545,26 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0
-	}
+	},
+	{
+		"username": "HolidayLady",
+		"first_name": "Alina",
+		"id": 6840795517,
+		"balance": 4,
+		"rating": 40,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": true,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	null,
+	null,
+	null,
+	375,
+	375,
+	375,
+	375
 ]

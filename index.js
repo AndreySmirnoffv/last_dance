@@ -11,32 +11,31 @@ const { giveRandomCardToUser } = require('./assets/scripts/getCard/getCard');
 const { top } = require('./assets/scripts/top/top');
 
 const shopText = require('./assets/db/shop/shop.json');
-const db = require('./assets/db/db.json');
 const commands = JSON.parse(fs.readFileSync('./assets/db/commands/commands.json'));
-
 bot.setMyCommands(commands);
 
 bot.on('message', async msg => {
-  const chatId = msg.chat.id;
-  const userId = msg.from.id;
-  const channelUsername = "@MCLPodPivomTournament";
+  // const chatId = msg.chat.id;
+  // const userId = msg.from.id;
+  // const channelUsername = "@MCLPodPivomTournament";
 
-  try {
-    const chatMember = await bot.getChatMember(channelUsername, userId);
-    if (chatMember && (chatMember.status === "member" || chatMember.status === "administrator" || chatMember.status === "creator")) {
-      console.log();
-    } else {
-      bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
-      return;
-    }
-  } catch (error) {
-    bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
-    return;
-  }
+  // try {
+  //   const chatMember = await bot.getChatMember(channelUsername, userId);
+  //   if (chatMember && (chatMember.status === "member" || chatMember.status === "administrator" || chatMember.status === "creator")) {
+  //     console.log();
+  //   } else {
+  //     bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
+  //     return;
+  //   }
+  // } catch (error) {
+  //   bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
+  //   return;
+  // }
 
-  let user = db.find(user => user.id === msg.from.id);
+  const db = JSON.parse(fs.readFileSync('./assets/db/db.json'));
 
   if (msg.text === '/start') {
+    let user = db.find(user => user.id === msg.from.id);
     if (!user) {
       db.push({
         username: msg?.from.username,

@@ -1,12 +1,21 @@
 const fs = require("fs")
-const path = require('path');
 
-const dbPath = path.join(__dirname, '../../db/db.json');
-const db = require(dbPath);
-const imagesData = require("C:/Users/nikky/Documents/kwork/last_dance/assets/db/images/images.json")
+const imagesData = require("../../db/images/images.json")
 
 async function giveRandomCardToUser(bot, msg) {
+  const db = JSON.parse(fs.readFileSync('./assets/db/db.json'));
+
   try {
+    const user = db.find(user => user.username === msg.from.username);
+
+    const lastUseTime = user.lastCardUseTime || 0;
+    // const currentTime = Date.now();
+    // const timeDiff = currentTime - lastUseTime;
+    // const coolDownTime = 2 * 60 * 60 * 1000;
+
+    const randomIndex = Math.floor(Math.random() * imagesData.length);
+    const randomCard = imagesData[randomIndex];
+
 
     if (!Array.isArray(imagesData)) {
       console.error('Ошибка: imagesData не является массивом.');
@@ -15,11 +24,10 @@ async function giveRandomCardToUser(bot, msg) {
         'Произошла ошибка при выдаче карты. Попробуйте еще раз.',
       );
     }
-    const userIndex = db.findIndex(user => user.username === msg.from.username);
 
-    if (userIndex === -1) {
+    if (!user) {
       console.error(
-        `Ошибка: Пользователь ${msg.from.username} не найден в базе данных.`,
+        `Ошибка: Пользователь ${user.username} не найден в базе данных.`,
       );
       return bot.sendMessage(
         msg.chat.id,
@@ -27,31 +35,22 @@ async function giveRandomCardToUser(bot, msg) {
       );
     }
 
-    console.log(`Найден пользователь: ${msg.from.username}`);
+    console.log(`Найден пользователь: ${user.username}`);
 
-    if (!db[userIndex].hasOwnProperty('inventory')) {
-      db[userIndex].inventory = [];
+    if (!user?.inventory) {
+      user.inventory = [];
     }
 
-    const lastUseTime = db[userIndex].lastCardUseTime || 0;
-    const currentTime = Date.now();
-    const timeDiff = currentTime - lastUseTime;
-    const coolDownTime = 2 * 60 * 60 * 1000;
+    // if (timeDiff < coolDownTime) {
+    //   const remainingTime = coolDownTime - timeDiff;
+    //   const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
+    //   const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
 
-    if (timeDiff < coolDownTime) {
-      const remainingTime = coolDownTime - timeDiff;
-      const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
-      const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
-
-      return bot.sendMessage(
-        msg.chat.id,
-        `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
-      );
-    }
-
-    console.log('Прошло проверку времени ожидания');
-
-    const randomIndex = Math.floor(Math.random() * imagesData.length);
+    //   return bot.sendMessage(
+    //     msg.chat.id,
+    //     `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
+    //   );
+    // }
 
     if (randomIndex < 0 || randomIndex >= imagesData.length) {
       console.error('Ошибка: Некорректный индекс для imagesData.');
@@ -60,32 +59,34 @@ async function giveRandomCardToUser(bot, msg) {
         'Произошла ошибка при выдаче карты. Попробуйте еще раз.',
       );
     }
-
     console.log(`Выбран случайный индекс: ${randomIndex}`);
 
-    const randomCard = imagesData[randomIndex];
+    // user.lastCardUseTime = currentTime;
+    if (randomCard.cardName === user.inventory.cardName) {
+      console.log(randomCard.cardPower)
+      user.balance = randomCard.cardPower / 2
+      console.log(user.balance)
 
-    randomCard.rarity = randomCard.rarity
+      fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, 0, 3))
+      console.log("база данных удалилась")
+      await bot.sendMessage(msg.chat.id, `Вы получили повторяющуюся карту теперь ваш баланс составляет ${user.balance}`)
 
-    db[userIndex].inventory.push(randomCard);
-    // db[userIndex].lastCardUseTime = currentTime;
+    } else {
+      console.log(randomCard)
+      user.inventory.push(randomCard);
+      fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
+      await bot.sendPhoto(msg.chat.id, randomCard.cardPhoto, {
+        caption: `🦠 ${randomCard.cardName}\n\n💬 ${msg.from.username
+          }, поздравляем, вы получили карту героя ${randomCard.cardName}!\n🎭 Класс: ${randomCard.cardSection
+          }\n🔮 Редкость: ${randomCard.cardRarity}\nАтака: ${randomCard.cardPower || 'Не указана'
+          }\n❤️ Защита: ${randomCard.cardDeffence
+          }\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${JSON.stringify(user.balance, null, '\t')}`,
+      })
+    };
 
-   fs.writeFileSync(dbPath, JSON.stringify(db, null, '\t'));
-   console.log(imagesData)
-    await bot.sendPhoto(msg.chat.id, randomCard.cardPhoto, {
-      caption: `🦠 ${randomCard.cardName}\n\n💬 ${msg.from.username
-        }, поздравляем, вы получили карту героя ${randomCard.cardName}!\n🎭 Класс: ${randomCard.cardSection
-        }\n🔮 Редкость: ${randomCard.cardRarity}\nАтака: ${randomCard.cardPower || 'Не указана'
-        }\n❤️ Защита: ${randomCard.cardDeffence
-        }\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${db[userIndex].balance - randomCard.cardPower
-        }`,
-    });
-    if (randomCard.name === db[userIndex].inventory) {
-      db[userIndex].balance = randomCard.power / 2
-      fs.writeFileSync('../../db/db.json', JSON.stringify(db, null, '\t'))
-    }
+
   } catch (error) {
-    console.error('Ошибка при выполнении giveRandomCardToUser:', error);
+    console.log(error)
     await bot.sendMessage(
       msg.chat.id,
       'Произошла ошибка при выдаче карты. Попробуйте еще раз.',
