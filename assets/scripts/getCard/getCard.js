@@ -9,9 +9,9 @@ async function giveRandomCardToUser(bot, msg) {
     const user = db.find(user => user.username === msg.from.username);
 
     const lastUseTime = user.lastCardUseTime || 0;
-    // const currentTime = Date.now();
-    // const timeDiff = currentTime - lastUseTime;
-    // const coolDownTime = 2 * 60 * 60 * 1000;
+    const currentTime = Date.now();
+    const timeDiff = currentTime - lastUseTime;
+    const coolDownTime = 2 * 60 * 60 * 1000;
 
     const randomIndex = Math.floor(Math.random() * imagesData.length);
     const randomCard = imagesData[randomIndex];
@@ -41,27 +41,19 @@ async function giveRandomCardToUser(bot, msg) {
       user.inventory = [];
     }
 
-    // if (timeDiff < coolDownTime) {
-    //   const remainingTime = coolDownTime - timeDiff;
-    //   const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
-    //   const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
+    if (timeDiff < coolDownTime) {
+      const remainingTime = coolDownTime - timeDiff;
+      const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
+      const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
 
-    //   return bot.sendMessage(
-    //     msg.chat.id,
-    //     `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
-    //   );
-    // }
-
-    if (randomIndex < 0 || randomIndex >= imagesData.length) {
-      console.error('Ошибка: Некорректный индекс для imagesData.');
       return bot.sendMessage(
         msg.chat.id,
-        'Произошла ошибка при выдаче карты. Попробуйте еще раз.',
+        `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
       );
     }
     console.log(`Выбран случайный индекс: ${randomIndex}`);
 
-    // user.lastCardUseTime = currentTime;
+    user.lastCardUseTime = currentTime;
     if (randomCard.cardName === user.inventory.cardName) {
       console.log(randomCard.cardPower)
       user.balance = randomCard.cardPower / 2

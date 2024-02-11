@@ -27,16 +27,9 @@ async function sendProfileData(bot, msg) {
 }
 
 async function myCards(bot, msg) {
-  const userIndex = db.findIndex(user => user?.username === msg.from.username);
+  const userInventory = db.find(user => user?.username === msg.from.username);
 
-  const userInventory = db[userIndex].inventory;
-
-  if (userIndex === -1 || !db[userIndex].hasOwnProperty('inventory')) {
-    return bot.sendMessage(
-      msg.chat.id,
-      'У вас нет карт в инвентаре. Попробуйте получить карты сначала.',
-    );
-  } else if (userInventory.length === 0) {
+ if (userInventory.length === 0) {
     return bot.sendMessage(
       msg.message.chat.id,
       'У вас нет карт в инвентаре. Попробуйте получить карты сначала.',
