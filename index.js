@@ -15,22 +15,22 @@ const commands = JSON.parse(fs.readFileSync('./assets/db/commands/commands.json'
 bot.setMyCommands(commands);
 
 bot.on('message', async msg => {
-  // const chatId = msg.chat.id;
-  // const userId = msg.from.id;
-  // const channelUsername = "@MCLPodPivomTournament";
+  const chatId = msg.chat.id;
+  const userId = msg.from.id;
+  const channelUsername = "@MCLPodPivomTournament";
 
-  // try {
-  //   const chatMember = await bot.getChatMember(channelUsername, userId);
-  //   if (chatMember && (chatMember.status === "member" || chatMember.status === "administrator" || chatMember.status === "creator")) {
-  //     console.log();
-  //   } else {
-  //     bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
-  //     return;
-  //   }
-  // } catch (error) {
-  //   bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
-  //   return;
-  // }
+  try {
+    const chatMember = await bot.getChatMember(channelUsername, userId);
+    if (chatMember && (chatMember.status === "member" || chatMember.status === "administrator" || chatMember.status === "creator")) {
+      console.log();
+    } else {
+      bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
+      return;
+    }
+  } catch (error) {
+    bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
+    return;
+  }
 
   const db = JSON.parse(fs.readFileSync('./assets/db/db.json'));
 
