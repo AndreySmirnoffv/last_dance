@@ -35,7 +35,7 @@ async function myCards(bot, msg) {
       'У вас нет карт в инвентаре. Попробуйте получить карты сначала.',
     );
   } else {
-    for (const card of userInventory) {
+    for (const card of userInventory?.inventory) {
       await bot.sendPhoto(msg.message.chat.id, card.cardPhoto, {
         caption: `🦠 ${card.cardName}\n🔮 Редкость: ${
           card.cardRarity
