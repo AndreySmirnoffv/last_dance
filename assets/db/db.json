@@ -5,14 +5,24 @@
 		"id": 749635133,
 		"balance": 3,
 		"rating": 30,
-		"inventory": [],
+		"inventory": [
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "280"
+			}
+		],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": true,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1705933177792
+		"lastCardUseTime": 1707929349220
 	},
 	{
 		"username": "hashfuck",
@@ -48,6 +58,15 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "790"
+			},
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "280"
 			}
 		],
 		"matchInventory": [],
@@ -56,7 +75,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1707168373114
+		"lastCardUseTime": 1707929365151
 	},
 	{
 		"username": "Andrey_Smirnoffv",

@@ -75,7 +75,7 @@ bot.on("message", async (msg) => {
     return;
   }
 
-  const db = JSON.parse(fs.readFileSync("./assets/db/db.json"));
+  const db = require('./assets/db/db.json')
   let user = db.find((user) => user.username === msg.from.username);
 
   if (msg.text === "/start") {
