@@ -290,15 +290,7 @@ async function findUser(bot, msg) {
 }
 
 async function showAllUsers(bot, msg) {
-  for (const user of users) {
-    await bot.sendMessage(
-      msg.message.chat.id,
-      `Имя пользователя: ${user.username}\nИмя: ${user.first_name}\nФамилия: ${user.last_name
-      }\nID: ${user.id}\nБаланс: ${user.balance}\nРейтинг: ${user.rating === null ? "N/A" : user.rating
-      }\nАдминистратор: ${user.isAdmin}\nПодходит: ${user.isMatch}\nОжидает: ${user.isWaiting
-      }\n---------------------`
-    );
-  }
+    return bot.sendMessage(msg.message.chat.id, "Нынешнее количество пользователей состовляет: " + users.length)
 }
 
 async function addShopText(bot, msg) {

@@ -19,7 +19,7 @@
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
-		"isMatch": true,
+		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1707929349220
@@ -531,7 +531,7 @@
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
-		"isMatch": true,
+		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1705937195533
@@ -574,16 +574,9 @@
 		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
-		"isWaiting": true,
-		"isMatch": true,
+		"isWaiting": false,
+		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0
-	},
-	null,
-	null,
-	null,
-	375,
-	375,
-	375,
-	375
+	}
 ]
