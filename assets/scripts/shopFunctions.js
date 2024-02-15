@@ -5,33 +5,29 @@ const cardsPath = path.join(__dirname, "../../db/images/images.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 
 const dbFilePath = path.join(__dirname, "../../db/db.json");
-const users = require(dbFilePath);
+const users = require("../../db/db.json");
 
 const shopTextPath = path.join(__dirname, "../../db/shop/shop.json");
 const shopText = JSON.parse(fs.readFileSync(shopTextPath, "utf8"));
 
-function getPack(bot, msg, packCount) {
+async function getPack(bot, msg, packCount) {
   try {
-    const userId = msg.from.id;
-    const username = msg.from.username;
-
-    const userIndex = users.findIndex(
-      (x) => x.username.toLowerCase() === username.toLowerCase()
+    const userId = msg.from.id
+    const user = users.find(
+      (x) => x.username === msg.from.username
     );
 
-    if (userIndex === -1) {
+    if (!user) {
       return bot.sendMessage(userId, "Пользователь не найден.");
     }
 
-    const user = users[userIndex];
-
-    const totalCost =
-      cards.reduce((acc, card) => acc + card.power, 0) * packCount;
+    const totalCost = cards.reduce((acc, card) => acc + card.power, 0) * packCount;
 
     if (user.balance == null || isNaN(user.balance)) {
       user.balance = 0;
+      fs.writeFileSync("../../db/db.json", JSON.stringify(users, null, 1))
     }
-
+1
     if (user.balance < totalCost) {
       return bot.sendMessage(
         userId,
@@ -49,7 +45,7 @@ function getPack(bot, msg, packCount) {
       );
 
       if (existingCard && typeof existingCard.power === "number") {
-        updatedBalance += 0.5 * existingCard.power;
+        return updatedBalance += 0.5 * existingCard.power;
       } else if (typeof randomCard.power === "number") {
         user.inventory.push(randomCard);
         openedCards.push(randomCard);
@@ -63,7 +59,7 @@ function getPack(bot, msg, packCount) {
       throw new Error("Invalid updated balance");
     }
 
-    users[userIndex].balance = updatedBalance;
+    user.balance = updatedBalance;
 
     fs.writeFileSync(dbFilePath, JSON.stringify(users, null, "\t"));
 
@@ -74,7 +70,7 @@ function getPack(bot, msg, packCount) {
       userId,
       `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards
         .map((card) => card.name)
-        .join(", ")}. Новый баланс: ${users[userIndex].balance}. сила карты ${
+        .join(", ")}. Новый баланс: ${user.balance}. сила карты ${
         openedCards.power
       }.`
     );

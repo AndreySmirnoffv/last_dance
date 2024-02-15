@@ -1,8 +1,8 @@
 const fs = require("fs");
 const path = require("path");
-const users = require("../../db/db.json");
-const cards = require("../../db/images/images.json");
-const shopTextPath = require("../../db/shop/shop.json");
+const users = require("../db/db.json");
+const cards = require("../db/images/images.json");
+const shopTextPath = require("../db/shop/shop.json");
 const shopPath = path.join(__dirname, "../../db/shop/shop.json");
 const shopData = require(shopPath);
 const promosPath = path.resolve(__dirname, "../../db/promos/promos.json");

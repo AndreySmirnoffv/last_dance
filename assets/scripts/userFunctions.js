@@ -1,11 +1,8 @@
 const fs = require("fs");
-const { profileKeyboard } = require("../../keyboard/keyboard");
-const promos = require("../../db/promos/promos.json");
-const db = require("../../db/db.json");
-const path = require("path");
-const userDb = path.join(__dirname, "../../db/db.json");
-const cardsPath = path.join(__dirname, "../../db/images/images.json");
-const cards = require(cardsPath);
+const { profileKeyboard } = require("../keyboard/keyboard");
+const promos = require("../db/promos/promos.json");
+const db = require("../db/db.json");
+const cards = require("../db/images/images.json");
 
 async function sendProfileData(bot, msg) {
   const filteredUsers = db.filter((user) => user?.id === msg.from.id);
@@ -13,12 +10,9 @@ async function sendProfileData(bot, msg) {
   if (filteredUsers.length > 0) {
     const user = filteredUsers[0];
 
-    const userInventory = user.inventory;
-    // const userCardsCount = userInventory.length;
-    const allCardsCount = cards.length;
     await bot.sendMessage(
       msg.chat.id,
-      `Имя пользователя: ${user.username}\nID: ${user.id}\nИмя: ${user.first_name}\nФамилия: ${user.last_name}\nБаланс: ${user.balance}\nРейтинг: ${user.rating}\nИнвентарь: ${userInventory.length} из ${allCardsCount}\n`,
+      `Имя пользователя: ${user.username}\nID: ${user.id}\nИмя: ${user.first_name}\nФамилия: ${user.last_name}\nБаланс: ${user.balance}\nРейтинг: ${user.rating}\nИнвентарь: ${user.inventory.length} из ${cards.length}\n`,
       profileKeyboard
     );
   } else {
@@ -29,7 +23,7 @@ async function sendProfileData(bot, msg) {
 async function myCards(bot, msg) {
   const userInventory = db.find((user) => user?.username === msg.from.username);
 
-  if (userInventory.length === 0) {
+  if (!userInventory.length) {
     return bot.sendMessage(
       msg.message.chat.id,
       "У вас нет карт в инвентаре. Попробуйте получить карты сначала."
@@ -49,6 +43,7 @@ async function myCards(bot, msg) {
 
 async function checkPromo(bot, msg) {
   let promo = promos.find((promo) => promo.name === msg.text);
+  
   if (!promo) {
     await bot.sendMessage(
       msg.message.chat.id,
@@ -68,9 +63,10 @@ async function checkPromo(bot, msg) {
 }
 
 async function changeName(bot, msg) {
-  let name = db.findIndex((user) => user.id === msg.from.id);
-  db[name].first_name = msg.text;
-  fs.writeFileSync(userDb, JSON.stringify(db, null, "\t"));
+  let user = db.find((user) => user.id === msg.from.id);
+
+  user.first_name = msg.text;
+  fs.writeFileSync(db, JSON.stringify(db, null, "\t"));
   await bot.sendMessage(
     msg.chat.id,
     `Вы успешно сменили имя на ${db[name].first_name}`
