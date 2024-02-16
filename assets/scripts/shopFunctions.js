@@ -1,10 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const cardsPath = path.join(__dirname, "../../db/images/images.json");
-const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
+const cards = require("../db/images/images.json");
 
-const dbFilePath = path.join(__dirname, "../../db/db.json");
 const users = require("../db/db.json");
 
 const shopTextPath = path.join(__dirname, "../../db/shop/shop.json");
@@ -12,22 +10,21 @@ const shopText = JSON.parse(fs.readFileSync(shopTextPath, "utf8"));
 
 async function getPack(bot, msg, packCount) {
   try {
-    const userId = msg.from.id
-    const user = users.find(
-      (x) => x.username === msg.from.username
-    );
+    const userId = msg.from.id;
+    const user = users.find((x) => x.username === msg.from.username);
 
     if (!user) {
       return bot.sendMessage(userId, "Пользователь не найден.");
     }
 
-    const totalCost = cards.reduce((acc, card) => acc + card.power, 0) * packCount;
+    const totalCost =
+      cards.reduce((acc, card) => acc + card.power, 0) * packCount;
 
     if (user.balance == null || isNaN(user.balance)) {
       user.balance = 0;
-      fs.writeFileSync("../../db/db.json", JSON.stringify(users, null, 1))
+      fs.writeFileSync("../../db/db.json", JSON.stringify(users, null, 1));
     }
-1
+    1;
     if (user.balance < totalCost) {
       return bot.sendMessage(
         userId,
@@ -36,7 +33,6 @@ async function getPack(bot, msg, packCount) {
     }
 
     const openedCards = [];
-    let updatedBalance = user.balance;
 
     for (let i = 0; i < packCount; i++) {
       const randomCard = cards[Math.floor(Math.random() * cards.length)];
@@ -44,24 +40,21 @@ async function getPack(bot, msg, packCount) {
         (card) => card.name === randomCard.name
       );
 
-      if (existingCard && typeof existingCard.power === "number") {
-        return updatedBalance += 0.5 * existingCard.power;
-      } else if (typeof randomCard.power === "number") {
+      if (
+        existingCard in user.inventory &&
+        typeof existingCard.cardPower === "number"
+      ) {
+        return (user.balance = randomCard.cardPower / 2);
+      } else if (typeof randomCard.cardPower === "number") {
         user.inventory.push(randomCard);
         openedCards.push(randomCard);
-        updatedBalance += 0.5 * randomCard.power;
+        user.balance += 0.5 * randomCard.cardPower;
       } else {
         return;
       }
     }
 
-    if (isNaN(updatedBalance) || updatedBalance < 0) {
-      throw new Error("Invalid updated balance");
-    }
-
-    user.balance = updatedBalance;
-
-    fs.writeFileSync(dbFilePath, JSON.stringify(users, null, "\t"));
+    fs.writeFileSync("../db/db.json", JSON.stringify(users, null, "\t"));
 
     const shopMessage = (
       shopText.message || "Текст не найден в магазине."
@@ -87,16 +80,16 @@ async function getUniquePack(bot, msg) {
   try {
     const userId = msg.message.chat.id;
 
-    const userIndex = users.findIndex((x) => x.username === msg.from.username);
+    const user = users.find(user => user.username === msg.from.username);
 
-    if (!users[userIndex]) {
+    if (!user) {
       return bot.sendMessage(userId, "Пользователь не найден.");
     }
 
     const zeroDropChanceCards = cards.filter((card) => card.dropChance === 0);
 
     const openedCards = [];
-    let updatedBalance = users[userIndex].balance || 0;
+    let updatedBalance = user.balance || 0;
 
     for (const randomCard of zeroDropChanceCards) {
       const existingCardIndex = users[userIndex].inventory.findIndex(
@@ -118,34 +111,29 @@ async function getUniquePack(bot, msg) {
       throw new Error("Некорректный баланс");
     }
 
-    if (users[userIndex].balance < updatedBalance) {
+    if (user.balance < updatedBalance) {
       return bot.sendMessage(
         userId,
         "У вас недостаточно баланса для открытия уникального пака."
       );
     }
+    user.inventory.push(openedCards);
 
-    users[userIndex].balance = updatedBalance;
-    users[userIndex].inventory.push(...openedCards);
-
-    fs.writeFileSync(dbFilePath, JSON.stringify(users, null, "\t"));
+    fs.writeFileSync("../db/db.json", JSON.stringify(users, null, "\t"));
 
     for (const card of openedCards) {
-      await bot.sendPhoto(userId, card.fileId, {
-        caption: `🦠 ${card.name}\n\n💬 ${users[userIndex].username}, поздравляем, вы получили карту героя ${users[userIndex].name}!\n🎭 Класс: ${card.class}\n🔮 Редкость: ${card.rarity}\nАтака: ${card.power}\n❤️ Защита: ${card.deffence}\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${users[userIndex].balance}`,
+      await bot.sendPhoto(userId, card.cardPhoto, {
+        caption: `🦠 ${card.cardName}\n\n💬 ${user.username}, поздравляем, вы получили карту героя ${card.cardName}!\n🎭 Класс: ${card.cardSection}\n🔮 Редкость: ${card.cardRarity}\nАтака: ${card.cardPower}\n❤️ Защита: ${card.cardDeffence}\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${user.balance}`,
       });
     }
   } catch (error) {
     bot.sendMessage(
       msg.message.chat.id,
       "Произошла ошибка при обработке вашего запроса."
-    ); 
+    );
     throw error;
   }
 }
-
-
-
 
 module.exports = {
   getPack: getPack,

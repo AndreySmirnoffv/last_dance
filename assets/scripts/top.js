@@ -1,10 +1,8 @@
 const fs = require('fs');
+const users = require('../db/db.json')
 
 async function top(bot, msg) {
     try {
-        const rawData = fs.readFileSync('../../db/db.json');
-        const users = JSON.parse(rawData);
-
         const sortedUsers = users.sort((a, b) => b.rating - a.rating);
         const topUsers = sortedUsers.slice(0, 5);
 
