@@ -3,8 +3,6 @@ const path = require("path");
 const users = require("../db/db.json");
 const cards = require("../db/images/images.json");
 const shopTextPath = require("../db/shop/shop.json");
-const shopPath = path.join(__dirname, "../../db/shop/shop.json");
-const shopData = require(shopPath);
 const promosPath = path.resolve(__dirname, "../../db/promos/promos.json");
 
 async function createPromo(bot, msg) {
@@ -48,10 +46,9 @@ async function createPromo(bot, msg) {
 
 async function updateShopText(bot, msg) {
   try {
-    const shopData = JSON.parse(fs.readFileSync(shopTextPath));
 
-    if (shopData.length > 0) {
-      shopData[0].text = msg.text;
+    if (shopTextPath.length > 0) {
+      shopTextPath[0].message = msg.text;
       await bot.sendMessage(msg.chat.id, "текст для шопа был успешно добавлен");
       await bot.sendMessage(
         msg.message.chat.id,
@@ -61,7 +58,7 @@ async function updateShopText(bot, msg) {
       return;
     }
 
-    fs.writeFileSync(shopTextPath, JSON.stringify(shopData, null, 2));
+    fs.writeFileSync(shopTextPath, JSON.stringify(shopTextPath, null, '\t'));
   } catch (error) {
     return;
   }
@@ -310,8 +307,8 @@ async function addShopText(bot, msg) {
       );
     }
 
-    shopData.push({ message: response });
-    fs.writeFileSync(shopPath, JSON.stringify(shopData, null, "\t"));
+    shopTextPath.push({ message: response });
+    fs.writeFileSync("../db/shop/shop.json", JSON.stringify(shopTextPath, null, "\t"));
 
     bot.sendMessage(msg.from.id, "Текст успешно добавлен в магазин!");
   } catch (error) {

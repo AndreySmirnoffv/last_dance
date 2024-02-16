@@ -5,8 +5,7 @@ const cards = require("../db/images/images.json");
 
 const users = require("../db/db.json");
 
-const shopTextPath = path.join(__dirname, "../../db/shop/shop.json");
-const shopText = JSON.parse(fs.readFileSync(shopTextPath, "utf8"));
+const shopText = require('../db/shop/shop.json')
 
 async function getPack(bot, msg, packCount) {
   try {

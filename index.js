@@ -15,7 +15,7 @@ const {
   sendProfileData,
   changeName,
   myCards,
-} = require("./assets/scripts/userFunctions/userFunctions");
+} = require("./assets/scripts/userFunctions");
 const {
   setAdmin,
   giveCardToUser,
@@ -25,20 +25,20 @@ const {
   askCardDetails,
   addShopText,
   removeAdmin,
-} = require("./assets/scripts/adminFunctions/adminFunctions");
+} = require("./assets/scripts/adminFunctions");
 const {
   addToWaitingRoom,
   matchInventory,
   processCallback,
   checkAndCreateMatch,
   addToMatchInventory,
-} = require("./assets/scripts/matchFunctions/matchFunctions");
+} = require("./assets/scripts/matchFunctions");
 const {
   getPack,
   getUniquePack,
-} = require("./assets/scripts/shopFunctions/shopFunctions");
-const { giveRandomCardToUser } = require("./assets/scripts/getCard/getCard");
-const { top } = require("./assets/scripts/top/top");
+} = require("./assets/scripts/shopFunctions");
+const { giveRandomCardToUser } = require("./assets/scripts/getCard");
+const { top } = require("./assets/scripts/top");
 
 const shopText = require("./assets/db/shop/shop.json");
 const commands = JSON.parse(

@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
-const filePath = path.join(__dirname, '../../db/db.json');
-const usersPath = require(filePath);
+const usersPath = require('../db/db.json')
+const cards = require('../db/images/images.json')
 
 function findCardByNameAndPower(cards, cardName, power) {
-  return cards.find(card => card.name === cardName && card.power === power);
+  return 
 }
 
 async function showAllUsers(bot, msg) {
@@ -34,8 +34,6 @@ async function showAllUsers(bot, msg) {
 
 async function sendAllCards(bot, userId, userInventory) {
   try {
-    const cardData = await fs.promises.readFile('cards.json', 'utf-8');
-    const cards = JSON.parse(cardData);
 
     const matchInventoryOptions = userInventory.map(card => ({
       name: card.name,
@@ -46,8 +44,8 @@ async function sendAllCards(bot, userId, userInventory) {
       reply_markup: JSON.stringify({
         inline_keyboard: matchInventoryOptions.map(card => [
           {
-            text: `Добавить в инвентарь матча: ${card.name}`,
-            callback_data: `addToMatchInventory:${card.name}:${card.power}`,
+            text: `Добавить в инвентарь матча: ${card.cardName}`,
+            callback_data: `addToMatchInventory:${card.cardName}:${card.cardPower}`,
           },
         ]),
       }),
@@ -57,7 +55,7 @@ async function sendAllCards(bot, userId, userInventory) {
       userId,
       cards.map(card => ({
         type: 'photo',
-        media: `https://example.com/cards/${card.name}`, // Замените на реальный URL картинки
+        media: card.cardPhoto, // Замените на реальный URL картинки
       })),
       options,
     );
@@ -69,17 +67,14 @@ async function sendAllCards(bot, userId, userInventory) {
 async function addToMatchInventory(bot, msg) {
   try {
     const userId = msg.from.id;
-    const username = msg.from.username;
 
-    const userIndex = users.findIndex(
-      x => x.username.toLowerCase() === username.toLowerCase(),
+    const user = usersPath.find(
+      x => x.username === msg.from.username
     );
 
-    if (userIndex === -1) {
+    if (!user) {
       return bot.sendMessage(userId, 'Пользователь не найден.');
     }
-
-    const user = users[userIndex];
 
     const matchInventoryOptions = user.inventory.map(card => ({
       name: card.name,
@@ -113,39 +108,27 @@ async function addToMatchInventoryCallback(bot, msg) {
     const userId = msg.from.id;
     const username = msg.from.username;
 
-    const userIndex = usersPath.findIndex(
-      x => x.username.toLowerCase() === username.toLowerCase(),
+    const user = usersPath.find(
+      x => x.username === username,
     );
 
-    if (userIndex === -1) {
+    if (!user) {
       return bot.sendMessage(userId, 'User not found.');
     }
 
-    const user = usersPath[userIndex];
-
-    const cardName = msg.data.split(':')[1];
-    const cardPower = parseInt(msg.data.split(':')[2]);
-
-    const card = findCardByNameAndPower(user.inventory, cardName, cardPower);
+    const card = cards.find(card => card.cardName === msg.data && card.cardPower === msg.data);
 
     if (!card) {
       return bot.sendMessage(userId, 'Card not found.');
     }
-
-    // Add the card to the match inventory of the user
     user.opponent.inventory.push(card);
+    fs.writeFileSync("../db/db.json", JSON.stringify(usersPath, null, '\t'));
 
-    // Save the updated user data
-    await fs.promises.writeFile(filePath, JSON.stringify(usersPath, null, '\t'));
-
-    // Send a message about the successful addition of the card to the match inventory
     await bot.sendMessage(
       userId,
-      `Card ${card.name} with power ${card.power} added to your match inventory`,
+      `Card ${card.cardName} with power ${card.cardPower} added to your match inventory`,
     );
 
-    // After adding the card to the inventory, you may want to perform additional checks or actions
-    // For example, check the power of cards and update the balance/rating based on the match result
     await checkAndCreateMatch(bot, msg);
   } catch (error) {
     bot.sendMessage(userId, 'Произошла ошибка при обработке вашего запроса.');
@@ -155,12 +138,11 @@ async function addToMatchInventoryCallback(bot, msg) {
 
 async function addToWaitingRoom(bot, msg) {
   try {
-    const currentUsers = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-    const user = currentUsers.find(user => user.username === msg.from.username);
+    const user = usersPath.find(user => user.username === msg.from.username);
 
     if (user) {
       user.isWaiting = true;
-      fs.writeFileSync(filePath, JSON.stringify(currentUsers, null, '\t'));
+      fs.writeFileSync(filePath, JSON.stringify(usersPath, null, '\t'));
       await bot.sendMessage(
         msg.message.chat.id,
         `@${msg.from.username}, вы были добавлены в комнату ожидания`,
@@ -174,10 +156,9 @@ async function addToWaitingRoom(bot, msg) {
 
 async function checkAndCreateMatch(bot, msg) {
   try {
-    const currentUsers = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-    const waitingUsers = currentUsers.filter(user => user.isWaiting);
+    const waitingUsers = usersPath.find(user => user.isWaiting);
 
-    if (waitingUsers.length >= 2) {
+    if (waitingUsers.length == 2) {
       const userId1 = waitingUsers[0].username;
       const userId2 = waitingUsers[1].username;
 
@@ -224,22 +205,21 @@ async function checkAndCreateMatch(bot, msg) {
 
 async function processCallback(bot, msg) {
   const userId = msg.message.chat.id;
-  const users = JSON.parse(fs.readFileSync(path.join(__dirname, "../../db/db.json")));
 
-  const currentUser = users.find(user => user.id === userId); // Исправлено здесь
+  const currentUser = usersPath.find(user => user.id === userId); // Исправлено здесь
 
   if (currentUser) {
     currentUser.balance += 1;
     currentUser.rating += 10;
     
-    fs.writeFileSync(path.join(__dirname, "../../db/db.json"), JSON.stringify(users, null, '\t'));
+    fs.writeFileSync( "../../db/db.json", JSON.stringify(usersPath, null, '\t'));
 
     await bot.sendMessage(
       userId,
       `Ваша валюта увеличена. Новый рейтинг: ${currentUser.rating}, Новая валюта: ${currentUser.balance}`,
     );
   } else {
-    await bot.sendMessage(msg.message.chat.id, "Неверный колбэк");
+    await bot.sendMessage(msg.message.chat.id, "нету юзера");
   }
 }
 
@@ -249,13 +229,11 @@ async function matchInventory(bot, msg) {
     const userId = msg.chat.id;
     const username = msg.from.username;
 
-    const userIndex = usersPath.findIndex(x => x.username === username);
+    const user = usersPath.find(x => x.username === msg.from.username);
 
-    if (userIndex === -1) {
+    if (!user) {
       return bot.sendMessage(userId, 'Пользователь не найден.');
     }
-
-    const user = usersPath[userIndex];
 
     const options = {
       reply_markup: JSON.stringify({
