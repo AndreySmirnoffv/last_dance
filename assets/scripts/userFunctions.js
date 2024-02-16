@@ -23,7 +23,7 @@ async function sendProfileData(bot, msg) {
 async function myCards(bot, msg) {
   const userInventory = db.find((user) => user?.username === msg.from.username);
 
-  if (!userInventory.length) {
+  if (userInventory.length === 0) {
     return bot.sendMessage(
       msg.message.chat.id,
       "У вас нет карт в инвентаре. Попробуйте получить карты сначала."
