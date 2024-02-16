@@ -5,7 +5,7 @@ const cardsPath = path.join(__dirname, "../../db/images/images.json");
 const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8"));
 
 const dbFilePath = path.join(__dirname, "../../db/db.json");
-const users = require("../../db/db.json");
+const users = require("../db/db.json");
 
 const shopTextPath = path.join(__dirname, "../../db/shop/shop.json");
 const shopText = JSON.parse(fs.readFileSync(shopTextPath, "utf8"));

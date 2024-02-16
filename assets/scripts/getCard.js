@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-const imagesData = require("../../db/images/images.json")
+const imagesData = require("../db/images/images.json")
 
 async function giveRandomCardToUser(bot, msg) {
   const db = JSON.parse(fs.readFileSync('./assets/db/db.json'));
@@ -26,16 +26,11 @@ async function giveRandomCardToUser(bot, msg) {
     }
 
     if (!user) {
-      console.error(
-        `Ошибка: Пользователь ${user.username} не найден в базе данных.`,
-      );
       return bot.sendMessage(
         msg.chat.id,
         'Произошла ошибка при выдаче карты. Попробуйте еще раз.',
       );
     }
-
-    console.log(`Найден пользователь: ${user.username}`);
 
     if (!user?.inventory) {
       user.inventory = [];
