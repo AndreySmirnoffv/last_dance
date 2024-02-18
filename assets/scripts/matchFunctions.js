@@ -9,10 +9,8 @@ function findCardByNameAndPower(cards, cardName, power) {
 
 async function showAllUsers(bot, msg) {
   try {
-    const usersData = await fs.promises.readFile(filePath, 'utf-8');
-    const allUsers = JSON.parse(usersData);
 
-    const userText = allUsers
+    const userText = usersPath
       .map(user => {
         return `Username: ${user.username}\nFirst Name: ${
           user.first_name
@@ -32,10 +30,10 @@ async function showAllUsers(bot, msg) {
   }
 }
 
-async function sendAllCards(bot, userId, userInventory) {
+async function sendAllCards(bot, userId) {
   try {
-
-    const matchInventoryOptions = userInventory.map(card => ({
+    let user = usersPath.find(user => user.username === msg.message.from.username)
+    const matchInventoryOptions = user.inventory.map(card => ({
       name: card.name,
       power: card.power,
     }));
@@ -55,7 +53,7 @@ async function sendAllCards(bot, userId, userInventory) {
       userId,
       cards.map(card => ({
         type: 'photo',
-        media: card.cardPhoto, // Замените на реальный URL картинки
+        media: card.cardPhoto,
       })),
       options,
     );
@@ -212,7 +210,7 @@ async function processCallback(bot, msg) {
     currentUser.balance += 1;
     currentUser.rating += 10;
     
-    fs.writeFileSync( "../../db/db.json", JSON.stringify(usersPath, null, '\t'));
+    fs.writeFileSync( "../db/db.json", JSON.stringify(usersPath, null, '\t'));
 
     await bot.sendMessage(
       userId,
@@ -227,7 +225,6 @@ async function processCallback(bot, msg) {
 async function matchInventory(bot, msg) {
   try {
     const userId = msg.chat.id;
-    const username = msg.from.username;
 
     const user = usersPath.find(x => x.username === msg.from.username);
 

@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 
 const cards = require("../db/images/images.json");
 
@@ -16,15 +15,15 @@ async function getPack(bot, msg, packCount) {
       return bot.sendMessage(userId, "Пользователь не найден.");
     }
 
-    const totalCost =
-      cards.reduce((acc, card) => acc + card.power, 0) * packCount;
+    const totalCost = cards.reduce((acc, card) => acc + card.power, 0) * packCount;
 
     if (user.balance == null || isNaN(user.balance)) {
       user.balance = 0;
-      fs.writeFileSync("../../db/db.json", JSON.stringify(users, null, 1));
-    }
-    1;
+      fs.writeFileSync("../db/db.json", JSON.stringify(users, null, '\t'));
+    };
     if (user.balance < totalCost) {
+      user.balance = 0
+      fs.writeFileSync("../db/db.json", JSON.stringify(users, null, '\t'))
       return bot.sendMessage(
         userId,
         `У вас недостаточно баланса для открытия ${packCount} паков.`
@@ -36,13 +35,10 @@ async function getPack(bot, msg, packCount) {
     for (let i = 0; i < packCount; i++) {
       const randomCard = cards[Math.floor(Math.random() * cards.length)];
       const existingCard = user.inventory.find(
-        (card) => card.name === randomCard.name
+        (card) => card.cardName === randomCard.cardName
       );
 
-      if (
-        existingCard in user.inventory &&
-        typeof existingCard.cardPower === "number"
-      ) {
+      if (existingCard in user.inventory && typeof existingCard.cardPower === "number") {
         return (user.balance = randomCard.cardPower / 2);
       } else if (typeof randomCard.cardPower === "number") {
         user.inventory.push(randomCard);
@@ -55,22 +51,10 @@ async function getPack(bot, msg, packCount) {
 
     fs.writeFileSync("../db/db.json", JSON.stringify(users, null, "\t"));
 
-    const shopMessage = (
-      shopText.message || "Текст не найден в магазине."
-    ).trim();
-    bot.sendMessage(
-      userId,
-      `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards
-        .map((card) => card.name)
-        .join(", ")}. Новый баланс: ${user.balance}. сила карты ${
-        openedCards.power
-      }.`
-    );
+    const shopMessage = (shopText.message || "Текст не найден в магазине.").trim();
+    bot.sendMessage(userId, `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards.map((card) => card.name).join(", ")}. Новый баланс: ${user.balance}. сила карты ${openedCards.power}.`);
   } catch (error) {
-    bot.sendMessage(
-      msg.message.from.id,
-      "Произошла ошибка при обработке вашего запроса."
-    );
+    bot.sendMessage(msg.message.from.id, "Произошла ошибка при обработке вашего запроса.");
     throw error;
   }
 }
@@ -111,10 +95,7 @@ async function getUniquePack(bot, msg) {
     }
 
     if (user.balance < updatedBalance) {
-      return bot.sendMessage(
-        userId,
-        "У вас недостаточно баланса для открытия уникального пака."
-      );
+      return bot.sendMessage(userId, "У вас недостаточно баланса для открытия уникального пака.");
     }
     user.inventory.push(openedCards);
 
@@ -126,10 +107,7 @@ async function getUniquePack(bot, msg) {
       });
     }
   } catch (error) {
-    bot.sendMessage(
-      msg.message.chat.id,
-      "Произошла ошибка при обработке вашего запроса."
-    );
+    bot.sendMessage(msg.message.chat.id,"Произошла ошибка при обработке вашего запроса.");
     throw error;
   }
 }

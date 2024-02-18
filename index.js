@@ -44,6 +44,9 @@ const shopText = require("./assets/db/shop/shop.json");
 const commands = JSON.parse(
   fs.readFileSync("./assets/db/commands/commands.json")
 );
+const db = require('./assets/db/db.json')
+
+
 bot.setMyCommands(commands)
 
 bot.on("message", async (msg) => {
@@ -75,7 +78,7 @@ bot.on("message", async (msg) => {
     return;
   }
 
-  const db = require('./assets/db/db.json')
+
   let user = db.find((user) => user.username === msg.from.username);
 
   if (msg.text === "/start") {
@@ -104,11 +107,7 @@ bot.on("message", async (msg) => {
       );
     } else {
       const isAdminMessage = user.isAdmin ? "Вы админ!" : "";
-      await bot.sendMessage(
-        msg.chat.id,
-        `Привет ${msg.from.username}. ${isAdminMessage}`,
-        user.isAdmin ? adminStartKeyboard : userStartKeyboard
-      );
+      await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}. ${isAdminMessage}`, user.isAdmin ? adminStartKeyboard : userStartKeyboard);
     }
   } else if (msg.text === "/profile" || msg.text == "👤 Личный Профиль") {
     sendProfileData(bot, msg);
