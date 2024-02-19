@@ -64,17 +64,11 @@ bot.on("message", async (msg) => {
     ) {
       console.log();
     } else {
-      bot.sendMessage(
-        chatId,
-        "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament"
-      );
+      bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
       return;
     }
   } catch (error) {
-    bot.sendMessage(
-      chatId,
-      "Произошла ошибка при проверке подписки. Попробуйте позже."
-    );
+    bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
     return;
   }
 
@@ -100,11 +94,7 @@ bot.on("message", async (msg) => {
         looseMatches: 0,
       });
       fs.writeFileSync("./assets/db/db.json", JSON.stringify(db, null, "\t"));
-      await bot.sendMessage(
-        msg.chat.id,
-        `Привет ${msg.from.username}`,
-        userStartKeyboard
-      );
+      await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}`, userStartKeyboard);
     } else {
       const isAdminMessage = user.isAdmin ? "Вы админ!" : "";
       await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}. ${isAdminMessage}`, user.isAdmin ? adminStartKeyboard : userStartKeyboard);
@@ -118,15 +108,8 @@ bot.on("message", async (msg) => {
   } else if (msg.text === "/getcard" || msg.text == "🀄️ Получить карточку") {
     giveRandomCardToUser(bot, msg);
   } else if (msg.text === "⚙️ Админ панель" && user.isAdmin) {
-    await bot.sendMessage(
-      msg.chat.id,
-      "вот что ты можешь сделать",
-      adminOptionsKeyboard
-    );
-  } else if (
-    msg.text === "🀄️ Добавить карту в инвентарь матчей" ||
-    msg.text === "/addcardtomatch"
-  ) {
+    await bot.sendMessage(msg.chat.id, "вот что ты можешь сделать", adminOptionsKeyboard);
+  } else if (msg.text === "🀄️ Добавить карту в инвентарь матчей" || msg.text === "/addcardtomatch") {
     matchInventory(bot, msg);
   } else if (msg.text === "/top") {
     top(bot, msg);
@@ -141,10 +124,7 @@ bot.on("callback_query", async (msg) => {
   } else if (msg.data === "showAllUsers") {
     showAllUsers(bot, msg);
   } else if (msg.data === "findUser") {
-    await bot.sendMessage(
-      msg.message.chat.id,
-      "Пришлите мне username пользователя"
-    );
+    await bot.sendMessage(msg.message.chat.id, "Пришлите мне username пользователя");
     await findUser(bot, msg);
   } else if (msg.data === "addCardToUser") {
     giveCardToUser(bot, msg);
@@ -164,20 +144,13 @@ bot.on("callback_query", async (msg) => {
   } else if (msg.data === "usual") {
     checkAndCreateMatch(bot, msg);
   } else if (msg.data === "changename") {
-    await bot.sendMessage(
-      msg.message.chat.id,
-      "напишите имя на которое хотите изменить ваш username"
-    );
+    await bot.sendMessage(msg.message.chat.id, "напишите имя на которое хотите изменить ваш username");
     bot.once("message", (msg) => changeName(bot, msg));
   } else if (msg.data === "mycards") {
     myCards(bot, msg);
   } else if (msg.data === "closewindow") {
     await bot.deleteMessage(msg.message.chat.id, msg.message.message_id);
-    await bot.sendMessage(
-      msg.message.chat.id,
-      "Привет админ вот что ты можешь сделать",
-      adminStartKeyboard
-    );
+    await bot.sendMessage(msg.message.chat.id, "Привет админ вот что ты можешь сделать", adminStartKeyboard);
   } else if (msg.data === "addcard") {
     askCardDetails(bot, msg);
   } else if (msg.data === "myteam") {

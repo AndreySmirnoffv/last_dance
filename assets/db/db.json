@@ -4,7 +4,7 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 19887.5,
+		"balance": 21812.5,
 		"rating": null,
 		"inventory": [
 			{
@@ -132,6 +132,60 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "290"
+			},
+			{
+				"cardName": "Броуаи",
+				"cardPhoto": "AgACAgIAAxkBAAIQMmWtYBDAuCB4GK_CHet8V0GoF0jjAALB1TEbF7hpScmh8v-n_L6JAQADAgADcwADNAQ",
+				"cardPower": 700,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Ив",
+				"cardPhoto": "AgACAgIAAxkBAAITVWWuiCzs7QuP1zdTnnwcH7Q9IrhKAAKC2zEbM9B5SU2XxMlRBqKbAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "Маг",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Беатрис",
+				"cardPhoto": "AgACAgIAAxkBAAIQZWWtYwimpA4VvrQ1ptBvIXwNzqQ7AALg1TEbF7hpSehFoB3TOcQ-AQADAgADcwADNAQ",
+				"cardPower": 780,
+				"cardSection": "5",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "220"
+			},
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "280"
+			},
+			{
+				"cardName": "Ив",
+				"cardPhoto": "AgACAgIAAxkBAAITVWWuiCzs7QuP1zdTnnwcH7Q9IrhKAAKC2zEbM9B5SU2XxMlRBqKbAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "Маг",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Валир",
+				"cardPhoto": "AgACAgIAAxkBAAIQj2WtaUgrAAEK5b1s0koIHJ-IESL8jQAC_tUxGxe4aUlozG1N3iB55QEAAwIAA3MAAzQE",
+				"cardPower": 550,
+				"cardSection": "Маг",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
 			}
 		],
 		"matchInventory": [],

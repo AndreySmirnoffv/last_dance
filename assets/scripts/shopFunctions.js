@@ -14,18 +14,18 @@ async function getPack(bot, msg, packCount) {
     const user = users.find((x) => x.username === msg.from.username);
 
     if (!user) {
-      return bot.sendMessage(userId, "Пользователь не найден.");
+      return await bot.sendMessage(userId, "Пользователь не найден.");
     }
 
     const totalCost = cards.reduce((acc, card) => acc + card.power, 0) * packCount;
 
     if (user.balance == null || isNaN(user.balance)) {
       user.balance = 0;
-      fs.writeFileSync(dbPath, JSON.stringify(users, null, '\t'));
+      fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, '\t'));
     };
     if (user.balance < totalCost) {
       user.balance = 0
-      fs.writeFileSync(dbPath, JSON.stringify(users, null, '\t'))
+      fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, '\t'))
       return bot.sendMessage(
         userId,
         `У вас недостаточно баланса для открытия ${packCount} паков.`
@@ -33,7 +33,7 @@ async function getPack(bot, msg, packCount) {
     }
 
     const openedCards = [];
-    const shopMessage = (shopText.message || "Текст не найден в магазине.").trim();
+    const shopMessage = (shopText.message|| "Текст не найден в магазине.").trim();
 
     for (let i = 0; i < packCount; i++) {
       const randomCard = cards[Math.floor(Math.random() * cards.length)];
@@ -52,9 +52,9 @@ async function getPack(bot, msg, packCount) {
       }
     }
 
-    fs.writeFileSync("../db/db.json", JSON.stringify(users, null, "\t"));
+    fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, "\t"));
 
-    await bot.sendMessage(userId, `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards.map((card) => card.name).join(", ")}. Новый баланс: ${user.balance}. сила карты ${openedCards.power}.`);
+    await bot.sendPhoto(userId, `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards.map((card) => card.name).join(", ")}. Новый баланс: ${user.balance}. сила карты ${openedCards.power}.`);
   } catch (error) {
     bot.sendMessage(msg.message.from.id, "Произошла ошибка при обработке вашего запроса.");
     throw error;
@@ -101,7 +101,7 @@ async function getUniquePack(bot, msg) {
     }
     user.inventory.push(openedCards);
 
-    fs.writeFileSync("../db/db.json", JSON.stringify(users, null, "\t"));
+    fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, "\t"));
 
     for (const card of openedCards) {
       await bot.sendPhoto(userId, card.cardPhoto, {
