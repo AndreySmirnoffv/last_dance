@@ -4,6 +4,8 @@ const cards = require("../db/images/images.json");
 
 const users = require("../db/db.json");
 
+const dbPath = "../db/db.json"
+
 const shopText = require('../db/shop/shop.json')
 
 async function getPack(bot, msg, packCount) {
@@ -19,11 +21,11 @@ async function getPack(bot, msg, packCount) {
 
     if (user.balance == null || isNaN(user.balance)) {
       user.balance = 0;
-      fs.writeFileSync("../db/db.json", JSON.stringify(users, null, '\t'));
+      fs.writeFileSync(dbPath, JSON.stringify(users, null, '\t'));
     };
     if (user.balance < totalCost) {
       user.balance = 0
-      fs.writeFileSync("../db/db.json", JSON.stringify(users, null, '\t'))
+      fs.writeFileSync(dbPath, JSON.stringify(users, null, '\t'))
       return bot.sendMessage(
         userId,
         `У вас недостаточно баланса для открытия ${packCount} паков.`
@@ -31,6 +33,7 @@ async function getPack(bot, msg, packCount) {
     }
 
     const openedCards = [];
+    const shopMessage = (shopText.message || "Текст не найден в магазине.").trim();
 
     for (let i = 0; i < packCount; i++) {
       const randomCard = cards[Math.floor(Math.random() * cards.length)];
@@ -51,8 +54,7 @@ async function getPack(bot, msg, packCount) {
 
     fs.writeFileSync("../db/db.json", JSON.stringify(users, null, "\t"));
 
-    const shopMessage = (shopText.message || "Текст не найден в магазине.").trim();
-    bot.sendMessage(userId, `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards.map((card) => card.name).join(", ")}. Новый баланс: ${user.balance}. сила карты ${openedCards.power}.`);
+    await bot.sendMessage(userId, `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards.map((card) => card.name).join(", ")}. Новый баланс: ${user.balance}. сила карты ${openedCards.power}.`);
   } catch (error) {
     bot.sendMessage(msg.message.from.id, "Произошла ошибка при обработке вашего запроса.");
     throw error;
@@ -63,27 +65,27 @@ async function getUniquePack(bot, msg) {
   try {
     const userId = msg.message.chat.id;
 
-    const user = users.find(user => user.username === msg.from.username);
+    const user = users.find(user => user.username === msg.message.from.username);
 
     if (!user) {
-      return bot.sendMessage(userId, "Пользователь не найден.");
+      return await bot.sendMessage(userId, "Пользователь не найден.");
     }
 
-    const zeroDropChanceCards = cards.filter((card) => card.dropChance === 0);
+    const zeroDropChanceCards = cards.filter((card) => card.cardDropChance === 0);
 
     const openedCards = [];
     let updatedBalance = user.balance || 0;
 
     for (const randomCard of zeroDropChanceCards) {
-      const existingCardIndex = users[userIndex].inventory.findIndex(
-        (card) => card.name === randomCard.name
+      const existingCardIndex = users.inventory.filter(
+        (card) => card.cardName === randomCard.name
       );
 
       if (existingCardIndex === -1) {
         openedCards.push(randomCard);
         updatedBalance -= randomCard.power;
       } else {
-        const existingCard = users[userIndex].inventory[existingCardIndex];
+        const existingCard = users.inventory
         const duplicateCard = { ...existingCard };
         openedCards.push(duplicateCard);
         updatedBalance -= duplicateCard.power;
