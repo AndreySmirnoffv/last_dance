@@ -134,7 +134,8 @@ bot.on("callback_query", async (msg) => {
   } else if (msg.data === "usualmatch") {
     await addToWaitingRoom(bot, msg);
   } else if (msg.data === "getonepack") {
-    getPack(bot, msg, 1);
+    console.log("callback сработал")
+    await getPack(bot, msg, 1);
   } else if (msg.data === "getfivepacks") {
     getPack(bot, msg, 5);
   } else if (msg.data === "gettenpacks") {

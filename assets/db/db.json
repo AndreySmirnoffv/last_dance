@@ -4,7 +4,7 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 21812.5,
+		"balance": 250,
 		"rating": null,
 		"inventory": [
 			{
@@ -186,7 +186,31 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "450"
-			}
+			},
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAIQTGWtYOLLaOjaVwABtSUZSRzbxfrIHwACxtUxGxe4aUlJrNEVLO0UHwEAAwIAA3MAAzQE",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "280"
+			},
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null,
+			null
 		],
 		"matchInventory": [],
 		"isAdmin": false,
