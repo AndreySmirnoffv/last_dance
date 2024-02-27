@@ -4,9 +4,9 @@ const cards = require("../db/images/images.json");
 
 const users = require("../db/db.json");
 
-const dbPath = "../db/db.json"
-
 const shopText = require('../db/shop/shop.json')
+
+const shopMessage = (shopText.message|| "Текст не найден в магазине.").trim();
 
 async function getPack(bot, msg, packCount) {
   try {
@@ -33,7 +33,6 @@ async function getPack(bot, msg, packCount) {
     }
 
     const openedCards = [];
-    const shopMessage = (shopText.message|| "Текст не найден в магазине.").trim();
 
     for (let i = 0; i < packCount; i++) {
       console.log("цикл начал свое выполнение")
@@ -42,25 +41,23 @@ async function getPack(bot, msg, packCount) {
         (card) => card.cardName === randomCard.cardName
       );
         console.log("фильрация карт завершена")
-      if (randomCard.cardName == existingCard.cardName) {
+      if (randomCard.cardName === existingCard.cardName) {
         user.balance += randomCard.cardPower / 2;
         fs.writeFileSync('assets/db/db.json', JSON.stringify(users, null, '\t'))
         await bot.sendMessage(userId, `Вам выпала повторная карта ваш баланс составляет ${user.balance}`)
-      } else if (typeof randomCard.cardPower === "number") {
+      } else {
         user.inventory.push(randomCard);
         openedCards.push(randomCard);
         user.balance += 0.5 * randomCard.cardPower;
         fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, "\t"));
 
-        const photoMessage = `${shopMessage} Вы открыли ${packCount} паков и получили карты: ${openedCards.map((card) => card.name).join(", ")}. Новый баланс: ${user.balance}. сила карты ${openedCards.power}.`
+        const photoMessage = `${shopMessage} Вы открыли ${packCount} паков и получили карты:\n🦠 ${randomCard.cardName}\n💬 ${randomCard.cardDeffence}\n🎭 ${randomCard.cardPower}\n🔮${randomCard.cardRarity}\n${randomCard.cardSection}\n❤️ ${openedCards.power}.\n Новый баланс: ${user.balance}.`
         await bot.sendPhoto(userId, randomCard.cardPhoto, {caption: photoMessage} );
-      } else {
-        return;
       }
     }
 
   } catch (error) {
-    bot.sendMessage(msg.message.from.id, "Произошла ошибка при обработке вашего запроса.");
+    await bot.sendMessage(msg.message.from.id, "Произошла ошибка при обработке вашего запроса.");
     throw error;
   }
 }
@@ -71,32 +68,37 @@ async function getUniquePack(bot, msg) {
     const userId = msg.message.chat.id;
 
     const user = users.find(user => user.username === msg.from.username);
-
-    const zeroDropChanceCards = cards.find((card) => card.cardDropChance === 0);
+    const zeroDropChanceCards = cards.find((card) => card.cardName);
+    console.log(zeroDropChanceCards)
 
     const openedCards = [];
-    const shopMessage = (shopText.message|| "Текст не найден в магазине.").trim();
 
     let updatedBalance = user.balance || 0;
     console.log("валидация юзера")
     if (!user) {
       return await bot.sendMessage(userId, "Пользователь не найден.");
-    }else if (user.balance < updatedBalance || isNaN(updatedBalance) || updatedBalance < 0) {
+    }else if (user.balance < updatedBalance || isNaN(updatedBalance)) {
       return bot.sendMessage(userId, "У вас недостаточно баланса для открытия уникального пака.");
     }
     console.log('валидация юзера прошла успешно')
 
-    if (zeroDropChanceCards in user.inventory) {
+    if (!zeroDropChanceCards.cardPhoto in user.inventory) {
+      console.log("пытаюсь выдать карту")
+      openedCards.push(zeroDropChanceCards)
       user.inventory.push(zeroDropChanceCards);
-      fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, '\t'))
-      const photoMessage = `${shopMessage} Вы открыли уникальный пак и получили карту: ${user.inventory.filter((card) => card.cardName).join(", ")}. Новый баланс: ${user.balance}. сила карты ${zeroDropChanceCards.cardPower}.`
-
-      await bot.sendMessage(userId, "Вам выпала повторная карта ваш баланс составляет: " + user.balance)
+      console.log(zeroDropChanceCards)
+      fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, "\t"));
+      const photoMessage = `${shopMessage} Вы открыли уникальный пак и получили карты:\n🦠 ${openedCards.cardName}\n💬 ${openedCards.cardDeffence}\n🎭 ${openedCards.cardPower}\n🔮${openedCards.cardRarity}\n${openedCards.cardSection}\n❤️ ${openedCards.power}.\n Новый баланс: ${user.balance}.`
+      await bot.sendPhoto(userId, zeroDropChanceCards.cardPhoto, {caption: photoMessage} );
+      console.log("карт выдана")
 
     }else{
+      console.log("проверка есть ли карта в инвентаре у юзера началась")
       user.inventory.push(zeroDropChanceCards);
-      fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, "\t"));
-      await bot.sendPhoto(userId, zeroDropChanceCards.cardPhoto, {caption: photoMessage} );
+      fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, '\t'))
+      await bot.sendMessage(userId, "Вам выпала повторная карта ваш баланс составляет: " + user.balance)
+      console.log("проверка есть ли карта в инвентаре у юзера завершенна")
+
     }
   } catch (error) {
     bot.sendMessage(msg.message.chat.id,"Произошла ошибка при обработке вашего запроса.");

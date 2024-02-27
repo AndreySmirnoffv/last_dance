@@ -64,11 +64,11 @@ bot.on("message", async (msg) => {
     ) {
       console.log();
     } else {
-      bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
+     await bot.sendMessage(chatId, "Вы не подписаны на канал. Пожалуйста, подпишитесь.\n@MCLPodPivomTournament");
       return;
     }
   } catch (error) {
-    bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
+    await bot.sendMessage(chatId, "Произошла ошибка при проверке подписки. Попробуйте позже.");
     return;
   }
 
@@ -97,7 +97,7 @@ bot.on("message", async (msg) => {
       await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}`, userStartKeyboard);
     } else {
       const isAdminMessage = user.isAdmin ? "Вы админ!" : "";
-      await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}. ${isAdminMessage}`, user.isAdmin ? adminStartKeyboard : userStartKeyboard);
+      await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}. ${isAdminMessage}`, user?.isAdmin ? adminStartKeyboard : userStartKeyboard);
     }
   } else if (msg.text === "/profile" || msg.text == "👤 Личный Профиль") {
     sendProfileData(bot, msg);
@@ -107,7 +107,7 @@ bot.on("message", async (msg) => {
     await bot.sendMessage(msg.chat.id, shopText[0].message, shopKeyboard);
   } else if (msg.text === "/getcard" || msg.text == "🀄️ Получить карточку") {
     giveRandomCardToUser(bot, msg);
-  } else if (msg.text === "⚙️ Админ панель" && user.isAdmin) {
+  } else if (msg.text === "⚙️ Админ панель" && user?.isAdmin) {
     await bot.sendMessage(msg.chat.id, "вот что ты можешь сделать", adminOptionsKeyboard);
   } else if (msg.text === "🀄️ Добавить карту в инвентарь матчей" || msg.text === "/addcardtomatch") {
     matchInventory(bot, msg);

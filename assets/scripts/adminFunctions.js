@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const users = require("../db/db.json");
-const cards = require("../db/images/images.json");
+const cards = require('../db/images/images.json')
 const shopTextPath = require("../db/shop/shop.json");
-const promosPath = path.resolve(__dirname, "../../db/promos/promos.json");
+const promosPath = require("../db/promos/promos.json");
 
 async function createPromo(bot, msg) {
   try {
@@ -176,6 +176,7 @@ async function waitForText(bot, chatId) {
     bot.onText(/.*/, (msg) => {
       if (msg.from.username === chatId) {
         resolve(msg);
+        console.log(msg.text)
       }
     });
   });
@@ -186,13 +187,14 @@ async function waitForPhoto(bot, chatId) {
     bot.on("photo", (msg) => {
       if (msg.from.username === chatId) {
         resolve(msg);
+        console.log(msg.fileId)
       }
     });
   });
 }
 
 function saveToJson(data) {
-  const dbPath = path.join(__dirname, "../../db/images/images.json");
+  const dbPath = path.join(__dirname, "../db/images/images.json");
   const jsonData = JSON.stringify(data, null, "\t");
   fs.writeFileSync(dbPath, jsonData);
 }
