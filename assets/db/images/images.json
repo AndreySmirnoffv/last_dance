@@ -1,11 +1,11 @@
 [
-	{
-		"cardName": "200",
-		"cardPhoto": "AgACAgIAAxkBAAInIWXY3IRSPJkde3Kn9XJpLq1zPpAIAAJS2jEbWT3ISvFET6wBpuSrAQADAgADcwADNAQ",
-		"cardPower": 200,
-		"cardSection": "200",
-		"cardRarity": "200",
-		"cardDropChance": "200",
-		"cardDeffence": "200"
+    {
+		"cardName": "Ангела",
+		"cardPhoto": "AgACAgIAAxkBAAIo6GXkaEPUXzOdZnQXPKRQ8RF9uvHXAALv0zEbKFEgS3HWq_F5DVQqAQADAgADcwADNAQ",
+		"cardPower": 260,
+		"cardSection": "Поддержка",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "739"
 	}
 ]

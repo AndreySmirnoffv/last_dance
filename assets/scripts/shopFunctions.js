@@ -20,7 +20,7 @@ async function getPack(bot, msg, packCount) {
 
     const totalCost = cards.reduce((acc, card) => acc + card.power, 0) * packCount;
 
-    if (user.balance == null || isNaN(user.balance)) {
+    if (user.balance == null || user.balance < 2500 || isNaN(user.balance)) {
       user.balance = 0;
       fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, '\t'));
     }else if (user.balance < totalCost) {
@@ -69,29 +69,29 @@ async function getUniquePack(bot, msg) {
 
     const user = users.find(user => user.username === msg.from.username);
     const zeroDropChanceCards = cards.find((card) => card.cardName);
+    const existingCard = user.inventory.find(card => card.cardName === zeroDropChanceCards.cardName)
     console.log(zeroDropChanceCards)
 
     const openedCards = [];
 
-    let updatedBalance = user.balance || 0;
+    let updatedBalance = 2500
     console.log("валидация юзера")
     if (!user) {
       return await bot.sendMessage(userId, "Пользователь не найден.");
     }else if (user.balance < updatedBalance || isNaN(updatedBalance)) {
-      return bot.sendMessage(userId, "У вас недостаточно баланса для открытия уникального пака.");
+      return await bot.sendMessage(userId, "У вас недостаточно баланса для открытия уникального пака.");
     }
     console.log('валидация юзера прошла успешно')
 
-    if (!zeroDropChanceCards.cardPhoto in user.inventory) {
+    if (!existingCard) {
       console.log("пытаюсь выдать карту")
       openedCards.push(zeroDropChanceCards)
       user.inventory.push(zeroDropChanceCards);
       console.log(zeroDropChanceCards)
       fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, "\t"));
       const photoMessage = `${shopMessage} Вы открыли уникальный пак и получили карты:\n🦠 ${openedCards.cardName}\n💬 ${openedCards.cardDeffence}\n🎭 ${openedCards.cardPower}\n🔮${openedCards.cardRarity}\n${openedCards.cardSection}\n❤️ ${openedCards.power}.\n Новый баланс: ${user.balance}.`
-      await bot.sendPhoto(userId, zeroDropChanceCards.cardPhoto, {caption: photoMessage} );
+      await bot.sendPhoto(userId, zeroDropChanceCards?.cardPhoto, {caption: photoMessage} );
       console.log("карт выдана")
-
     }else{
       console.log("проверка есть ли карта в инвентаре у юзера началась")
       user.inventory.push(zeroDropChanceCards);

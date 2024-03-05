@@ -41,6 +41,7 @@ const { giveRandomCardToUser } = require("./assets/scripts/getCard");
 const { top } = require("./assets/scripts/top");
 
 const shopText = require("./assets/db/shop/shop.json");
+
 const commands = JSON.parse(
   fs.readFileSync("./assets/db/commands/commands.json")
 );
@@ -104,7 +105,7 @@ bot.on("message", async (msg) => {
   } else if (msg.text === "/arenas" || msg.text == "⚔️ Арены") {
     await bot.sendMessage(msg.chat.id, "Список Арен", arenaKeyboard);
   } else if (msg.text === "/shop" || msg.text === "🛒 Магазин паков") {
-    await bot.sendMessage(msg.chat.id, shopText[0].message, shopKeyboard);
+    await bot.sendMessage(msg.chat.id, shopText.map(text => text[0].message), shopKeyboard);
   } else if (msg.text === "/getcard" || msg.text == "🀄️ Получить карточку") {
     giveRandomCardToUser(bot, msg);
   } else if (msg.text === "⚙️ Админ панель" && user?.isAdmin) {
