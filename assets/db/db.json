@@ -4,16 +4,17 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 5180,
+		"balance": 11680,
 		"rating": null,
-		"inventory": [],
+		"inventory": [
+		],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1709510191365
+		"lastCardUseTime": 1709994054452
 	},
 	{
 		"username": "arts_holv",
