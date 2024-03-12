@@ -6,8 +6,7 @@
 		"id": 1425448286,
 		"balance": 11680,
 		"rating": null,
-		"inventory": [
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
