@@ -6,7 +6,7 @@ const users = require("../db/db.json");
 
 const shopText = require('../db/shop/shop.json')
 
-const shopMessage = (shopText.message|| "Текст не найден в магазине.").trim();
+const shopMessage = (shopText?.message|| "Текст не найден в магазине.").trim();
 
 async function getPack(bot, msg, packCount) {
   try {

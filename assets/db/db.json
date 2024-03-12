@@ -21,12 +21,15 @@
 		"id": 749635133,
 		"balance": 0,
 		"rating": null,
-		"inventory": [],
+		"inventory": [
+			null
+		],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
-		"looseMatches": 0
+		"looseMatches": 0,
+		"lastCardUseTime": 1710276766767
 	}
 ]

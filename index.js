@@ -105,7 +105,7 @@ bot.on("message", async (msg) => {
   } else if (msg.text === "/arenas" || msg.text == "⚔️ Арены") {
     await bot.sendMessage(msg.chat.id, "Список Арен", arenaKeyboard);
   } else if (msg.text === "/shop" || msg.text === "🛒 Магазин паков") {
-    await bot.sendMessage(msg.chat.id, shopText.map(text => text[0].message), shopKeyboard);
+    await bot.sendMessage(msg.chat.id, '💰 Цена каждого "пака" равняется 2000 валюты\n\n💰 Повторяющиеся карты дают на баланс сумму, которая равна половине от силы полученной повторной карты', shopKeyboard);
   } else if (msg.text === "/getcard" || msg.text == "🀄️ Получить карточку") {
     giveRandomCardToUser(bot, msg);
   } else if (msg.text === "⚙️ Админ панель" && user?.isAdmin) {
