@@ -73,9 +73,22 @@ async function changeName(bot, msg) {
   );
 }
 
+
+async function refLink(bot, msg){
+  let user = db.find(x => x.username === msg.text)
+  if (!user){
+    return await bot.sendMessage(msg.chat.id, "Такого пользователя не существует")
+  }else{
+    user.balance += 2000
+    fs.writeFileSync("../db/db.json", JSON.stringify(user, null, '\t'))
+    await bot.sendMessage(user.id, "Спасибо за приглашение друга вам было добавлено 2000 на баланс")
+  }
+}
+
 module.exports = {
   sendProfileData: sendProfileData,
   changeName: changeName,
   myCards: myCards,
   checkPromo: checkPromo,
+  refLink: refLink
 };

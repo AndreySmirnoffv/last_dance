@@ -15,6 +15,7 @@ const {
   sendProfileData,
   changeName,
   myCards,
+  refLink,
 } = require("./assets/scripts/userFunctions");
 const {
   setAdmin,
@@ -114,6 +115,11 @@ bot.on("message", async (msg) => {
     matchInventory(bot, msg);
   } else if (msg.text === "/top") {
     top(bot, msg);
+  }else if(msg.text === "Реферальная ссылка"){
+    await bot.sendMessage("Введите имя пользователя от которого вы узнали про нас")
+    refLink(bot, msg)
+  }else if(msg.chat.type === 'group' || msg.chat.type === 'supergroup'){
+    giveRandomCardToUser(bot, msg)
   }
 });
 

@@ -6,14 +6,17 @@
 		"id": 1425448286,
 		"balance": 11680,
 		"rating": null,
-		"inventory": [],
+		"inventory": [
+			null,
+			null
+		],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1710080140477
+		"lastCardUseTime": 1710537472813
 	},
 	{
 		"username": "arts_holv",
@@ -31,5 +34,22 @@
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1710276766767
+	},
+	{
+		"username": "darknessto",
+		"first_name": "ᴅᴀʀᴋɴᴇssᴛᴏ",
+		"id": 689684025,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			null
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1710536624478
 	}
 ]
