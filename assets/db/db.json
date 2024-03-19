@@ -4,11 +4,18 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 11680,
+		"balance": 12960,
 		"rating": null,
 		"inventory": [
-			null,
-			null
+			{
+				"cardName": "Чип",
+				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
+				"cardPower": 320,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "580"
+			}
 		],
 		"matchInventory": [],
 		"isAdmin": true,
@@ -24,9 +31,7 @@
 		"id": 749635133,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			null
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
@@ -41,9 +46,7 @@
 		"id": 689684025,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			null
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,

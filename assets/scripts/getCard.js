@@ -50,6 +50,7 @@ async function giveRandomCardToUser(bot, msg) {
     const hasCard = user.inventory.find(item => item?.cardName === randomCard?.cardName);
     // user.lastCardUseTime = currentTime;
     if(!hasCard) {
+      user.inventory = []
       console.log(randomCard)
       user.inventory.push(randomCard);
       fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
@@ -61,6 +62,7 @@ async function giveRandomCardToUser(bot, msg) {
           }\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${JSON.stringify(user.balance, null, '\t')}`,
       })
     } else {
+      user.inventory = []
       console.log(randomCard.cardPower)
       user.balance += randomCard?.cardPower / 2
       console.log(user.balance)

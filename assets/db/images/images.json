@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "cardName": "Чип",
+        "cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
+        "cardPower": 320,
+        "cardSection": "Поддержка",
+        "cardRarity": "5",
+        "cardDropChance": "50",
+        "cardDeffence": "580"
+    }
+
+]

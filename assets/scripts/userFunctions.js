@@ -22,7 +22,26 @@ async function sendProfileData(bot, msg) {
 
 async function myCards(bot, msg) {
   const userInventory = db.find((user) => user?.username === msg.from.username);
+  const matchInventoryOptions = userInventory.inventory.find(card => ({
+    cardName: card.cardName,
+    cardPhoto: card.cardPhoto,
+    CardPower: card.cardPower,
+    cardSection: card.cardSection,
+    cardRarity: card.cardRarity,
+    cardDropChance: card.cardDropChance,
+    cardDeffence: card.cardDeffence
 
+  }));
+  const options = {
+    reply_markup: JSON.stringify({
+      inline_keyboard: matchInventoryOptions.map(card => [
+        {
+          text: `Добавить в инвентарь матча: ${card.cardName}`,
+          callback_data: `addToMatchInventory:${card.cardName}:${card.cardPower}`,
+        },
+      ]),
+    }),
+  };
   if (userInventory.length === 0) {
     return bot.sendMessage(
       msg.message.chat.id,
@@ -35,7 +54,7 @@ async function myCards(bot, msg) {
           card.cardRarity
         }\nАтака: ${card.cardPower || "Не указана"}\nЗащита: ${
           card.cardDeffence || "Не указана"
-        }`,
+        }`, options
       });
     }
   }
