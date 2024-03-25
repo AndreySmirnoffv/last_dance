@@ -124,7 +124,6 @@ bot.on("message", async (msg) => {
   }
 });
 
-() => console.log("hello world")
 bot.on("callback_query", async (msg) => {
   if (msg.data.startsWith("createPromo_")) {
     await addToMatchInventory(bot, msg);
