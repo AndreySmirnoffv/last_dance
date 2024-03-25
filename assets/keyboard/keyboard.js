@@ -78,4 +78,14 @@ module.exports = {
       ],
     }),
   },
+
+  addMatchInventory: {
+    reply_markup: JSON.stringify({
+      inline_keyboard: [
+        [{text: "Добавить в инвентарь матча", callback_data: "addToMatchInventory"}]
+      ],
+      resize_keyboard: true
+    }),
+  }
 };
+

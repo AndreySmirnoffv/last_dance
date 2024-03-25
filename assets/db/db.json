@@ -4,7 +4,7 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 12960,
+		"balance": 13440,
 		"rating": null,
 		"inventory": [
 			{
@@ -29,7 +29,7 @@
 		"username": "arts_holv",
 		"first_name": "Artsem",
 		"id": 749635133,
-		"balance": 0,
+		"balance": 160,
 		"rating": null,
 		"inventory": [],
 		"matchInventory": [],
@@ -54,5 +54,19 @@
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1710536624478
+	},
+	{
+		"username": "jonyki45",
+		"first_name": "женя",
+		"id": 1034645434,
+		"balance": 160,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
 	}
 ]

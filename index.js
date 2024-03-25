@@ -16,6 +16,7 @@ const {
   changeName,
   myCards,
   refLink,
+  addCardToMatchInventory,
 } = require("./assets/scripts/userFunctions");
 const {
   setAdmin,
@@ -171,7 +172,9 @@ bot.on("callback_query", async (msg) => {
     processCallback(bot, msg);
   } else if (msg.data === "removeadmin") {
     removeAdmin(bot, msg);
-  } else {
+  }else if(msg.data === 'addToMatchInventory'){
+    addCardToMatchInventory(bot, msg)
+  }else {
     await bot.sendMessage(msg.message.chat.id, "Таких данных не существует");
   }
 });
