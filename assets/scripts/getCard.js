@@ -46,14 +46,12 @@ async function giveRandomCardToUser(bot, msg) {
       //   `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
       // );
     // }
-    // console.log(`Выбран случайный индекс: ${randomIndex}`);
     const hasCard = user.inventory.find(item => item?.cardName === randomCard?.cardName);
     // user.lastCardUseTime = currentTime;
     if(!hasCard) {
-      user.inventory = []
       console.log(randomCard)
       user.inventory.push(randomCard);
-      fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
+      fs.writeFileSync('./assets/db/db.json', JSON.stringify(user, null, '\t'));
       await bot.sendPhoto(msg.chat.id, randomCard?.cardPhoto, {
         caption: `🦠 ${randomCard?.cardName}\n\n💬 ${msg.from.username
           }, поздравляем, вы получили карту героя ${randomCard?.cardName}!\n🎭 Класс: ${randomCard?.cardSection
@@ -62,11 +60,10 @@ async function giveRandomCardToUser(bot, msg) {
           }\n➖➖➖➖➖➖➖\n🃏 Кол-во оставшихся токенов: ${JSON.stringify(user.balance, null, '\t')}`,
       })
     } else {
-      user.inventory = []
       console.log(randomCard.cardPower)
       user.balance += randomCard?.cardPower / 2
       console.log(user.balance)
-      fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'))
+      fs.writeFileSync('./assets/db/db.json', JSON.stringify(user, null, '\t'))
       console.log("база данных удалилась")
       await bot.sendMessage(msg.chat.id, `Вы получили повторяющуюся карту теперь ваш баланс составляет ${user.balance}`)
     } 
