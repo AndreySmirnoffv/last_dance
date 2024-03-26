@@ -76,7 +76,7 @@ bot.on("message", async (msg) => {
   }
 
 
-  let user = db.find((user) => user.username === msg.from.username);
+  let user = db.find(user => user.username === msg.from.username)
 
   if (msg.text === "/start") {
     console.log(user)
