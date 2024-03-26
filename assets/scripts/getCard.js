@@ -8,10 +8,10 @@ async function giveRandomCardToUser(bot, msg) {
   try {
     const user = db.find(user => user.username === msg.from.username);
 
-    // const lastUseTime = user.lastCardUseTime || 0;
-    // const currentTime = Date.now();
-    // const timeDiff = currentTime - lastUseTime;
-    // const coolDownTime = 2 * 60 * 60 * 1000;
+    const lastUseTime = user.lastCardUseTime || 0;
+    const currentTime = Date.now();
+    const timeDiff = currentTime - lastUseTime;
+    const coolDownTime = 2 * 60 * 60 * 1000;
 
     const randomIndex = Math.floor(Math.random() * imagesData.length);
     const randomCard = imagesData[randomIndex];
@@ -36,18 +36,18 @@ async function giveRandomCardToUser(bot, msg) {
       user.inventory = [];
     }
 
-    // if (timeDiff < coolDownTime) {
-    //   const remainingTime = coolDownTime - timeDiff;
-    //   const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
-    //   const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
+    if (timeDiff < coolDownTime) {
+      const remainingTime = coolDownTime - timeDiff;
+      const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
+      const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
 
-      // return bot.sendMessage(
-      //   msg.chat.id,
-      //   `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
-      // );
-    // }
+      return bot.sendMessage(
+        msg.chat.id,
+        `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
+      );
+    }
     const hasCard = user.inventory.find(item => item?.cardName === randomCard?.cardName);
-    // user.lastCardUseTime = currentTime;
+    user.lastCardUseTime = currentTime;
     if(!hasCard) {
       console.log(randomCard)
       user.inventory.push(randomCard);
