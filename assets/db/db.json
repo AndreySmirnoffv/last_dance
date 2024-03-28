@@ -4,14 +4,25 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 0,
+		"balance": 2000,
 		"rating": null,
-		"inventory": [],
+		"inventory": [
+			{
+				"cardName": "Хилос",
+				"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "610"
+			}
+		],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
-		"looseMatches": 0
+		"looseMatches": 0,
+		"lastCardUseTime": 1711650695904
 	}
 ]

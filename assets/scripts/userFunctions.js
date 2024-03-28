@@ -80,8 +80,6 @@ async function refLink(bot, msg) {
     console.log("Сообщение не содержит текст, вероятно, оно не введено пользователем.");
     return;
   }
-  
-  cleanedUsername = cleanedUsername.trim();
 
   console.log("Имя пользователя для поиска:", cleanedUsername);
 
@@ -97,7 +95,11 @@ async function refLink(bot, msg) {
   } else {
     await bot.sendMessage(msg.chat.id, "Такого пользователя не существует");
   }
+  
+  // Обновляем cleanedUsername
+  cleanedUsername = undefined;
 }
+
 
 
 
