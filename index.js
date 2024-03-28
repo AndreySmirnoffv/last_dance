@@ -117,8 +117,9 @@ bot.on("message", async (msg) => {
   } else if (msg.text === "/top") {
     top(bot, msg);
   }else if(msg.text === "Реферальная ссылка"){
-    await bot.sendMessage("Введите имя пользователя от которого вы узнали про нас")
-    refLink(bot, msg)
+    console.log("запрос на выполнение функции")
+    await bot.sendMessage(msg.chat.id, "Введите имя пользователя от которого вы узнали про нас")
+    bot.once('message', () => refLink(bot, msg))
   }else if(msg.chat.type === 'group' || msg.chat.type === 'supergroup'){
     giveRandomCardToUser(bot, msg)
   }

@@ -73,28 +73,44 @@ async function changeName(bot, msg) {
   );
 }
 
+async function refLink(bot, msg) {
+  let cleanedUsername = msg.text;
+  
+  if (!cleanedUsername) {
+    console.log("Сообщение не содержит текст, вероятно, оно не введено пользователем.");
+    return;
+  }
+  
+  cleanedUsername = cleanedUsername.trim();
 
-async function refLink(bot, msg){
-  let user = db.find(x => x.username === msg.text)
-  if (!user){
-    return await bot.sendMessage(msg.chat.id, "Такого пользователя не существует")
-  }else{
-    user.balance += 2000
-    fs.writeFileSync("../db/db.json", JSON.stringify(user, null, '\t'))
-    await bot.sendMessage(user.id, "Спасибо за приглашение друга вам было добавлено 2000 на баланс")
+  console.log("Имя пользователя для поиска:", cleanedUsername);
+
+  let userExists = db.some(user => user.username === cleanedUsername);
+
+  console.log("Пользователь найден:", userExists);
+
+  if (userExists) {
+    let user = db.find(user => user.username === cleanedUsername);
+    user.balance += 2000;
+    fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
+    await bot.sendMessage(msg.chat.id, "Мы передали ему спасибо");
+  } else {
+    await bot.sendMessage(msg.chat.id, "Такого пользователя не существует");
   }
 }
 
+
+
+
 async function addCardToMatchInventory(bot, msg){
-  await bot.sendMessage(msg.message.chat.id, "Введите имя карты которое хотите добавить в инвентарь")
   let userInventory = cards.find(card => card.cardName === msg.text)
   let user = db.find(user => user.username === msg.message.from.username)
-  if(!userInventory){
+  if(!userInventory && msg.text){
     await bot.sendMessage(msg.message.chat.id, "Такой карты не существует")
   }else{
     await bot.sendMessage(msg.message.chat.id, "карта успешно добавлена в инвентарь")
-    user.matchInventory.push(userInventory)
-    fs.writeFileSync('../db/db.json', JSON.stringify(user, null, '\t'))
+    user?.matchInventory?.push(userInventory)
+    fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'))
   }
   
 }

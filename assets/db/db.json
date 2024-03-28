@@ -4,86 +4,14 @@
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
 		"id": 1425448286,
-		"balance": 17705,
-		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Атлас",
-				"cardPhoto": "AgACAgIAAxkBAAIwvmYB1ocM9VWa0vBYXDgaayAGbquMAAKR1zEbg_IRSD-abrLxvg56AQADAgADcwADNAQ",
-				"cardPower": 300,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "700"
-			},
-			{
-				"cardName": "Тигрил",
-				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
-				"cardPower": 300,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "730"
-			},
-			{
-				"cardName": "Хилос",
-				"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
-				"cardPower": 400,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "610"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Лолита",
-				"cardPhoto": "AgACAgIAAxkBAAIwrWYB1jsEsT-3ph2PKOWfesRzrm5cAAKP1zEbg_IRSLg0rR-gl0vkAQADAgADcwADNAQ",
-				"cardPower": 350,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "740"
-			}
-		],
-		"matchInventory": [],
-		"isAdmin": true,
-		"isWaiting": false,
-		"isMatch": false,
-		"wonMatches": 0,
-		"looseMatches": 0,
-		"lastCardUseTime": 1710537472813
-	},
-	{
-		"username": "arts_holv",
-		"first_name": "Artsem",
-		"id": 749635133,
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Хилос",
-				"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
-				"cardPower": 400,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "610"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
-		"isAdmin": true,
+		"isAdmin": false,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
-		"looseMatches": 0,
-		"lastCardUseTime": 1711456559800
+		"looseMatches": 0
 	}
 ]
