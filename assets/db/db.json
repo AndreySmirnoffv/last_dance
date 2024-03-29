@@ -1,5 +1,19 @@
 [
 	{
+		"username": "bostonBeats",
+		"first_name": "tomori",
+		"id": 930996637,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
 		"username": "hashfuck",
 		"first_name": "В легких больше дыма , чем воздуха",
 		"last_name": "⁤",
@@ -18,11 +32,12 @@
 			}
 		],
 		"matchInventory": [],
-		"isAdmin": false,
+		"isAdmin": true,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1711650695904
+		"lastCardUseTime": 1711752112808,
+		"refLinkUsed": true
 	}
 ]

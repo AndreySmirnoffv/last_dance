@@ -71,33 +71,40 @@ async function changeName(bot, msg) {
     msg.chat.id,
     `Вы успешно сменили имя на ${db[name].first_name}`
   );
-}
+}// Путь к файлу db.json
 
 async function refLink(bot, msg) {
-  let cleanedUsername = msg.text;
-  
-  if (!cleanedUsername) {
-    console.log("Сообщение не содержит текст, вероятно, оно не введено пользователем.");
-    return;
+  if (msg.from && msg.from.username) {
+
+    if (db.some(user => user.username === msg.from.username && user.refLinkUsed)) {
+          return bot.sendMessage(msg.chat.id, "Вы уже использовали ссылку.");
+    }
+
+    let cleanedUsername = msg.text;
+    
+    if (!cleanedUsername) {
+      console.log("Сообщение не содержит текст, вероятно, оно не введено пользователем.");
+      return;
+    }
+
+    console.log("Имя пользователя для поиска:", cleanedUsername);
+
+    let userExists = db.some(user => user.username === cleanedUsername);
+
+    console.log("Пользователь найден:", userExists);
+
+    if (userExists) {
+      let user = db.find(user => user.username === cleanedUsername);
+      user.balance += 2000;
+      user.refLinkUsed = true;
+      fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
+      await bot.sendMessage(msg.chat.id, "Мы передали ему спасибо");
+    } else {
+      await bot.sendMessage(msg.chat.id, "Такого пользователя не существует");
+    }
+    
+    cleanedUsername = undefined;
   }
-
-  console.log("Имя пользователя для поиска:", cleanedUsername);
-
-  let userExists = db.some(user => user.username === cleanedUsername);
-
-  console.log("Пользователь найден:", userExists);
-
-  if (userExists) {
-    let user = db.find(user => user.username === cleanedUsername);
-    user.balance += 2000;
-    fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
-    await bot.sendMessage(msg.chat.id, "Мы передали ему спасибо");
-  } else {
-    await bot.sendMessage(msg.chat.id, "Такого пользователя не существует");
-  }
-  
-  // Обновляем cleanedUsername
-  cleanedUsername = undefined;
 }
 
 
