@@ -56,7 +56,7 @@ async function checkPromo(bot, msg) {
     );
     promo.name = {};
     fs.writeFileSync(
-      "../db/promos/promos.json",
+      "./assets/db/promos/promos.json",
       JSON.stringify(promo.text, null, "\t")
     );
   }
