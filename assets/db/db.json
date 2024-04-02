@@ -1,17 +1,379 @@
 [
 	{
-		"username": "bostonBeats",
-		"first_name": "tomori",
-		"id": 930996637,
-		"balance": 0,
-		"rating": null,
-		"inventory": [],
+		"username": "Ilyxxhr",
+		"first_name": "Илья",
+		"id": -1001827009626,
+		"balance": 7,
+		"rating": 70,
+		"inventory": [
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Беатрис",
+				"cardPhoto": "AgACAgIAAxkBAAI4ZGYH9nOWo9i17xLDVBX5pCv3UyRtAAI41TEb4-ZBSIRxdB0usjH2AQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			}
+		],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
-		"looseMatches": 0
+		"looseMatches": 0,
+		"lastCardUseTime": 1711817147607
+	},
+	{
+		"username": "SongStarfall",
+		"first_name": "[⋆] 𝗦𝗼𝗻𝗴𝗦𝘁𝗮𝗿𝗳𝗮𝗹𝗹",
+		"last_name": "🤍❤️💛⚔️🔥",
+		"id": 5705707834,
+		"balance": 503,
+		"rating": 70,
+		"inventory": [
+			{
+				"cardName": "Чип",
+				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
+				"cardPower": 320,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "580"
+			},
+			{
+				"cardName": "Атлас",
+				"cardPhoto": "AgACAgIAAxkBAAIwvmYB1ocM9VWa0vBYXDgaayAGbquMAAKR1zEbg_IRSD-abrLxvg56AQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "700"
+			},
+			{
+				"cardName": "Клинт",
+				"cardPhoto": "AgACAgIAAxkBAAI4imYH93E3q_E7l6v7Gd5xCM48l1CEAAJB1TEb4-ZBSJbZOXE7MFFxAQADAgADcwADNAQ",
+				"cardPower": 700,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Акай",
+				"cardPhoto": "AgACAgIAAxkBAAI272YHz3ovoJbcboLbJzh1Hsme8J9aAAJX1DEb4-ZBSHk8XduoJbosAQADAgADcwADNAQ",
+				"cardPower": 520,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "500"
+			},
+			{
+				"cardName": "Дигги",
+				"cardPhoto": "AgACAgIAAxkBAAI31WYH54b4AAFYB1gsl1u3Km_nk_0hvwAC79QxG-PmQUgDF4a_GKjLKgEAAwIAA3MAAzQE",
+				"cardPower": 550,
+				"cardSection": "5",
+				"cardRarity": "50",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Кайя",
+				"cardPhoto": "AgACAgIAAxkBAAI4F2YH7adhNsQ_A4bFts44fcRarRLDAAIQ1TEb4-ZBSPkpB0SRP4JaAQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712031210997
+	},
+	{
+		"username": "ffkk1235",
+		"first_name": "Un ruso infiltrado⚔️",
+		"id": 799300626,
+		"balance": 151,
+		"rating": 20,
+		"inventory": [
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Клауд",
+				"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
+				"cardPower": 700,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			},
+			{
+				"cardName": "Кармила",
+				"cardPhoto": "AgACAgIAAxkBAAI3s2YH5RNN0d-Ylq8WFhhy-Uk5K0RWAALQ1DEb4-ZBSOy21X5MPSB4AQADAgADcwADNAQ",
+				"cardPower": 460,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "550"
+			},
+			{
+				"cardName": "Флорин",
+				"cardPhoto": "AgACAgIAAxkBAAI3oGYH5KXa7hOaw1scjDFm7ZGDE4l3AALO1DEb4-ZBSJ3bdsjkYW14AQADAgADcwADNAQ",
+				"cardPower": 320,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "590"
+			},
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			},
+			{
+				"cardName": "Лесли",
+				"cardPhoto": "AgACAgIAAxkBAAI_0GYK6mtlPvryU2U8_mEGUcLPUklHAAKi4DEbYOxRSMrp0GaGzm78AQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Ханаби",
+				"cardPhoto": "AgACAgIAAxkBAAI7r2YIR0o8Qq-sBsxQdZiA7ZSk-HljAALB1zEb4-ZBSHJEQutf13wyAQADAgADcwADNAQ",
+				"cardPower": 680,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712035541205,
+		"refLinkUsed": true
+	},
+	{
+		"username": "arts_holv",
+		"first_name": "⚙️ Админ панель",
+		"id": 749635133,
+		"balance": 1,
+		"rating": 20,
+		"inventory": [
+			{
+				"cardName": "Атлас",
+				"cardPhoto": "AgACAgIAAxkBAAIwvmYB1ocM9VWa0vBYXDgaayAGbquMAAKR1zEbg_IRSD-abrLxvg56AQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "700"
+			},
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			},
+			{
+				"cardName": "Эстес",
+				"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
+				"cardPower": 390,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "620"
+			},
+			{
+				"cardName": "Иксия",
+				"cardPhoto": "AgACAgIAAxkBAAI7xGYIR7Tb3UxgmzD2J5Vx4f4jRdQlAALC1zEb4-ZBSML9GROVhX-MAQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Иритель",
+				"cardPhoto": "AgACAgIAAxkBAAI43WYH_7AiNjU5V93HUFoOi1gagTHZAAJr1TEb4-ZBSMuPrJYl6jLWAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			},
+			{
+				"cardName": "Хильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3ImYH0Kd_VfWzJE9tnmTUJTfW0nnRAAJf1DEb4-ZBSDKLfNlv_FmoAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Кайя",
+				"cardPhoto": "AgACAgIAAxkBAAI4F2YH7adhNsQ_A4bFts44fcRarRLDAAIQ1TEb4-ZBSPkpB0SRP4JaAQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			},
+			{
+				"cardName": "Мия",
+				"cardPhoto": "AgACAgIAAxkBAAJAAWYK6xeIFor3gXWQ-rbo46N3l7hpAAKg4DEbYOxRSK_9bby1zgpXAQADAgADcwADNAQ",
+				"cardPower": 710,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "280"
+			},
+			{
+				"cardName": "Броуди",
+				"cardPhoto": "AgACAgIAAxkBAAI4tWYH_ZMopbHh8UUTl3C2jOQG8LjFAAJd1TEb4-ZBSIyuTzo0lQG7AQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": true,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712029009288,
+		"refLinkUsed": true
+	},
+	{
+		"username": "VesTNIk023",
+		"first_name": "𝕍𝕖𝕤𝕋𝕟𝕀𝕂",
+		"id": 1656527622,
+		"balance": 1,
+		"rating": 10,
+		"inventory": [
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAI4yGYH_oFdQjyckGQKbOd1SxGjR4n7AAJi1TEb4-ZBSO8taqNfvok5AQADAgADcwADNAQ",
+				"cardPower": 730,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711805840439
+	},
+	{
+		"username": "Liisenok22",
+		"first_name": "βê§ųмŀlάя",
+		"id": 5488507885,
+		"balance": 1,
+		"rating": 10,
+		"inventory": [
+			{
+				"cardName": "Ангела",
+				"cardPhoto": "AgACAgIAAxkBAAI3jWYH4kdnd3JtHvgeMDxBZAzqagyqAAK81DEb4-ZBSCMdGtFE2n5AAQADAgADcwADNAQ",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "420"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711826143035
+	},
+	{
+		"username": "bostonBeats",
+		"first_name": "tomori",
+		"id": 930996637,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAI4yGYH_oFdQjyckGQKbOd1SxGjR4n7AAJi1TEb4-ZBSO8taqNfvok5AQADAgADcwADNAQ",
+				"cardPower": 730,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711812067960
 	},
 	{
 		"username": "hashfuck",
@@ -29,6 +391,15 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "610"
+			},
+			{
+				"cardName": "Эстес",
+				"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
+				"cardPower": 390,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "620"
 			}
 		],
 		"matchInventory": [],
@@ -37,7 +408,2360 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1711752112808,
+		"lastCardUseTime": 1711806183740,
 		"refLinkUsed": true
+	},
+	{
+		"username": "ory076",
+		"first_name": "Мария",
+		"id": 6011167057,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Лолита",
+				"cardPhoto": "AgACAgIAAxkBAAIwrWYB1jsEsT-3ph2PKOWfesRzrm5cAAKP1zEbg_IRSLg0rR-gl0vkAQADAgADcwADNAQ",
+				"cardPower": 350,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "740"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711770065584
+	},
+	{
+		"username": "nerotyan",
+		"first_name": "nero^^",
+		"id": 2066792816,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Дигги",
+				"cardPhoto": "AgACAgIAAxkBAAI31WYH54b4AAFYB1gsl1u3Km_nk_0hvwAC79QxG-PmQUgDF4a_GKjLKgEAAwIAA3MAAzQE",
+				"cardPower": 550,
+				"cardSection": "5",
+				"cardRarity": "50",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAI4yGYH_oFdQjyckGQKbOd1SxGjR4n7AAJi1TEb4-ZBSO8taqNfvok5AQADAgADcwADNAQ",
+				"cardPower": 730,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Хильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3ImYH0Kd_VfWzJE9tnmTUJTfW0nnRAAJf1DEb4-ZBSDKLfNlv_FmoAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712005005665,
+		"refLinkUsed": true
+	},
+	{
+		"username": "Lapa076",
+		"first_name": "Мари",
+		"id": 6011167057,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Лолита",
+				"cardPhoto": "AgACAgIAAxkBAAIwrWYB1jsEsT-3ph2PKOWfesRzrm5cAAKP1zEbg_IRSLg0rR-gl0vkAQADAgADcwADNAQ",
+				"cardPower": 350,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "740"
+			},
+			{
+				"cardName": "Кармила",
+				"cardPhoto": "AgACAgIAAxkBAAI3s2YH5RNN0d-Ylq8WFhhy-Uk5K0RWAALQ1DEb4-ZBSOy21X5MPSB4AQADAgADcwADNAQ",
+				"cardPower": 460,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "550"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711813668427
+	},
+	{
+		"username": "Vichernyi",
+		"first_name": "Ви",
+		"id": 6927950950,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711786765250
+	},
+	{
+		"username": "God_deception",
+		"first_name": "Святой?성자.",
+		"id": 5725774819,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Флорин",
+				"cardPhoto": "AgACAgIAAxkBAAI3oGYH5KXa7hOaw1scjDFm7ZGDE4l3AALO1DEb4-ZBSJ3bdsjkYW14AQADAgADcwADNAQ",
+				"cardPower": 320,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "590"
+			},
+			{
+				"cardName": "Броуди",
+				"cardPhoto": "AgACAgIAAxkBAAI4tWYH_ZMopbHh8UUTl3C2jOQG8LjFAAJd1TEb4-ZBSIyuTzo0lQG7AQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Акай",
+				"cardPhoto": "AgACAgIAAxkBAAI272YHz3ovoJbcboLbJzh1Hsme8J9aAAJX1DEb4-ZBSHk8XduoJbosAQADAgADcwADNAQ",
+				"cardPower": 520,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "500"
+			},
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			},
+			{
+				"cardName": "Харит",
+				"cardPhoto": "AgACAgIAAxkBAAJComYLBuNGytcFI2TGORnkN7zER3HnAAKi2TEbtc5ZSKTAZYreXL1vAQADAgADcwADNAQ",
+				"cardPower": 700,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			},
+			{
+				"cardName": "Хаябуса",
+				"cardPhoto": "AgACAgIAAxkBAAJCeGYLBgcqylEgz9iobcu11sEBqNRpAAKd2TEbtc5ZSBBRZoJ5QoYOAQADAgADcwADNAQ",
+				"cardPower": 700,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "310"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712036632690
+	},
+	{
+		"username": "safarinx",
+		"first_name": "safArinX",
+		"id": 841751474,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Хуфра",
+				"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
+				"cardPower": 430,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			},
+			{
+				"cardName": "Броуди",
+				"cardPhoto": "AgACAgIAAxkBAAI4tWYH_ZMopbHh8UUTl3C2jOQG8LjFAAJd1TEb4-ZBSIyuTzo0lQG7AQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Матильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3SWYH0fx5zTPjo5HXGq111fNpe7jeAAJr1DEb4-ZBSBMKLE7jKx5XAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Кэрри",
+				"cardPhoto": "AgACAgIAAxkBAAI632YIPmMtZb7s-chErDCvj6W3zj-qAAKc1zEb4-ZBSE_TNqF57YLQAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			},
+			{
+				"cardName": "Эстес",
+				"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
+				"cardPower": 390,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "620"
+			},
+			{
+				"cardName": "Джой",
+				"cardPhoto": "AgACAgIAAxkBAAJCxGYLB0L3gOVpR9bZnzZDBsXOFzrpAAKk2TEbtc5ZSF-C8QO6pSGWAQADAgADcwADNAQ",
+				"cardPower": 680,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			},
+			{
+				"cardName": "Хильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3ImYH0Kd_VfWzJE9tnmTUJTfW0nnRAAJf1DEb4-ZBSDKLfNlv_FmoAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712021978644
+	},
+	{
+		"username": "your_shadow2",
+		"first_name": "Good",
+		"last_name": "Morning🌞",
+		"id": 5701336508,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Хилос",
+				"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "610"
+			},
+			{
+				"cardName": "Матильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3SWYH0fx5zTPjo5HXGq111fNpe7jeAAJr1DEb4-ZBSBMKLE7jKx5XAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Чип",
+				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
+				"cardPower": 320,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "580"
+			},
+			{
+				"cardName": "Натан",
+				"cardPhoto": "AgACAgIAAxkBAAJAK2YK7E1QRzYMggledHs2S6n6cvZYAAIJ2TEbtc5ZSDGANt41fJyAAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711994857320
+	},
+	{
+		"username": "YoureSmileSunShine",
+		"first_name": "Sunny ☀",
+		"id": 5645083689,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			},
+			{
+				"cardName": "Белерик",
+				"cardPhoto": "AgACAgIAAxkBAAI3M2YH0QXhuoDMgGyEvkeeI2siN61KAAJh1DEb4-ZBSM0cX5klLUFaAQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			},
+			{
+				"cardName": "Аулус",
+				"cardPhoto": "AgACAgIAAxkBAAJBuGYK-wR1vls9JgoxOQOiD9YcAAHCWgACS9kxG7XOWUgWZHJVpQhPfgEAAwIAA3MAAzQE",
+				"cardPower": 650,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712002774957
+	},
+	{
+		"first_name": "ᦓꫝꫀ᥅ꪮꪀ",
+		"id": 6427765275,
+		"balance": 250,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			},
+			{
+				"cardName": "Минотавр",
+				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "650"
+			},
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Рафаэль",
+				"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
+				"cardPower": 480,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "540"
+			},
+			{
+				"cardName": "Флорин",
+				"cardPhoto": "AgACAgIAAxkBAAI3oGYH5KXa7hOaw1scjDFm7ZGDE4l3AALO1DEb4-ZBSJ3bdsjkYW14AQADAgADcwADNAQ",
+				"cardPower": 320,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "590"
+			},
+			{
+				"cardName": "Хелкарт",
+				"cardPhoto": "AgACAgIAAxkBAAJCkWYLBqjC22GeInfATEKu7gJipoHNAAKh2TEbtc5ZSL7W2ykBuzUKAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712019773561
+	},
+	{
+		"username": "MIYUKIALOOO",
+		"first_name": "Miyuki",
+		"id": 1966302851,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAI4yGYH_oFdQjyckGQKbOd1SxGjR4n7AAJi1TEb4-ZBSO8taqNfvok5AQADAgADcwADNAQ",
+				"cardPower": 730,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Акай",
+				"cardPhoto": "AgACAgIAAxkBAAI272YHz3ovoJbcboLbJzh1Hsme8J9aAAJX1DEb4-ZBSHk8XduoJbosAQADAgADcwADNAQ",
+				"cardPower": 520,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "500"
+			},
+			{
+				"cardName": "Эстес",
+				"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
+				"cardPower": 390,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "620"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712000493217
+	},
+	{
+		"username": "Hawkins_x",
+		"first_name": "Jim",
+		"last_name": "Hawkins",
+		"id": 5844990522,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Джонсон",
+				"cardPhoto": "AgACAgIAAxkBAAI4OWYH7h3zr7Ih_Gc1l9CM8gYZAm8CAAIV1TEb4-ZBSAzk4tfZmSk6AQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711795898129
+	},
+	{
+		"username": "Naimudreishi",
+		"first_name": "Мудрец",
+		"id": 787484550,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Хуфра",
+				"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
+				"cardPower": 430,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711798897005
+	},
+	{
+		"username": "KishibeRohanSensei",
+		"first_name": "|C.マ.Y|",
+		"id": 1147895931,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Рафаэль",
+				"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
+				"cardPower": 480,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "540"
+			},
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			},
+			{
+				"cardName": "Иритель",
+				"cardPhoto": "AgACAgIAAxkBAAI43WYH_7AiNjU5V93HUFoOi1gagTHZAAJr1TEb4-ZBSMuPrJYl6jLWAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			},
+			{
+				"cardName": "Беатрис",
+				"cardPhoto": "AgACAgIAAxkBAAI4ZGYH9nOWo9i17xLDVBX5pCv3UyRtAAI41TEb4-ZBSIRxdB0usjH2AQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			},
+			{
+				"cardName": "Хильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3ImYH0Kd_VfWzJE9tnmTUJTfW0nnRAAJf1DEb4-ZBSDKLfNlv_FmoAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Клауд",
+				"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
+				"cardPower": 700,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712031303371
+	},
+	{
+		"username": "grozaRuservera",
+		"first_name": "🪐— 𝐈𝐭'𝐬 𝐰𝐑𝐫𝐞𝐬𝐭𝐋𝟑𝐬 🐢🕸",
+		"id": 6929513940,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Хуфра",
+				"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
+				"cardPower": 430,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			},
+			{
+				"cardName": "Минотавр",
+				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "650"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711994864167
+	},
+	{
+		"username": "whitefox_geto",
+		"first_name": "Nikita",
+		"id": 5007596596,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Ангела",
+				"cardPhoto": "AgACAgIAAxkBAAI3jWYH4kdnd3JtHvgeMDxBZAzqagyqAAK81DEb4-ZBSCMdGtFE2n5AAQADAgADcwADNAQ",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "420"
+			},
+			{
+				"cardName": "Иксия",
+				"cardPhoto": "AgACAgIAAxkBAAI7xGYIR7Tb3UxgmzD2J5Vx4f4jRdQlAALC1zEb4-ZBSML9GROVhX-MAQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711990310697
+	},
+	{
+		"username": "mimikkosa",
+		"first_name": "[His name is] chance",
+		"last_name": "salvation",
+		"id": 1257659017,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Клауд",
+				"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
+				"cardPower": 700,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			},
+			{
+				"cardName": "Иксия",
+				"cardPhoto": "AgACAgIAAxkBAAI7xGYIR7Tb3UxgmzD2J5Vx4f4jRdQlAALC1zEb4-ZBSML9GROVhX-MAQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711991127786
+	},
+	{
+		"username": "silenchouse",
+		"first_name": "̶𝚙̶𝚛̶𝚘̶𝚍̶𝚞̶𝚌̶𝚝̶𝚒̶𝚘̶𝚗̶≾̶𝚍.𝚠.𝚑𒉭",
+		"id": 5196394405,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711809940979
+	},
+	{
+		"username": "anastasiya_homa",
+		"first_name": "Анастасия 🖤",
+		"id": 6466099929,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Рафаэль",
+				"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
+				"cardPower": 480,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "540"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711814722973
+	},
+	{
+		"username": "zi1890",
+		"first_name": "Саша",
+		"id": 1385353728,
+		"balance": 370,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Броуди",
+				"cardPhoto": "AgACAgIAAxkBAAI4tWYH_ZMopbHh8UUTl3C2jOQG8LjFAAJd1TEb4-ZBSIyuTzo0lQG7AQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711836434721
+	},
+	{
+		"username": "legendar1ty2",
+		"first_name": "Дима♡",
+		"id": 5642651333,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			},
+			{
+				"cardName": "Матильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3SWYH0fx5zTPjo5HXGq111fNpe7jeAAJr1DEb4-ZBSBMKLE7jKx5XAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Эстес",
+				"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
+				"cardPower": 390,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "620"
+			},
+			{
+				"cardName": "Кимми",
+				"cardPhoto": "AgACAgIAAxkBAAI7hWYIRcISsgfrqIXvk2ReBRFVXLUwAAK91zEb4-ZBSP0DbToLTWlTAQADAgADcwADNAQ",
+				"cardPower": 610,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			},
+			{
+				"cardName": "Ханаби",
+				"cardPhoto": "AgACAgIAAxkBAAI7r2YIR0o8Qq-sBsxQdZiA7ZSk-HljAALB1zEb4-ZBSHJEQutf13wyAQADAgADcwADNAQ",
+				"cardPower": 680,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			},
+			{
+				"cardName": "ВанВан",
+				"cardPhoto": "AgACAgIAAxkBAAJAgWYK7ePGZWPNEieEMfHAcgc_EJO5AAIN2TEbtc5ZSNCRy1WWbYB2AQADAgADcwADNAQ",
+				"cardPower": 750,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712022768991
+	},
+	{
+		"username": "hotwheeellls",
+		"first_name": "hotwheels",
+		"id": 458654994,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "TheSmuzi",
+		"first_name": "TheSmuzi",
+		"id": 5422618246,
+		"balance": 240,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Эстес",
+				"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
+				"cardPower": 390,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "620"
+			},
+			{
+				"cardName": "Хуфра",
+				"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
+				"cardPower": 430,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			},
+			{
+				"cardName": "Рафаэль",
+				"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
+				"cardPower": 480,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "540"
+			},
+			{
+				"cardName": "Лолита",
+				"cardPhoto": "AgACAgIAAxkBAAIwrWYB1jsEsT-3ph2PKOWfesRzrm5cAAKP1zEbg_IRSLg0rR-gl0vkAQADAgADcwADNAQ",
+				"cardPower": 350,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "740"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712037803181
+	},
+	{
+		"username": "seventeeenen",
+		"first_name": "anonimous",
+		"id": 6558441168,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Клинт",
+				"cardPhoto": "AgACAgIAAxkBAAI4imYH93E3q_E7l6v7Gd5xCM48l1CEAAJB1TEb4-ZBSJbZOXE7MFFxAQADAgADcwADNAQ",
+				"cardPower": 700,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711815663841
+	},
+	{
+		"username": "Nf_meec",
+		"first_name": "Neafils",
+		"id": 1328029150,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "whooduck",
+		"first_name": "Кружева",
+		"last_name": "ぉぴこし",
+		"id": 5116606689,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Дигги",
+				"cardPhoto": "AgACAgIAAxkBAAI31WYH54b4AAFYB1gsl1u3Km_nk_0hvwAC79QxG-PmQUgDF4a_GKjLKgEAAwIAA3MAAzQE",
+				"cardPower": 550,
+				"cardSection": "5",
+				"cardRarity": "50",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711815768119
+	},
+	{
+		"username": "danilwwkl",
+		"first_name": "Данил",
+		"id": 692634700,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Минотавр",
+				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "650"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711815953729
+	},
+	{
+		"username": "rickreygan",
+		"first_name": "Денис",
+		"last_name": "Осьминин",
+		"id": 795155179,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Хилос",
+				"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "610"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711815977508
+	},
+	{
+		"username": "Ulqio_ra",
+		"first_name": "Кирилл",
+		"last_name": "Линник",
+		"id": 1774850122,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Минотавр",
+				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "650"
+			},
+			{
+				"cardName": "Хилос",
+				"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "610"
+			},
+			{
+				"cardName": "Хелкарт",
+				"cardPhoto": "AgACAgIAAxkBAAJCkWYLBqjC22GeInfATEKu7gJipoHNAAKh2TEbtc5ZSL7W2ykBuzUKAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712038662728
+	},
+	{
+		"username": "Vash_greh",
+		"first_name": "றнε(ßćề)ήѻφմґ",
+		"id": 1618901461,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711816512368
+	},
+	{
+		"username": "Kurapika_1",
+		"first_name": "Владислав",
+		"last_name": "Гусеничкович",
+		"id": 987204482,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Джонсон",
+				"cardPhoto": "AgACAgIAAxkBAAI4OWYH7h3zr7Ih_Gc1l9CM8gYZAm8CAAIV1TEb4-ZBSAzk4tfZmSk6AQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			},
+			{
+				"cardName": "Бруно",
+				"cardPhoto": "AgACAgIAAxkBAAI4yGYH_oFdQjyckGQKbOd1SxGjR4n7AAJi1TEb4-ZBSO8taqNfvok5AQADAgADcwADNAQ",
+				"cardPower": 730,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Иритель",
+				"cardPhoto": "AgACAgIAAxkBAAI43WYH_7AiNjU5V93HUFoOi1gagTHZAAJr1TEb4-ZBSMuPrJYl6jLWAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712037898003
+	},
+	{
+		"username": "Satykulovv",
+		"first_name": "Альяса",
+		"id": 1111370935,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "Cureowaaa",
+		"first_name": "Victoria's Husband",
+		"id": 6259570920,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Иритель",
+				"cardPhoto": "AgACAgIAAxkBAAI43WYH_7AiNjU5V93HUFoOi1gagTHZAAJr1TEb4-ZBSMuPrJYl6jLWAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711817324505
+	},
+	{
+		"username": "i124q_0",
+		"first_name": "Serge 𒉭",
+		"id": 1683706559,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Минотавр",
+				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "650"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711817832144
+	},
+	{
+		"username": "meysder",
+		"first_name": "Meysder",
+		"id": 5297067422,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			},
+			{
+				"cardName": "Хильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3ImYH0Kd_VfWzJE9tnmTUJTfW0nnRAAJf1DEb4-ZBSDKLfNlv_FmoAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			},
+			{
+				"cardName": "Атлас",
+				"cardPhoto": "AgACAgIAAxkBAAIwvmYB1ocM9VWa0vBYXDgaayAGbquMAAKR1zEbg_IRSD-abrLxvg56AQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "700"
+			},
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711999757192
+	},
+	{
+		"username": "weehbek",
+		"first_name": "weehbek",
+		"id": 5190747850,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Франко",
+				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "520"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711818151293
+	},
+	{
+		"username": "MoDNik58",
+		"first_name": "안드레이 모드니크",
+		"id": 874192537,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Ангела",
+				"cardPhoto": "AgACAgIAAxkBAAI3jWYH4kdnd3JtHvgeMDxBZAzqagyqAAK81DEb4-ZBSCMdGtFE2n5AAQADAgADcwADNAQ",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "420"
+			},
+			{
+				"cardName": "Кармила",
+				"cardPhoto": "AgACAgIAAxkBAAI3s2YH5RNN0d-Ylq8WFhhy-Uk5K0RWAALQ1DEb4-ZBSOy21X5MPSB4AQADAgADcwADNAQ",
+				"cardPower": 460,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "550"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711990722514
+	},
+	{
+		"username": "OccupantML",
+		"first_name": "Occupant.",
+		"last_name": "🐊",
+		"id": 1539964958,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Минотавр",
+				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "650"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711819173244
+	},
+	{
+		"username": "species_mortem",
+		"first_name": "𝓜𝓪𝓻𝓲𝓪",
+		"id": 789082424,
+		"balance": 2,
+		"rating": 20,
+		"inventory": [
+			{
+				"cardName": "Хуфра",
+				"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
+				"cardPower": 430,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			},
+			{
+				"cardName": "Кармила",
+				"cardPhoto": "AgACAgIAAxkBAAI3s2YH5RNN0d-Ylq8WFhhy-Uk5K0RWAALQ1DEb4-ZBSOy21X5MPSB4AQADAgADcwADNAQ",
+				"cardPower": 460,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "550"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711992935191
+	},
+	{
+		"username": "tgLBER34",
+		"first_name": "𝕯𝖆𝖗𝖐𝖂𝖔𝖑𝖋♡",
+		"id": 1297999978,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Кайя",
+				"cardPhoto": "AgACAgIAAxkBAAI4F2YH7adhNsQ_A4bFts44fcRarRLDAAIQ1TEb4-ZBSPkpB0SRP4JaAQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711821403162
+	},
+	{
+		"username": "prezamik",
+		"first_name": "Щенок Зевса",
+		"id": 972689003,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Атлас",
+				"cardPhoto": "AgACAgIAAxkBAAIwvmYB1ocM9VWa0vBYXDgaayAGbquMAAKR1zEbg_IRSD-abrLxvg56AQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "700"
+			},
+			{
+				"cardName": "Рафаэль",
+				"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
+				"cardPower": 480,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "540"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711987739310
+	},
+	{
+		"username": "Yagamiwin",
+		"first_name": "ᴋ ᴀ ᴢ ᴜ ʏ ᴀ",
+		"id": 954458580,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Минотавр",
+				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "650"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711824875570
+	},
+	{
+		"username": "sancheezx",
+		"first_name": "zubastick",
+		"id": -1001827009626,
+		"balance": 650,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Иритель",
+				"cardPhoto": "AgACAgIAAxkBAAI43WYH_7AiNjU5V93HUFoOi1gagTHZAAJr1TEb4-ZBSMuPrJYl6jLWAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712007211103
+	},
+	{
+		"username": "pustota237",
+		"first_name": "Лидер(нем.)",
+		"id": 776704095,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Матильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3SWYH0fx5zTPjo5HXGq111fNpe7jeAAJr1DEb4-ZBSBMKLE7jKx5XAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711831391654
+	},
+	{
+		"username": "Voin_0025",
+		"first_name": "Krieger",
+		"id": 1431177347,
+		"balance": 1,
+		"rating": 20,
+		"inventory": [
+			{
+				"cardName": "Клауд",
+				"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
+				"cardPower": 700,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			},
+			{
+				"cardName": "Минотавр",
+				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "650"
+			},
+			{
+				"cardName": "Клинт",
+				"cardPhoto": "AgACAgIAAxkBAAI4imYH93E3q_E7l6v7Gd5xCM48l1CEAAJB1TEb4-ZBSJbZOXE7MFFxAQADAgADcwADNAQ",
+				"cardPower": 700,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711987739350
+	},
+	{
+		"username": "Agleemm",
+		"first_name": "Aglena",
+		"last_name": "Le ~",
+		"id": 851531555,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "Valeronychka",
+		"first_name": "Валерия",
+		"last_name": "Вишневская",
+		"id": 5426203611,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "idessssss",
+		"first_name": "I love",
+		"last_name": "Carvi",
+		"id": 5214120331,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "reaniplay",
+		"first_name": "Kentucky",
+		"id": 1074403339,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "Zikhop",
+		"first_name": "ᚹᚴᛈᛋᛩⰓ",
+		"id": 6028157535,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Клауд",
+				"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
+				"cardPower": 700,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712019723019
+	},
+	{
+		"username": "guxind",
+		"first_name": "Gixund",
+		"id": 948202318,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Лолита",
+				"cardPhoto": "AgACAgIAAxkBAAIwrWYB1jsEsT-3ph2PKOWfesRzrm5cAAKP1zEbg_IRSLg0rR-gl0vkAQADAgADcwADNAQ",
+				"cardPower": 350,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "740"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711896953592
+	},
+	{
+		"username": "Ensignh",
+		"first_name": "heywath",
+		"id": 6294189490,
+		"balance": 2000,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Кайя",
+				"cardPhoto": "AgACAgIAAxkBAAI4F2YH7adhNsQ_A4bFts44fcRarRLDAAIQ1TEb4-ZBSPkpB0SRP4JaAQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711897530541,
+		"refLinkUsed": true
+	},
+	{
+		"username": "dersaky2",
+		"first_name": "Діма",
+		"id": 1439736631,
+		"balance": 4,
+		"rating": 40,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "GrooBook",
+		"first_name": "GrooV",
+		"id": 948205156,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Рафаэль",
+				"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
+				"cardPower": 480,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "540"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711901087242
+	},
+	{
+		"username": "dimasio9",
+		"first_name": "Дмитрий",
+		"id": 747895047,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Хилос",
+				"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
+				"cardPower": 400,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "610"
+			},
+			{
+				"cardName": "Баксий",
+				"cardPhoto": "AgACAgIAAxkBAAJBzmYK-7Qt2nLM2Y7YAAF1FbXksDj4RAACTNkxG7XOWUiULqySlGIzewEAAwIAA3MAAzQE",
+				"cardPower": 450,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "550"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712030661431
+	},
+	{
+		"username": "evgeniy0kot",
+		"first_name": "Евгений",
+		"id": 1245110180,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "ggfbhq",
+		"first_name": "мимимуму",
+		"id": 1637388201,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Хуфра",
+				"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
+				"cardPower": 430,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711987739347
+	},
+	{
+		"username": "naraleksanyan",
+		"first_name": "𝓝𝓪𝓻 𝓐𝓵𝓮𝓴𝓼𝓪𝓷𝔂𝓪𝓷✝️",
+		"id": 792229615,
+		"balance": 2,
+		"rating": 20,
+		"inventory": [
+			{
+				"cardName": "Клауд",
+				"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
+				"cardPower": 700,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711989892076
+	},
+	{
+		"username": "reraxXx",
+		"first_name": "ReraX",
+		"last_name": "._.",
+		"id": 959844016,
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"username": "Onix618",
+		"first_name": "🅾️NIX",
+		"id": 1395306512,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Клауд",
+				"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
+				"cardPower": 700,
+				"cardSection": "стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711990021130
+	},
+	{
+		"username": "p3rcyk",
+		"first_name": "p3rcy",
+		"id": 456539924,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Хуфра",
+				"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
+				"cardPower": 430,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711990719792
+	},
+	{
+		"username": "mikuhtsn",
+		"first_name": "༄",
+		"id": 6590390156,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Флорин",
+				"cardPhoto": "AgACAgIAAxkBAAI3oGYH5KXa7hOaw1scjDFm7ZGDE4l3AALO1DEb4-ZBSJ3bdsjkYW14AQADAgADcwADNAQ",
+				"cardPower": 320,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "590"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711991602049
+	},
+	{
+		"username": "Zl4To",
+		"first_name": "zlato",
+		"id": 1066258098,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Эстес",
+				"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
+				"cardPower": 390,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "620"
+			},
+			{
+				"cardName": "Кэрри",
+				"cardPhoto": "AgACAgIAAxkBAAI632YIPmMtZb7s-chErDCvj6W3zj-qAAKc1zEb4-ZBSE_TNqF57YLQAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			},
+			{
+				"cardName": "Дигги",
+				"cardPhoto": "AgACAgIAAxkBAAI31WYH54b4AAFYB1gsl1u3Km_nk_0hvwAC79QxG-PmQUgDF4a_GKjLKgEAAwIAA3MAAzQE",
+				"cardPower": 550,
+				"cardSection": "5",
+				"cardRarity": "50",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712032766505
+	},
+	{
+		"username": "Renshuk",
+		"first_name": "Renshu",
+		"id": 1950529317,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Беатрис",
+				"cardPhoto": "AgACAgIAAxkBAAI4ZGYH9nOWo9i17xLDVBX5pCv3UyRtAAI41TEb4-ZBSIRxdB0usjH2AQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711993057968
+	},
+	{
+		"username": "Apyley",
+		"first_name": "Апулей",
+		"last_name": "Вадим",
+		"id": 733317416,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "ВанВан",
+				"cardPhoto": "AgACAgIAAxkBAAJAgWYK7ePGZWPNEieEMfHAcgc_EJO5AAIN2TEbtc5ZSNCRy1WWbYB2AQADAgADcwADNAQ",
+				"cardPower": 750,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711993531871
+	},
+	{
+		"username": "Lipk11",
+		"first_name": "Arima",
+		"id": 2035276541,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Натан",
+				"cardPhoto": "AgACAgIAAxkBAAJAK2YK7E1QRzYMggledHs2S6n6cvZYAAIJ2TEbtc5ZSDGANt41fJyAAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711994968004
+	},
+	{
+		"username": "Fillip1234",
+		"first_name": "\"^\"",
+		"id": 1459003366,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Мелисса",
+				"cardPhoto": "AgACAgIAAxkBAAI_52YK6rH7IusktsO_LVHyOGcQgLO_AAKh4DEbYOxRSIPBilL2jncWAQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711995465081
+	},
+	{
+		"username": "Beren_r",
+		"first_name": "Богдан",
+		"id": 816271518,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Мелисса",
+				"cardPhoto": "AgACAgIAAxkBAAI_52YK6rH7IusktsO_LVHyOGcQgLO_AAKh4DEbYOxRSIPBilL2jncWAQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711996388124
+	},
+	{
+		"username": "qiqiwl",
+		"first_name": "qiqiwl",
+		"id": 1218174199,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Ли Сун-Син",
+				"cardPhoto": "AgACAgIAAxkBAAJA_2YK9jkDyhT-CPfcyRIJu5yvFzp3AAIu2TEbtc5ZSIwMTJPuVo5MAQADAgADcwADNAQ",
+				"cardPower": null,
+				"cardSection": "Эта карта ошибочная будет удалена",
+				"cardRarity": "5",
+				"cardDropChance": "1",
+				"cardDeffence": "2"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711996558536
+	},
+	{
+		"username": "Loveer_sun",
+		"first_name": "Кто знает, тот знает",
+		"id": 5114083238,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Кэрри",
+				"cardPhoto": "AgACAgIAAxkBAAI632YIPmMtZb7s-chErDCvj6W3zj-qAAKc1zEb4-ZBSE_TNqF57YLQAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711998376979
+	},
+	{
+		"username": "tvoiKaif12",
+		"first_name": "𝕋𝕧𝕠𝕚𝕂𝕒𝕚𝕗",
+		"id": 6500458886,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Харит",
+				"cardPhoto": "AgACAgIAAxkBAAJComYLBuNGytcFI2TGORnkN7zER3HnAAKi2TEbtc5ZSKTAZYreXL1vAQADAgADcwADNAQ",
+				"cardPower": 700,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1711999960042
+	},
+	{
+		"username": "Klassik4",
+		"first_name": "Klassik",
+		"id": 6154717933,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Атлас",
+				"cardPhoto": "AgACAgIAAxkBAAIwvmYB1ocM9VWa0vBYXDgaayAGbquMAAKR1zEbg_IRSD-abrLxvg56AQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "700"
+			},
+			{
+				"cardName": "Пополь и Купа",
+				"cardPhoto": "AgACAgIAAxkBAAJAW2YK7YH2YHW-LXSeg0wCEbNhBHesAAIM2TEbtc5ZSCQIp6NAR2eoAQADAgADcwADNAQ",
+				"cardPower": 680,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "330"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712029128279
+	},
+	{
+		"username": "Totsuki_sempai",
+		"first_name": "Totsuki",
+		"id": 1391045793,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Тигрил",
+				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+				"cardPower": 300,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "730"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712004761724
+	},
+	{
+		"username": "Infinity371",
+		"first_name": "🎀Infiniti🎀",
+		"id": 1270089728,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Кайя",
+				"cardPhoto": "AgACAgIAAxkBAAI4F2YH7adhNsQ_A4bFts44fcRarRLDAAIQ1TEb4-ZBSPkpB0SRP4JaAQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712005384494
+	},
+	{
+		"username": "iqkutabare",
+		"first_name": "kuroiq",
+		"id": 1196785540,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Дигги",
+				"cardPhoto": "AgACAgIAAxkBAAI31WYH54b4AAFYB1gsl1u3Km_nk_0hvwAC79QxG-PmQUgDF4a_GKjLKgEAAwIAA3MAAzQE",
+				"cardPower": 550,
+				"cardSection": "5",
+				"cardRarity": "50",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712018444802
+	},
+	{
+		"username": "dorian280",
+		"first_name": "ᴀɪsᴜʀᴜ",
+		"id": 5781582431,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Кусака",
+				"cardPhoto": "AgACAgIAAxkBAAJCs2YLBxaZcb0vR1DWmQcpoVk6FfegAAKj2TEbtc5ZSDNO7G0DfUEqAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712029534154
+	},
+	{
+		"username": "yakubchik_life",
+		"first_name": "Yakub",
+		"id": 321496403,
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Лолита",
+				"cardPhoto": "AgACAgIAAxkBAAIwrWYB1jsEsT-3ph2PKOWfesRzrm5cAAKP1zEbg_IRSLg0rR-gl0vkAQADAgADcwADNAQ",
+				"cardPower": 350,
+				"cardSection": "Поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "740"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712035534870
 	}
 ]

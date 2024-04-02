@@ -74,14 +74,15 @@ async function changeName(bot, msg) {
 }// Путь к файлу db.json
 
 async function refLink(bot, msg) {
-  if (msg.from && msg.from.username) {
+  let usedRefLinks = [];
 
-    if (db.some(user => user.username === msg.from.username && user.refLinkUsed)) {
-          return bot.sendMessage(msg.chat.id, "Вы уже использовали ссылку.");
+  if (msg.from && msg.from.username) {
+    if (usedRefLinks.includes(msg.from.username)) {
+      return bot.sendMessage(msg.chat.id, "Вы уже использовали ссылку.");
     }
 
     let cleanedUsername = msg.text;
-    
+
     if (!cleanedUsername) {
       console.log("Сообщение не содержит текст, вероятно, оно не введено пользователем.");
       return;
@@ -96,18 +97,16 @@ async function refLink(bot, msg) {
     if (userExists) {
       let user = db.find(user => user.username === cleanedUsername);
       user.balance += 2000;
-      user.refLinkUsed = true;
+      usedRefLinks.push(msg.from.username); // Добавляем имя пользователя в список использованных ссылок
       fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, '\t'));
       await bot.sendMessage(msg.chat.id, "Мы передали ему спасибо");
     } else {
       await bot.sendMessage(msg.chat.id, "Такого пользователя не существует");
     }
-    
+
     cleanedUsername = undefined;
   }
 }
-
-
 
 
 
