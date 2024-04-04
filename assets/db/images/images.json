@@ -493,5 +493,23 @@
 		"cardRarity": "5",
 		"cardDropChance": "50",
 		"cardDeffence": "320"
+	},
+	{
+		"cardName": "Ли Сун-Син",
+		"cardPhoto": "AgACAgIAAxkBAAJD72YLrjbE27AH9syWbhfXeaVZI5zPAALo5DEbiW5YSGvf65ByFzDPAQADAgADcwADNAQ",
+		"cardPower": 680,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "320"
+	},
+	{
+		"cardName": "Дигги",
+		"cardPhoto": "AgACAgIAAxkBAAJEAAFmC69vZjUQzhoGt9th2omiPvy21gAC6eQxG4luWEi5JTZhSwAB_RkBAAMCAANzAAM0BA",
+		"cardPower": 570,
+		"cardSection": "Поддержка",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "450"
 	}
 ]

@@ -3,8 +3,8 @@
 		"username": "Ilyxxhr",
 		"first_name": "Илья",
 		"id": -1001827009626,
-		"balance": 7,
-		"rating": 70,
+		"balance": 8,
+		"rating": 80,
 		"inventory": [
 			{
 				"cardName": "Тигрил",
@@ -289,15 +289,6 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Джонсон",
-				"cardPhoto": "AgACAgIAAxkBAAI4OWYH7h3zr7Ih_Gc1l9CM8gYZAm8CAAIV1TEb4-ZBSAzk4tfZmSk6AQADAgADcwADNAQ",
-				"cardPower": 450,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "600"
 			}
 		],
 		"matchInventory": [],
@@ -306,7 +297,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1712043674841,
+		"lastCardUseTime": 1712029009288,
 		"refLinkUsed": true
 	},
 	{
@@ -409,24 +400,6 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "620"
-			},
-			{
-				"cardName": "Белерик",
-				"cardPhoto": "AgACAgIAAxkBAAI3M2YH0QXhuoDMgGyEvkeeI2siN61KAAJh1DEb4-ZBSM0cX5klLUFaAQADAgADcwADNAQ",
-				"cardPower": 450,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "600"
-			},
-			{
-				"cardName": "Роджер",
-				"cardPhoto": "AgACAgIAAxkBAAJBJWYK92yBZGG2OliKbjycoaWRTzzKAAI32TEbtc5ZSHWXi5npH23KAQADAgADcwADNAQ",
-				"cardPower": 710,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "340"
 			}
 		],
 		"matchInventory": [],
@@ -435,7 +408,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1712218096626,
+		"lastCardUseTime": 1711806183740,
 		"refLinkUsed": true
 	},
 	{
@@ -819,15 +792,6 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Ханзо",
-				"cardPhoto": "AgACAgIAAxkBAAJCG2YK_h-c3ZNLIji1qcGpQTg8jeldAAJb2TEbtc5ZSPanyIfIuXh1AQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
 			}
 		],
 		"matchInventory": [],
@@ -836,7 +800,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1712043897632
+		"lastCardUseTime": 1712002774957
 	},
 	{
 		"first_name": "ᦓꫝꫀ᥅ꪮꪀ",
@@ -1788,15 +1752,6 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "550"
-			},
-			{
-				"cardName": "Хелкарт",
-				"cardPhoto": "AgACAgIAAxkBAAJCkWYLBqjC22GeInfATEKu7gJipoHNAAKh2TEbtc5ZSL7W2ykBuzUKAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
 			}
 		],
 		"matchInventory": [],
@@ -1805,7 +1760,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1712043491119
+		"lastCardUseTime": 1711990722514
 	},
 	{
 		"username": "OccupantML",
@@ -2050,11 +2005,11 @@
 		"last_name": "Le ~",
 		"id": 851531555,
 		"balance": 0,
-		"rating": null,
+		"rating": 40,
 		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
-		"isWaiting": false,
+		"isWaiting": true,
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0
@@ -2774,15 +2729,6 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Харли",
-				"cardPhoto": "AgACAgIAAxkBAAJCO2YK_696ltsBdeskTyJhySk3wg_YAAJh2TEbtc5ZSOZMLI4PNcSvAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
 			}
 		],
 		"matchInventory": [],
@@ -2791,7 +2737,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1712043622016
+		"lastCardUseTime": 1712029534154
 	},
 	{
 		"username": "yakubchik_life",
@@ -2819,29 +2765,129 @@
 		"lastCardUseTime": 1712035534870
 	},
 	{
-		"id": 6822709019,
-		"username": "Andrey_Smirnoffv",
-		"first_name": "Андрей",
-		"last_name": "Смирнов",
+		"id": 743950873,
+		"username": "mmorning_gloww",
+		"first_name": "Yu",
 		"balance": 0,
 		"rating": null,
-		"inventory": [
-			{
-				"cardName": "Харли",
-				"cardPhoto": "AgACAgIAAxkBAAJCO2YK_696ltsBdeskTyJhySk3wg_YAAJh2TEbtc5ZSOZMLI4PNcSvAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			}
-		],
+		"inventory": [],
 		"matchInventory": [],
 		"isAdmin": false,
 		"isWaiting": false,
 		"isMatch": false,
 		"wonMatches": 0,
-		"looseMatches": 0,
-		"lastCardUseTime": 1712218202806
+		"looseMatches": 0
+	},
+	{
+		"id": 733753392,
+		"username": "Badarti",
+		"first_name": "Bαdαrtι",
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"id": 1739782023,
+		"username": "Kokonoid1",
+		"first_name": "Benedetta's Enjoyer>>>",
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"id": 1798578065,
+		"username": "AKULA_360",
+		"first_name": "Orbit",
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"id": 1061010814,
+		"username": "Sanzuchik",
+		"first_name": "👤 Личный Профиль",
+		"balance": 0,
+		"rating": 20,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"id": 837847549,
+		"username": "eferyeg",
+		"first_name": "Егор",
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"id": 1370527193,
+		"username": "GraFiTchIiK",
+		"first_name": "PanDa",
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"id": 2110457437,
+		"username": "WkekW_123",
+		"first_name": "Кек",
+		"balance": 2,
+		"rating": 20,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
+	},
+	{
+		"id": 5325141737,
+		"username": "wotyez",
+		"first_name": "Анонкен",
+		"balance": 0,
+		"rating": null,
+		"inventory": [],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0
 	}
 ]
