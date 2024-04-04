@@ -48,26 +48,12 @@ const db = require('./assets/db/db.json');
 
 bot.setMyCommands(commands);
 
-bot.onText(/\/getсard/, async (msg) => {
-  const chatId = msg.chat.id;
-  if (msg.chat.type === 'group' || msg.chat.type === 'supergroup') {
-    let user = db.find(user => user.id === msg.from.id);
-    if (!user) {
-      await bot.sendMessage(msg.from.id, "Вы не зарегистрированы в нашей системе. Для получения карты вам необходимо зарегистрироваться.");
-      return;
-    }
-    giveRandomCardToUser(bot, msg);
-  } else {
-    await bot.sendMessage(msg.chat.id, 'Выберите команду:', userStartKeyboard);
-  }
-});
 
 bot.on("message", async (msg) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id;
+  const channelUsername = "@MCLPodPivom";
 
-  // Проверка подписки на канал
-  const channelUsername = "@MCLPodPivomTournament";
   try {
     const chatMember = await bot.getChatMember(channelUsername, userId);
     if (chatMember && (chatMember.status === "member" || chatMember.status === "administrator" || chatMember.status === "creator")) {
@@ -81,70 +67,76 @@ bot.on("message", async (msg) => {
     return;
   }
 
-  let user = db.find(user => user.id === msg.from.id)
+  let user = db.find(user => user.username === msg.from.username)
 
-  // Обработка сообщений в личных чатах
-  switch (msg.text) {
-    case "/start":
-      if (!user) {
-        db.push({
-          id: msg.from.id,
-          username: msg.from.username,
-          first_name: msg.from.first_name,
-          last_name: msg.from.last_name,
-          balance: 0,
-          rating: null,
-          inventory: [],
-          matchInventory: [],
-          isAdmin: false,
-          isWaiting: false,
-          isMatch: false,
-          wonMatches: 0,
-          looseMatches: 0,
+  if (msg.chat.type === 'group' || msg.chat.type === 'supergroup') {
+    if (msg.text === "/getсard" || msg.text === '🀄️ Получить карточку') {
+      giveRandomCardToUser(bot, msg);
+    }
+  } else {
+    switch (msg.text) {
+      case "/start":
+        if (!user) {
+          db.push({
+            id: msg.from.id,
+            username: msg.from.username,
+            first_name: msg.from.first_name,
+            last_name: msg.from.last_name,
+            balance: 0,
+            rating: null,
+            inventory: [],
+            matchInventory: [],
+            isAdmin: false,
+            isWaiting: false,
+            isMatch: false,
+            wonMatches: 0,
+            looseMatches: 0,
+          });
+          fs.writeFileSync("./assets/db/db.json", JSON.stringify(db, null, "\t"));
+          await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}`, userStartKeyboard);
+        } else {
+          const isAdminMessage = user.isAdmin ? "Вы админ!" : "";
+          await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}. ${isAdminMessage}`, user?.isAdmin ? adminStartKeyboard : userStartKeyboard);
+        }
+        break;
+      case "/profile":
+      case "👤 Личный Профиль":
+        sendProfileData(bot, msg);
+        break;
+      case "/arenas":
+      case "⚔️ Арены":
+        await bot.sendMessage(msg.chat.id, "Список Арен", arenaKeyboard);
+        break;
+      case "/shop":
+      case "🛒 Магазин паков":
+        await bot.sendMessage(msg.chat.id, '💰 Цена каждого "пака" равняется 2000 валюты\n\n💰 Повторяющиеся карты дают на баланс сумму, которая равна половине от силы полученной повторной карты', shopKeyboard);
+        break;
+      case "⚙️ Админ панель":
+        if (user?.isAdmin) {
+          await bot.sendMessage(msg.chat.id, "вот что ты можешь сделать", adminOptionsKeyboard);
+        }
+        break;
+      case "🀄️ Добавить карту в инвентарь матчей":
+      case "/addcardtomatch":
+        matchInventory(bot, msg);
+        break;
+      case "/top":
+        top(bot, msg);
+        break;
+      case "Реферальная ссылка":
+        await bot.sendMessage(msg.chat.id, "Введите имя пользователя от которого вы узнали про нас");
+        bot.once('message', async (nextMsg) => {
+          await refLink(bot, nextMsg);
         });
-        fs.writeFileSync("./assets/db/db.json", JSON.stringify(db, null, "\t"));
-        await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}`, userStartKeyboard);
-      } else {
-        const isAdminMessage = user.isAdmin ? "Вы админ!" : "";
-        await bot.sendMessage(msg.chat.id, `Привет ${msg.from.username}. ${isAdminMessage}`, user?.isAdmin ? adminStartKeyboard : userStartKeyboard);
-      }
-      break;
-    case "/profile":
-    case "👤 Личный Профиль":
-      sendProfileData(bot, msg);
-      break;
-    case "/arenas":
-    case "⚔️ Арены":
-      await bot.sendMessage(msg.chat.id, "Список Арен", arenaKeyboard);
-      break;
-    case "/shop":
-    case "🛒 Магазин паков":
-      await bot.sendMessage(msg.chat.id, '💰 Цена каждого "пака" равняется 2000 валюты\n\n💰 Повторяющиеся карты дают на баланс сумму, которая равна половине от силы полученной повторной карты', shopKeyboard);
-      break;
-    case "⚙️ Админ панель":
-      if (user?.isAdmin) {
-        await bot.sendMessage(msg.chat.id, "вот что ты можешь сделать", adminOptionsKeyboard);
-      }
-      break;
-    case "🀄️ Добавить карту в инвентарь матчей":
-    case "/addcardtomatch":
-      matchInventory(bot, msg);
-      break;
-    case "/top":
-      top(bot, msg);
-      break;
-    case "Реферальная ссылка":
-      await bot.sendMessage(msg.chat.id, "Введите имя пользователя от которого вы узнали про нас");
-      bot.once('message', async (nextMsg) => {
-        await refLink(bot, nextMsg);
-      });
-      break;
-    default:
-      // Остальные команды
-      break;
+        break;
+      case "🀄️ Получить карточку":
+      case "/getcard":
+        giveRandomCardToUser(bot, msg)
+      default:
+        break;
+    }
   }
 });
-
 
 bot.on("callback_query", async (msg) => {
   if (msg.data.startsWith("createPromo_")) {
@@ -201,16 +193,26 @@ bot.on("callback_query", async (msg) => {
   }
 });
 
+bot.onText(/\/getcard/, async (msg) => {
+  const chatId = msg.chat.id;
+  if (msg.chat.type === 'private') {
+    // Если это личное сообщение, отправляем случайную карту пользователю
+    giveRandomCardToUser(bot, msg);
+  } else {
+    // В остальных случаях (в группах или супергруппах) отправляем сообщение о выборе команды
+    giveRandomCardToUser(bot, msg);
+
+  }
+});
+
+
 bot.on("new_chat_members", async (msg) => {
   const chatId = msg.chat.id;
-  const channelUsername = "@MCLPodPivomTournament";
+  const channelUsername = "@MCLPodPivom";
   const botId = bot.botId;
 
   if (msg.new_chat_members.some(member => member.id === botId)) {
     await bot.sendMessage(chatId, "Привет! Спасибо за добавление меня в чат. Я могу реагировать только на команду /getCard.");
   }
 });
-
-
-
 bot.on("polling_error", console.log);

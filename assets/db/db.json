@@ -289,6 +289,15 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Джонсон",
+				"cardPhoto": "AgACAgIAAxkBAAI4OWYH7h3zr7Ih_Gc1l9CM8gYZAm8CAAIV1TEb4-ZBSAzk4tfZmSk6AQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
 			}
 		],
 		"matchInventory": [],
@@ -297,7 +306,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1712029009288,
+		"lastCardUseTime": 1712043674841,
 		"refLinkUsed": true
 	},
 	{
@@ -400,6 +409,24 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "620"
+			},
+			{
+				"cardName": "Белерик",
+				"cardPhoto": "AgACAgIAAxkBAAI3M2YH0QXhuoDMgGyEvkeeI2siN61KAAJh1DEb4-ZBSM0cX5klLUFaAQADAgADcwADNAQ",
+				"cardPower": 450,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "600"
+			},
+			{
+				"cardName": "Роджер",
+				"cardPhoto": "AgACAgIAAxkBAAJBJWYK92yBZGG2OliKbjycoaWRTzzKAAI32TEbtc5ZSHWXi5npH23KAQADAgADcwADNAQ",
+				"cardPower": 710,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "340"
 			}
 		],
 		"matchInventory": [],
@@ -408,7 +435,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1711806183740,
+		"lastCardUseTime": 1712218096626,
 		"refLinkUsed": true
 	},
 	{
@@ -792,6 +819,15 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "350"
+			},
+			{
+				"cardName": "Ханзо",
+				"cardPhoto": "AgACAgIAAxkBAAJCG2YK_h-c3ZNLIji1qcGpQTg8jeldAAJb2TEbtc5ZSPanyIfIuXh1AQADAgADcwADNAQ",
+				"cardPower": 750,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "250"
 			}
 		],
 		"matchInventory": [],
@@ -800,7 +836,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1712002774957
+		"lastCardUseTime": 1712043897632
 	},
 	{
 		"first_name": "ᦓꫝꫀ᥅ꪮꪀ",
@@ -1752,6 +1788,15 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "550"
+			},
+			{
+				"cardName": "Хелкарт",
+				"cardPhoto": "AgACAgIAAxkBAAJCkWYLBqjC22GeInfATEKu7gJipoHNAAKh2TEbtc5ZSL7W2ykBuzUKAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
 			}
 		],
 		"matchInventory": [],
@@ -1760,7 +1805,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1711990722514
+		"lastCardUseTime": 1712043491119
 	},
 	{
 		"username": "OccupantML",
@@ -2729,6 +2774,15 @@
 				"cardRarity": "5",
 				"cardDropChance": "50",
 				"cardDeffence": "350"
+			},
+			{
+				"cardName": "Харли",
+				"cardPhoto": "AgACAgIAAxkBAAJCO2YK_696ltsBdeskTyJhySk3wg_YAAJh2TEbtc5ZSOZMLI4PNcSvAQADAgADcwADNAQ",
+				"cardPower": 680,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
 			}
 		],
 		"matchInventory": [],
@@ -2737,7 +2791,7 @@
 		"isMatch": false,
 		"wonMatches": 0,
 		"looseMatches": 0,
-		"lastCardUseTime": 1712029534154
+		"lastCardUseTime": 1712043622016
 	},
 	{
 		"username": "yakubchik_life",
@@ -2763,5 +2817,31 @@
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1712035534870
+	},
+	{
+		"id": 6822709019,
+		"username": "Andrey_Smirnoffv",
+		"first_name": "Андрей",
+		"last_name": "Смирнов",
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Харли",
+				"cardPhoto": "AgACAgIAAxkBAAJCO2YK_696ltsBdeskTyJhySk3wg_YAAJh2TEbtc5ZSOZMLI4PNcSvAQADAgADcwADNAQ",
+				"cardPower": 680,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712218202806
 	}
 ]

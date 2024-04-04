@@ -3,6 +3,7 @@ const imagesData = require("../db/images/images.json");
 const db = require('../db/db.json'); // Загрузка данных из db.json
 
 async function giveRandomCardToUser(bot, msg) {
+  console.log("Функция вызывалась")
   try {
    
     const user = db.find(user => user.username === msg.from.username);
