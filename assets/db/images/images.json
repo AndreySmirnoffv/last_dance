@@ -511,5 +511,41 @@
 		"cardRarity": "5",
 		"cardDropChance": "50",
 		"cardDeffence": "450"
+	},
+	{
+		"cardName": "Джулиан",
+		"cardPhoto": "AgACAgIAAxkBAAJFiGYOdNmmsPux9gT8qxo8nEgoR4ZZAAID1TEbtvR5SNcKZaI2njYuAQADAgADcwADNAQ",
+		"cardPower": 700,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "320"
+	},
+	{
+		"cardName": "Карина",
+		"cardPhoto": "AgACAgIAAxkBAAJFmWYOdV-X4_bbH3Acd-I4NGxku_xZAAIE1TEbtvR5SO8-OP26dDOIAQADAgADcwADNAQ",
+		"cardPower": 700,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "340"
+	},
+	{
+		"cardName": "Ланселот",
+		"cardPhoto": "AgACAgIAAxkBAAJFrGYOdcgzAAH1wUt2S9eZCGOjKTnNaQACB9UxG7b0eUjzGJMBMv-pXAEAAwIAA3MAAzQE",
+		"cardPower": 690,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "340"
+	},
+	{
+		"cardName": "Леоморд",
+		"cardPhoto": "AgACAgIAAxkBAAJFv2YOdg5hLuSqfoiz8YeenJZZ-FtYAAII1TEbtvR5SNc2ZJezq5ZpAQADAgADcwADNAQ",
+		"cardPower": 650,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "360"
 	}
 ]

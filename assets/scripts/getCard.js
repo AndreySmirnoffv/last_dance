@@ -8,7 +8,7 @@ async function giveRandomCardToUser(bot, msg) {
    
     const user = db.find(user => user.username === msg.from.username);
     if (!user) {
-      return bot.sendMessage(
+      return await bot.sendMessage( // добавляем await
         msg.chat.id,
         'Произошла ошибка при выдаче карты. Попробуйте еще раз.',
       );
@@ -27,7 +27,7 @@ async function giveRandomCardToUser(bot, msg) {
       const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
       const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
 
-      return bot.sendMessage(
+      return await bot.sendMessage( // добавляем await
         msg.chat.id,
         `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
       );

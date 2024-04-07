@@ -210,7 +210,7 @@ async function processCallback(bot, msg) {
     currentUser.balance += 1;
     currentUser.rating += 10;
     
-    fs.writeFileSync( "../db/db.json", JSON.stringify(usersPath, null, '\t'));
+    fs.writeFileSync( "./assets/db/db.json", JSON.stringify(currentUser, null, '\t'));
 
     await bot.sendMessage(
       userId,
