@@ -3281,6 +3281,40 @@
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1712258696498
+	},
+	{
+		"id": 6822709019,
+		"username": "Andrey_Smirnoffv",
+		"first_name": "Андрей",
+		"last_name": "Смирнов",
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Ангела",
+				"cardPhoto": "AgACAgIAAxkBAAI3jWYH4kdnd3JtHvgeMDxBZAzqagyqAAK81DEb4-ZBSCMdGtFE2n5AAQADAgADcwADNAQ",
+				"cardPower": 500,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "420"
+			},
+			{
+				"cardName": "Хильда",
+				"cardPhoto": "AgACAgIAAxkBAAI3ImYH0Kd_VfWzJE9tnmTUJTfW0nnRAAJf1DEb4-ZBSDKLfNlv_FmoAQADAgADcwADNAQ",
+				"cardPower": 550,
+				"cardSection": "поддержка",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "450"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1712780000390
 	}
 ]
-

@@ -67,27 +67,29 @@ bot.on("message", async (msg) => {
       return;
     }
   } else {
-    if (msg.text === "/start") {
-      await bot.sendMessage(chatId, "Привет! Чтобы получить доступ к командам, подпишитесь на наш канал: " + channelUsername);
+    if (msg.text.startsWith("/")) {
+      if (msg.text === "/start") {
+        await bot.sendMessage(chatId, "Привет! Чтобы получить доступ к командам, подпишитесь на наш канал: @" + channelUsername, {
+          reply_markup: {
+            remove_keyboard: true
+          }
+        });
+      } else if (msg.text === "/getcard") {
+        giveRandomCardToUser(bot, msg);
+      } else {
+        await bot.sendMessage(chatId, "Неправильная команда. Доступные команды: /start, /getcard");
+      }
+    } else {
+      if (msg.chat.type === 'private') {
+        await bot.sendMessage(chatId, "Чтобы воспользоваться командами, отправьте их в общий чат.");
+      } else {
+        await bot.sendMessage(chatId, "Чтобы воспользоваться командами, отправьте их в личные сообщения боту.");
+      }
     }
   }
 
-  if (msg.chat.type !== 'private' && msg.text !== '/getcard') {
-    await bot.sendMessage(chatId, "Эта команда доступна только в личных сообщениях или воспользуйтесь командой /getcard.");
-    return; // Блокируем выполнение всех остальных команд в чатах
-  }
 
-  if (msg.text === "/getсard" || msg.text === '🀄️ Получить карточку') {
-    giveRandomCardToUser(bot, msg);
-    return;
-  }
 
-  if (msg.chat.type === 'group' || msg.chat.type === 'supergroup') {
-    if (msg.text !== '/getcard') {
-      await bot.sendMessage(chatId, "Эта команда доступна только в личных сообщениях или воспользуйтесь командой /getcard.");
-      return; // Блокируем выполнение всех остальных команд в чатах, кроме /getcard
-    }
-  }
 
 
   let user = db.find(user => user.username === msg.from.username)
