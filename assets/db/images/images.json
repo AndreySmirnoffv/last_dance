@@ -547,5 +547,33 @@
 		"cardRarity": "5",
 		"cardDropChance": "50",
 		"cardDeffence": "360"
+	},
+	{
+		"cardName": "Линг",
+		"cardPhoto": "AgACAgIAAxkBAAJKy2YVClLGR3bWECDUlhqgw3r3xoCbAAKZ2jEbTHqpSH9KzjVDPG9KAQADAgADcwADNAQ",
+		"cardPower": 720,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "320"
+	},
+	{
+		"cardName": "Мартис",
+		"cardPhoto": "AgACAgIAAxkBAAJK3GYVCqWQkEfSp3QvYseIyGcbb0EkAAKc2jEbTHqpSJNb0st28LjBAQADAgADcwADNAQ",
+		"cardPower": 700,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "350"
+	},
+	{
+		"cardName": "Наталья",
+		"cardPhoto": "AgACAgIAAxkBAAJK7WYVCup4s8U7Ndg_XEIm1miFsu46AAKg2jEbTHqpSEwtV8HQbzLmAQADAgADcwADNAQ",
+		"cardPower": 700,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "300"
 	}
 ]
+
