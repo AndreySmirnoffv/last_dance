@@ -155,7 +155,24 @@ async function addToWaitingRoom(bot, msg) {
 async function checkAndCreateMatch(bot, msg) {
   try {
     const waitingUsers = usersPath.find(user => user.isWaiting);
+    const lastUseTime = user.lastCardUseTime || 0;
+    const currentTime = Date.now();
+    const timeDiff = currentTime - lastUseTime;
+    const coolDownTime = 3 * 60 * 60 * 1000; // Изменение времени ожидания на 3 часа
 
+    const randomIndex = Math.floor(Math.random() * imagesData.length);
+    const randomCard = imagesData[randomIndex];
+
+    if (timeDiff < coolDownTime) {
+      const remainingTime = coolDownTime - timeDiff;
+      const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
+      const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
+
+      return await bot.sendMessage(
+        msg.chat.id,
+        `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
+      );
+    }
     if (waitingUsers.length == 2) {
       const userId1 = waitingUsers[0].username;
       const userId2 = waitingUsers[1].username;
@@ -164,29 +181,6 @@ async function checkAndCreateMatch(bot, msg) {
       currentUsers.find(user => user.username === userId2).isWaiting = false;
       currentUsers.find(user => user.username === userId1).isMatch = true;
       currentUsers.find(user => user.username === userId2).isMatch = true;
-
-      fs.writeFileSync(filePath, JSON.stringify(currentUsers, null, '\t'));
-
-      await bot.sendMessage(
-        msg.message.chat.id,
-        `Match created between @${userId1} and @${userId2}`,
-      );
-    }
-  } catch (error) {
-    await bot.sendMessage(msg.chat.id, 'Не мог создать матч:\n' + error);
-  }
-  try {
-    const currentUsers = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-    const waitingUsers = currentUsers.filter(user => user.isWaiting);
-
-    if (waitingUsers.length >= 2) {
-      const userId1 = waitingUsers[0].id;
-      const userId2 = waitingUsers[1].id;
-
-      currentUsers.find(user => user.id === userId1).isWaiting = false;
-      currentUsers.find(user => user.id === userId2).isWaiting = false;
-      currentUsers.find(user => user.id === userId1).isMatch = true;
-      currentUsers.find(user => user.id === userId2).isMatch = true;
 
       fs.writeFileSync(filePath, JSON.stringify(currentUsers, null, '\t'));
 
