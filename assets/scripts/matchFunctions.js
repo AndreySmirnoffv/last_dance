@@ -158,7 +158,7 @@ async function checkAndCreateMatch(bot, msg) {
     const lastUseTime = user.lastCardUseTime || 0;
     const currentTime = Date.now();
     const timeDiff = currentTime - lastUseTime;
-    const coolDownTime = 3 * 60 * 60 * 1000; // Изменение времени ожидания на 3 часа
+    const coolDownTime = 3 * 60 * 60 * 1000; 
 
     const randomIndex = Math.floor(Math.random() * imagesData.length);
     const randomCard = imagesData[randomIndex];
