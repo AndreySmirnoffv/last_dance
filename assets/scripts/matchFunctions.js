@@ -153,26 +153,8 @@ async function addToWaitingRoom(bot, msg) {
 }
 
 async function checkAndCreateMatch(bot, msg) {
-  try {
-    const waitingUsers = usersPath.find(user => user.isWaiting);
-    const lastUseTime = user.lastCardUseTime || 0;
-    const currentTime = Date.now();
-    const timeDiff = currentTime - lastUseTime;
-    const coolDownTime = 3 * 60 * 60 * 1000; 
-
-    const randomIndex = Math.floor(Math.random() * imagesData.length);
-    const randomCard = imagesData[randomIndex];
-
-    if (timeDiff < coolDownTime) {
-      const remainingTime = coolDownTime - timeDiff;
-      const remainingHours = Math.floor(remainingTime / (60 * 60 * 1000));
-      const remainingMinutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
-
-      return await bot.sendMessage(
-        msg.chat.id,
-        `Извините, но функция недоступна. Попробуйте снова через ${remainingHours} часов и ${remainingMinutes} минут.`,
-      );
-    }
+  try{
+    const waitingUsers = usersPath.find(user => user.isWaiting)
     if (waitingUsers.length == 2) {
       const userId1 = waitingUsers[0].username;
       const userId2 = waitingUsers[1].username;
@@ -195,21 +177,40 @@ async function checkAndCreateMatch(bot, msg) {
   }
 }
 
+
 async function processCallback(bot, msg) {
   const userId = msg.message.chat.id;
 
-  const currentUser = usersPath.find(user => user.id === userId); // Исправлено здесь
+  const currentUser = usersPath.find(user => user.id === userId);
+  
 
   if (currentUser) {
-    currentUser.balance += 1;
-    currentUser.rating += 10;
-    
-    fs.writeFileSync( "./assets/db/db.json", JSON.stringify(currentUser, null, '\t'));
+    const currentTime = new Date().getTime(); 
+    const lastActionTime = currentUser.lastActionTime || 0; 
 
-    await bot.sendMessage(
-      userId,
-      `Ваша валюта увеличена. Новый рейтинг: ${currentUser.rating}, Новая валюта: ${currentUser.balance}`,
-    );
+    const timeDiff = currentTime - lastActionTime;
+
+    const threeHoursInMs = 1 * 60 * 60 * 1000; 
+
+    if (timeDiff >= threeHoursInMs) { 
+        currentUser.balance += 1;
+        currentUser.rating += 10;
+        currentUser.lastActionTime = currentTime; // Обновляем время последнего действия
+        fs.writeFileSync("./assets/db/db.json", JSON.stringify(usersPath, null, '\t')); // Сохраняем обновленные данные
+
+        await bot.sendMessage(
+            userId,
+            `Ваша валюта увеличена. Новый рейтинг: ${currentUser.rating}, Новая валюта: ${currentUser.balance}`,
+        );
+    } else { 
+        const timeRemainingInMs = threeHoursInMs - timeDiff; 
+        const timeRemainingInHours = Math.ceil(timeRemainingInMs / (60 * 60 * 1000)); 
+
+        await bot.sendMessage(
+            userId,
+            `Вы уже играли недавно. Попробуйте снова через ${timeRemainingInHours} часов.`,
+        );
+    }
   } else {
     await bot.sendMessage(msg.message.chat.id, "нету юзера");
   }

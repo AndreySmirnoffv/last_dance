@@ -116,6 +116,7 @@ bot.on("message", async (msg) => {
             isMatch: false,
             wonMatches: 0,
             looseMatches: 0,
+            lastActionTime: 0
           });
           fs.writeFileSync('./assets/db/db.json', JSON.stringify(db, null, "\t"));
           await bot.sendMessage(chatId, `Привет ${msg.from.username}`, userStartKeyboard);
