@@ -195,7 +195,7 @@ async function processCallback(bot, msg) {
     if (timeDiff >= threeHoursInMs) { 
         currentUser.balance += 1;
         currentUser.rating += 10;
-        currentUser.lastActionTime = currentTime; // Обновляем время последнего действия
+        currentUser.lastActionTime = currentTime;
         fs.writeFileSync("./assets/db/db.json", JSON.stringify(usersPath, null, '\t')); // Сохраняем обновленные данные
 
         await bot.sendMessage(

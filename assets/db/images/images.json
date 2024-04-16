@@ -574,6 +574,95 @@
 		"cardRarity": "5",
 		"cardDropChance": "50",
 		"cardDeffence": "300"
+	},
+	{
+		"cardName": "Сабер",
+		"cardPhoto": "AgACAgIAAxkBAAJVDmYX9Vb3bHJsrEEgcMlIpBATr8_SAAL72TEbskLBSFxs2G03ubN4AQADAgADcwADNAQ",
+		"cardPower": 700,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "300"
+	},
+	{
+		"cardName": "Инь",
+		"cardPhoto": "AgACAgIAAxkBAAJVLmYX9Zh5u9gGOfYT2X16WYzqMCkCAAL_2TEbskLBSGxhCc288LKaAQADAgADcwADNAQ",
+		"cardPower": 720,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "300"
+	},
+	{
+		"cardName": "720",
+		"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
+		"cardPower": 740,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "320"
+	},
+	{
+		"cardName": "720",
+		"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
+		"cardPower": 740,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "320"
+	},
+	{
+		"cardName": "Дариус",
+		"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
+		"cardPower": 740,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "320"
+	},
+	{
+		"cardName": "Альфа",
+		"cardPhoto": "AgACAgIAAxkBAAJWNmYX9rOPcaG6sNF_hEIuKRhTfA5aAAIC2jEbskLBSL5-yIdY_7mBAQADAgADcwADNAQ",
+		"cardPower": 600,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "400"
+	},
+	{
+		"cardName": "Нолан",
+		"cardPhoto": "AgACAgIAAxkBAAJWb2YX9ulPJuhnFagbcClS2AABUaTnGAACB9oxG7JCwUjEE-j1dlZohAEAAwIAA3MAAzQE",
+		"cardPower": 730,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "310"
+	},
+	{
+		"cardName": "Сан",
+		"cardPhoto": "AgACAgIAAxkBAAJW-GYX9yc8SoxxRtpzjoWcQ3WpcLacAAII2jEbskLBSPhvphxCwQPjAQADAgADcwADNAQ",
+		"cardPower": 700,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "350"
+	},
+	{
+		"cardName": "Бэйн",
+		"cardPhoto": "AgACAgIAAxkBAAJXX2YX92quGXnrsvMpMCk1b74hTcEcAAIM2jEbskLBSDyiB2obrG6qAQADAgADcwADNAQ",
+		"cardPower": 680,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "350"
+	},
+	{
+		"cardName": "700",
+		"cardPhoto": "AgACAgIAAxkBAAJXX2YX92quGXnrsvMpMCk1b74hTcEcAAIM2jEbskLBSDyiB2obrG6qAQADAgADcwADNAQ",
+		"cardPower": 680,
+		"cardSection": "Лесник",
+		"cardRarity": "5",
+		"cardDropChance": "50",
+		"cardDeffence": "350"
 	}
 ]
-
