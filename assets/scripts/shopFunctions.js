@@ -42,13 +42,13 @@ async function getPack(bot, msg, packCount) {
       );
         console.log("фильрация карт завершена")
       if (randomCard.cardName === existingCard.cardName) {
-        user.balance += randomCard.cardPower / 2;
+        user.balance -= 2000 + (randomCard.cardPower / 2);
         fs.writeFileSync('assets/db/db.json', JSON.stringify(users, null, '\t'))
         await bot.sendMessage(userId, `Вам выпала повторная карта ваш баланс составляет ${user.balance}`)
       } else {
         user.inventory.push(randomCard);
         openedCards.push(randomCard);
-        user.balance += 0.5 * randomCard.cardPower;
+        user.balance -= 2000 
         fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, "\t"));
 
         const photoMessage = `${shopMessage} Вы открыли ${packCount} паков и получили карты:\n🦠 ${randomCard.cardName}\n💬 ${randomCard.cardDeffence}\n🎭 ${randomCard.cardPower}\n🔮${randomCard.cardRarity}\n${randomCard.cardSection}\n❤️ ${openedCards.power}.\n Новый баланс: ${user.balance}.`
@@ -87,6 +87,7 @@ async function getUniquePack(bot, msg) {
       console.log("пытаюсь выдать карту")
       openedCards.push(zeroDropChanceCards)
       user.inventory.push(zeroDropChanceCards);
+      user.balance -= 2000 + (randomCard.cardPower / 2);
       console.log(zeroDropChanceCards)
       fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, "\t"));
       const photoMessage = `${shopMessage} Вы открыли уникальный пак и получили карты:\n🦠 ${openedCards.cardName}\n💬 ${openedCards.cardDeffence}\n🎭 ${openedCards.cardPower}\n🔮${openedCards.cardRarity}\n${openedCards.cardSection}\n❤️ ${openedCards.power}.\n Новый баланс: ${user.balance}.`
@@ -94,6 +95,7 @@ async function getUniquePack(bot, msg) {
       console.log("карт выдана")
     }else{
       console.log("проверка есть ли карта в инвентаре у юзера началась")
+      user.balance -= 2000 
       user.inventory.push(zeroDropChanceCards);
       fs.writeFileSync("assets/db/db.json", JSON.stringify(users, null, '\t'))
       await bot.sendMessage(userId, "Вам выпала повторная карта ваш баланс составляет: " + user.balance)
