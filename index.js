@@ -88,10 +88,6 @@ bot.on("message", async (msg) => {
     }
   }
 
-
-
-
-
   let user = db.find(user => user.username === msg.from.username)
 
   if (msg.chat.type === 'group' || msg.chat.type === 'supergroup') {
