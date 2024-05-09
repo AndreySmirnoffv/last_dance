@@ -640,998 +640,833 @@
 		"id": 749635133,
 		"balance": 17296,
 		"rating": 470,
-		"inventory": [
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Лолита",
-				"cardPhoto": "AgACAgIAAxkBAAIwrWYB1jsEsT-3ph2PKOWfesRzrm5cAAKP1zEbg_IRSLg0rR-gl0vkAQADAgADcwADNAQ",
-				"cardPower": 350,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "740"
-			},
-			{
-				"cardName": "Атлас",
-				"cardPhoto": "AgACAgIAAxkBAAIwvmYB1ocM9VWa0vBYXDgaayAGbquMAAKR1zEbg_IRSD-abrLxvg56AQADAgADcwADNAQ",
-				"cardPower": 300,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "700"
-			},
-			{
-				"cardName": "Хилос",
-				"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
-				"cardPower": 400,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "610"
-			},
-			{
-				"cardName": "Тигрил",
-				"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
-				"cardPower": 300,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "730"
-			},
-			{
-				"cardName": "Акай",
-				"cardPhoto": "AgACAgIAAxkBAAI272YHz3ovoJbcboLbJzh1Hsme8J9aAAJX1DEb4-ZBSHk8XduoJbosAQADAgADcwADNAQ",
-				"cardPower": 520,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "500"
-			},
-			{
-				"cardName": "Франко",
-				"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
-				"cardPower": 500,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "520"
-			},
-			{
-				"cardName": "Хуфра",
-				"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
-				"cardPower": 430,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "600"
-			},
-			{
-				"cardName": "Хильда",
-				"cardPhoto": "AgACAgIAAxkBAAI3ImYH0Kd_VfWzJE9tnmTUJTfW0nnRAAJf1DEb4-ZBSDKLfNlv_FmoAQADAgADcwADNAQ",
-				"cardPower": 550,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "450"
-			},
-			{
-				"cardName": "Белерик",
-				"cardPhoto": "AgACAgIAAxkBAAI3M2YH0QXhuoDMgGyEvkeeI2siN61KAAJh1DEb4-ZBSM0cX5klLUFaAQADAgADcwADNAQ",
-				"cardPower": 450,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "600"
-			},
-			{
-				"cardName": "Матильда",
-				"cardPhoto": "AgACAgIAAxkBAAI3SWYH0fx5zTPjo5HXGq111fNpe7jeAAJr1DEb4-ZBSBMKLE7jKx5XAQADAgADcwADNAQ",
-				"cardPower": 550,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "450"
-			},
-			{
-				"cardName": "Ангела",
-				"cardPhoto": "AgACAgIAAxkBAAI3jWYH4kdnd3JtHvgeMDxBZAzqagyqAAK81DEb4-ZBSCMdGtFE2n5AAQADAgADcwADNAQ",
-				"cardPower": 500,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "420"
-			},
-			{
-				"cardName": "Флорин",
-				"cardPhoto": "AgACAgIAAxkBAAI3oGYH5KXa7hOaw1scjDFm7ZGDE4l3AALO1DEb4-ZBSJ3bdsjkYW14AQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "590"
-			},
-			{
-				"cardName": "Кармила",
-				"cardPhoto": "AgACAgIAAxkBAAI3s2YH5RNN0d-Ylq8WFhhy-Uk5K0RWAALQ1DEb4-ZBSOy21X5MPSB4AQADAgADcwADNAQ",
-				"cardPower": 460,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "550"
-			},
-			{
-				"cardName": "Эстес",
-				"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
-				"cardPower": 390,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "620"
-			},
-			{
-				"cardName": "Рафаэль",
-				"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
-				"cardPower": 480,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "540"
-			},
-			{
-				"cardName": "Кайя",
-				"cardPhoto": "AgACAgIAAxkBAAI4F2YH7adhNsQ_A4bFts44fcRarRLDAAIQ1TEb4-ZBSPkpB0SRP4JaAQADAgADcwADNAQ",
-				"cardPower": 450,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "600"
-			},
-			{
-				"cardName": "Минотавр",
-				"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
-				"cardPower": 400,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "650"
-			},
-			{
-				"cardName": "Джонсон",
-				"cardPhoto": "AgACAgIAAxkBAAI4OWYH7h3zr7Ih_Gc1l9CM8gYZAm8CAAIV1TEb4-ZBSAzk4tfZmSk6AQADAgADcwADNAQ",
-				"cardPower": 450,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "600"
-			},
-			{
-				"cardName": "Беатрис",
-				"cardPhoto": "AgACAgIAAxkBAAI4ZGYH9nOWo9i17xLDVBX5pCv3UyRtAAI41TEb4-ZBSIRxdB0usjH2AQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Клауд",
-				"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
-				"cardPower": 700,
-				"cardSection": "стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Клинт",
-				"cardPhoto": "AgACAgIAAxkBAAI4imYH93E3q_E7l6v7Gd5xCM48l1CEAAJB1TEb4-ZBSJbZOXE7MFFxAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Броуди",
-				"cardPhoto": "AgACAgIAAxkBAAI4tWYH_ZMopbHh8UUTl3C2jOQG8LjFAAJd1TEb4-ZBSIyuTzo0lQG7AQADAgADcwADNAQ",
-				"cardPower": 740,
-				"cardSection": "стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Бруно",
-				"cardPhoto": "AgACAgIAAxkBAAI4yGYH_oFdQjyckGQKbOd1SxGjR4n7AAJi1TEb4-ZBSO8taqNfvok5AQADAgADcwADNAQ",
-				"cardPower": 730,
-				"cardSection": "стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Иритель",
-				"cardPhoto": "AgACAgIAAxkBAAI43WYH_7AiNjU5V93HUFoOi1gagTHZAAJr1TEb4-ZBSMuPrJYl6jLWAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Кэрри",
-				"cardPhoto": "AgACAgIAAxkBAAI632YIPmMtZb7s-chErDCvj6W3zj-qAAKc1zEb4-ZBSE_TNqF57YLQAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Кимми",
-				"cardPhoto": "AgACAgIAAxkBAAI7hWYIRcISsgfrqIXvk2ReBRFVXLUwAAK91zEb4-ZBSP0DbToLTWlTAQADAgADcwADNAQ",
-				"cardPower": 610,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Ханаби",
-				"cardPhoto": "AgACAgIAAxkBAAI7r2YIR0o8Qq-sBsxQdZiA7ZSk-HljAALB1zEb4-ZBSHJEQutf13wyAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Иксия",
-				"cardPhoto": "AgACAgIAAxkBAAI7xGYIR7Tb3UxgmzD2J5Vx4f4jRdQlAALC1zEb4-ZBSML9GROVhX-MAQADAgADcwADNAQ",
-				"cardPower": 740,
-				"cardSection": "стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Лейла",
-				"cardPhoto": "AgACAgIAAxkBAAI71WYIR--vJyhNebfwPumI1f8_JhOGAALK1zEb4-ZBSJWnq6vjVrBeAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
-			},
-			{
-				"cardName": "Лесли",
-				"cardPhoto": "AgACAgIAAxkBAAI_0GYK6mtlPvryU2U8_mEGUcLPUklHAAKi4DEbYOxRSMrp0GaGzm78AQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Мелисса",
-				"cardPhoto": "AgACAgIAAxkBAAI_52YK6rH7IusktsO_LVHyOGcQgLO_AAKh4DEbYOxRSIPBilL2jncWAQADAgADcwADNAQ",
-				"cardPower": 740,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Мия",
-				"cardPhoto": "AgACAgIAAxkBAAJAAWYK6xeIFor3gXWQ-rbo46N3l7hpAAKg4DEbYOxRSK_9bby1zgpXAQADAgADcwADNAQ",
-				"cardPower": 710,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			},
-			{
-				"cardName": "Москов",
-				"cardPhoto": "AgACAgIAAxkBAAJAGmYK66-dGDNql144MVQIPbtnljrBAAIH2TEbtc5ZSHuaqD66AxUcAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "290"
-			},
-			{
-				"cardName": "Натан",
-				"cardPhoto": "AgACAgIAAxkBAAJAK2YK7E1QRzYMggledHs2S6n6cvZYAAIJ2TEbtc5ZSDGANt41fJyAAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Пополь и Купа",
-				"cardPhoto": "AgACAgIAAxkBAAJAW2YK7YH2YHW-LXSeg0wCEbNhBHesAAIM2TEbtc5ZSCQIp6NAR2eoAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "330"
-			},
-			{
-				"cardName": "ВанВан",
-				"cardPhoto": "AgACAgIAAxkBAAJAgWYK7ePGZWPNEieEMfHAcgc_EJO5AAIN2TEbtc5ZSNCRy1WWbYB2AQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Грейнджер",
-				"cardPhoto": "AgACAgIAAxkBAAJBFGYK9xdrvLMoV-N2_9KR10GqUBPRAAI02TEbtc5ZSBxcrDBsYwulAQADAgADcwADNAQ",
-				"cardPower": 740,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Роджер",
-				"cardPhoto": "AgACAgIAAxkBAAJBJWYK92yBZGG2OliKbjycoaWRTzzKAAI32TEbtc5ZSHWXi5npH23KAQADAgADcwADNAQ",
-				"cardPower": 710,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "340"
-			},
-			{
-				"cardName": "Эймон",
-				"cardPhoto": "AgACAgIAAxkBAAJBNmYK9906HXwXEG5y3ONlRKTXWky6AAI42TEbtc5ZSPkq1QABZDcmHQEAAwIAA3MAAzQE",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Бальмонд",
-				"cardPhoto": "AgACAgIAAxkBAAJBdWYK-j1-krPizcViPtaDV7292GuRAAJG2TEbtc5ZSJxwqcRlKEakAQADAgADcwADNAQ",
-				"cardPower": 560,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "450"
-			},
-			{
-				"cardName": "Бартс",
-				"cardPhoto": "AgACAgIAAxkBAAJBlGYK-n0npyc6dbcOV0i3jfHBctKBAAJI2TEbtc5ZSOToaeRK3hgJAQADAgADcwADNAQ",
-				"cardPower": 550,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "500"
-			},
-			{
-				"cardName": "Алукард",
-				"cardPhoto": "AgACAgIAAxkBAAJBpWYK-sJTosGiIvBsVWfIA5mLVwY7AAJJ2TEbtc5ZSFZ0aw6EjsBdAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Аулус",
-				"cardPhoto": "AgACAgIAAxkBAAJBuGYK-wR1vls9JgoxOQOiD9YcAAHCWgACS9kxG7XOWUgWZHJVpQhPfgEAAwIAA3MAAzQE",
-				"cardPower": 650,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Баксий",
-				"cardPhoto": "AgACAgIAAxkBAAJBzmYK-7Qt2nLM2Y7YAAF1FbXksDj4RAACTNkxG7XOWUiULqySlGIzewEAAwIAA3MAAzQE",
-				"cardPower": 450,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "550"
-			},
-			{
-				"cardName": "Фанни",
-				"cardPhoto": "AgACAgIAAxkBAAJB4WYK_CT4wB62F9EBZauItDSJ3nm_AAJO2TEbtc5ZSM5qFymOC2qQAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Фредрин",
-				"cardPhoto": "AgACAgIAAxkBAAJB8mYK_GJM1798T8uQ_6JiPB75pXfKAAJR2TEbtc5ZSIw5nu7MEfY9AQADAgADcwADNAQ",
-				"cardPower": 470,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "530"
-			},
-			{
-				"cardName": "Госсен",
-				"cardPhoto": "AgACAgIAAxkBAAJCBWYK_N8cti-ZBaAyehvtWeqH0cYkAAJW2TEbtc5ZSIKJQNJtu3MLAQADAgADcwADNAQ",
-				"cardPower": 660,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "340"
-			},
-			{
-				"cardName": "Ханзо",
-				"cardPhoto": "AgACAgIAAxkBAAJCG2YK_h-c3ZNLIji1qcGpQTg8jeldAAJb2TEbtc5ZSPanyIfIuXh1AQADAgADcwADNAQ",
-				"cardPower": 750,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "250"
-			},
-			{
-				"cardName": "Харли",
-				"cardPhoto": "AgACAgIAAxkBAAJCO2YK_696ltsBdeskTyJhySk3wg_YAAJh2TEbtc5ZSOZMLI4PNcSvAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Хелкарт",
-				"cardPhoto": "AgACAgIAAxkBAAJCkWYLBqjC22GeInfATEKu7gJipoHNAAKh2TEbtc5ZSL7W2ykBuzUKAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Харит",
-				"cardPhoto": "AgACAgIAAxkBAAJComYLBuNGytcFI2TGORnkN7zER3HnAAKi2TEbtc5ZSKTAZYreXL1vAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Кусака",
-				"cardPhoto": "AgACAgIAAxkBAAJCs2YLBxaZcb0vR1DWmQcpoVk6FfegAAKj2TEbtc5ZSDNO7G0DfUEqAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Джой",
-				"cardPhoto": "AgACAgIAAxkBAAJCxGYLB0L3gOVpR9bZnzZDBsXOFzrpAAKk2TEbtc5ZSF-C8QO6pSGWAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Джулиан",
-				"cardPhoto": "AgACAgIAAxkBAAJFiGYOdNmmsPux9gT8qxo8nEgoR4ZZAAID1TEbtvR5SNcKZaI2njYuAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Карина",
-				"cardPhoto": "AgACAgIAAxkBAAJFmWYOdV-X4_bbH3Acd-I4NGxku_xZAAIE1TEbtvR5SO8-OP26dDOIAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "340"
-			},
-			{
-				"cardName": "Ланселот",
-				"cardPhoto": "AgACAgIAAxkBAAJFrGYOdcgzAAH1wUt2S9eZCGOjKTnNaQACB9UxG7b0eUjzGJMBMv-pXAEAAwIAA3MAAzQE",
-				"cardPower": 690,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "340"
-			},
-			{
-				"cardName": "Леоморд",
-				"cardPhoto": "AgACAgIAAxkBAAJFv2YOdg5hLuSqfoiz8YeenJZZ-FtYAAII1TEbtvR5SNc2ZJezq5ZpAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "360"
-			},
-			{
-				"cardName": "Линг",
-				"cardPhoto": "AgACAgIAAxkBAAJKy2YVClLGR3bWECDUlhqgw3r3xoCbAAKZ2jEbTHqpSH9KzjVDPG9KAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Мартис",
-				"cardPhoto": "AgACAgIAAxkBAAJK3GYVCqWQkEfSp3QvYseIyGcbb0EkAAKc2jEbTHqpSJNb0st28LjBAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Наталья",
-				"cardPhoto": "AgACAgIAAxkBAAJK7WYVCup4s8U7Ndg_XEIm1miFsu46AAKg2jEbTHqpSEwtV8HQbzLmAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Сабер",
-				"cardPhoto": "AgACAgIAAxkBAAJVDmYX9Vb3bHJsrEEgcMlIpBATr8_SAAL72TEbskLBSFxs2G03ubN4AQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Инь",
-				"cardPhoto": "AgACAgIAAxkBAAJVLmYX9Zh5u9gGOfYT2X16WYzqMCkCAAL_2TEbskLBSGxhCc288LKaAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "720",
-				"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
-				"cardPower": 740,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "720",
-				"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
-				"cardPower": 740,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Дариус",
-				"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
-				"cardPower": 740,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Альфа",
-				"cardPhoto": "AgACAgIAAxkBAAJWNmYX9rOPcaG6sNF_hEIuKRhTfA5aAAIC2jEbskLBSL5-yIdY_7mBAQADAgADcwADNAQ",
-				"cardPower": 600,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "400"
-			},
-			{
-				"cardName": "Нолан",
-				"cardPhoto": "AgACAgIAAxkBAAJWb2YX9ulPJuhnFagbcClS2AABUaTnGAACB9oxG7JCwUjEE-j1dlZohAEAAwIAA3MAAzQE",
-				"cardPower": 730,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "310"
-			},
-			{
-				"cardName": "Сан",
-				"cardPhoto": "AgACAgIAAxkBAAJW-GYX9yc8SoxxRtpzjoWcQ3WpcLacAAII2jEbskLBSPhvphxCwQPjAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Бэйн",
-				"cardPhoto": "AgACAgIAAxkBAAJXX2YX92quGXnrsvMpMCk1b74hTcEcAAIM2jEbskLBSDyiB2obrG6qAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "700",
-				"cardPhoto": "AgACAgIAAxkBAAJXX2YX92quGXnrsvMpMCk1b74hTcEcAAIM2jEbskLBSDyiB2obrG6qAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Алиса",
-				"cardPhoto": "AgACAgIAAxkBAAJsUWYebx3gXaPINj4tzEglsE-JbvjOAALz1TEbdwrxSH7IZyRHEd5tAQADAgADcwADNAQ",
-				"cardPower": 500,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "500"
-			},
-			{
-				"cardName": "Аврора",
-				"cardPhoto": "AgACAgIAAxkBAAJsb2Yeb_mG7qCLsdeil-I1ioprOmrfAAL51TEbdwrxSL3gD9LG_rpvAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Чан’Э",
-				"cardPhoto": "AgACAgIAAxkBAAJsh2YecEKJ8OdqNDznpIBHT4wc76AlAAL91TEbdwrxSF0Bg3U1_rxiAQADAgADcwADNAQ",
-				"cardPower": 670,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Циклоп",
-				"cardPhoto": "AgACAgIAAxkBAAJsrWYec4XbDOp4TTuTwmrCpzHGJbqgAAIJ1jEbdwrxSPFC6YMEMwq0AQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "330"
-			},
-			{
-				"cardName": "Сесилион",
-				"cardPhoto": "AgACAgIAAxkBAAJsxWYec7wO3ll8fICu-IDFWCwzZdNVAAIL1jEbdwrxSAkr0bHK5wABaAEAAwIAA3MAAzQE",
-				"cardPower": 700,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Эйдора",
-				"cardPhoto": "AgACAgIAAxkBAAJtdGYe5lzWYFmpg6YvdxVzaGxyGTfyAAIJ2TEbdwr5SNx0yyGA-uBVAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "280"
-			},
-			{
-				"cardName": "Фарамис",
-				"cardPhoto": "AgACAgIAAxkBAAJtjGYe5vNKm6S1NpeGKS992pPgOyueAAIK2TEbdwr5SJrQnQbr0hQ9AQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "400"
-			},
-			{
-				"cardName": "Горд",
-				"cardPhoto": "AgACAgIAAxkBAAJtpGYe53wQEFtFjq7NAAEa9svlsxIf0QACDNkxG3cK-UgOCwPSokn20gEAAwIAA3MAAzQE",
-				"cardPower": 630,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "340"
-			},
-			{
-				"cardName": "Кадита",
-				"cardPhoto": "AgACAgIAAxkBAAJtvGYe59QUmBOgvsRE4WYVLfzvB75sAAIN2TEbdwr5SCeT3EmeFCOhAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Кагура",
-				"cardPhoto": "AgACAgIAAxkBAAJt12Ye6Lx3Aoweeqd1dFJCfDE9e7yeAAIO2TEbdwr5SOMYKNlzyWJ2AQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "330"
-			},
-			{
-				"cardName": "Люнокс",
-				"cardPhoto": "AgACAgIAAxkBAAJt72Ye6b5B_zCpoBAPlBPVrezrfV9_AAIS2TEbdwr5SPcxu1XqTQ5VAQADAgADcwADNAQ",
-				"cardPower": 690,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "340"
-			},
-			{
-				"cardName": "Ло Йи",
-				"cardPhoto": "AgACAgIAAxkBAAJuCmYe6haTD0B1V2mkPrNmtBuTZrbHAAIU2TEbdwr5SAz2JJt7rQ32AQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "330"
-			},
-			{
-				"cardName": "Нана",
-				"cardPhoto": "AgACAgIAAxkBAAJuSGYe6zWA4SeGngaRw7n_w4VOPPHnAAIZ2TEbdwr5SBZJQLOqIrlwAQADAgADcwADNAQ",
-				"cardPower": 670,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Новария",
-				"cardPhoto": "AgACAgIAAxkBAAJuZmYe67OzlvW5zNLy6qEjzSYUWznEAAIc2TEbdwr5SBcy257K-Pt0AQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Одетта",
-				"cardPhoto": "AgACAgIAAxkBAAJue2Ye7CQj3Mf9MgpuJVl6boJKVZO9AAId2TEbdwr5SChl-bKKGPZVAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "360"
-			},
-			{
-				"cardName": "Фаша",
-				"cardPhoto": "AgACAgIAAxkBAAJuk2Ye7F6BO7Scy1x0L-yRx8XByRcUAAIf2TEbdwr5SMnmSgSKlhJSAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Вейл",
-				"cardPhoto": "AgACAgIAAxkBAAJuq2Ye7KDwJm5ToSXf8Ebnql8zsDeYAAIg2TEbdwr5SF3jdOosa5pYAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Валентина",
-				"cardPhoto": "AgACAgIAAxkBAAJuxmYe7NTuF6Rar5uFaviCR6Dgo9yuAAIh2TEbdwr5SE3X7lDrqcezAQADAgADcwADNAQ",
-				"cardPower": 670,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Валир",
-				"cardPhoto": "AgACAgIAAxkBAAJu5WYe7VZSo1bdrk6CUIFMhgpbBXwhAAIi2TEbdwr5SKA1tp8qEOOYAQADAgADcwADNAQ",
-				"cardPower": 600,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "400"
-			},
-			{
-				"cardName": "Ксавьер",
-				"cardPhoto": "AgACAgIAAxkBAAJvFWYe7fZJcqgGGgJd2gABEaG9Oe0QfgACJNkxG3cK-UiU5sIElFgXxgEAAwIAA3MAAzQE",
-				"cardPower": 710,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "310"
-			},
-			{
-				"cardName": "Ив",
-				"cardPhoto": "AgACAgIAAxkBAAJvMGYe7mDDN5s7AxJ5vUuilAsIsnD1AAIl2TEbdwr5SJD03qwgOlJQAQADAgADcwADNAQ",
-				"cardPower": 600,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "400"
-			},
-			{
-				"cardName": "Заск",
-				"cardPhoto": "AgACAgIAAxkBAAJvS2Ye7136DAnMmeYGR2dvXS26zA6ZAAIo2TEbdwr5SOyk6AHaigGOAQADAgADcwADNAQ",
-				"cardPower": 600,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "410"
-			},
-			{
-				"cardName": "Рафаэль",
-				"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
-				"cardPower": 480,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "540"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Наталья",
-				"cardPhoto": "AgACAgIAAxkBAAJK7WYVCup4s8U7Ndg_XEIm1miFsu46AAKg2jEbTHqpSEwtV8HQbzLmAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Ханаби",
-				"cardPhoto": "AgACAgIAAxkBAAI7r2YIR0o8Qq-sBsxQdZiA7ZSk-HljAALB1zEb4-ZBSHJEQutf13wyAQADAgADcwADNAQ",
-				"cardPower": 680,
-				"cardSection": "стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Кусака",
-				"cardPhoto": "AgACAgIAAxkBAAJCs2YLBxaZcb0vR1DWmQcpoVk6FfegAAKj2TEbtc5ZSDNO7G0DfUEqAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Мартис",
-				"cardPhoto": "AgACAgIAAxkBAAJK3GYVCqWQkEfSp3QvYseIyGcbb0EkAAKc2jEbTHqpSJNb0st28LjBAQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Кайя",
-				"cardPhoto": "AgACAgIAAxkBAAI4F2YH7adhNsQ_A4bFts44fcRarRLDAAIQ1TEb4-ZBSPkpB0SRP4JaAQADAgADcwADNAQ",
-				"cardPower": 450,
-				"cardSection": "поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "600"
-			},
-			{
-				"cardName": "Нана",
-				"cardPhoto": "AgACAgIAAxkBAAJuSGYe6zWA4SeGngaRw7n_w4VOPPHnAAIZ2TEbdwr5SBZJQLOqIrlwAQADAgADcwADNAQ",
-				"cardPower": 670,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			},
-			{
-				"cardName": "Валир",
-				"cardPhoto": "AgACAgIAAxkBAAJu5WYe7VZSo1bdrk6CUIFMhgpbBXwhAAIi2TEbdwr5SKA1tp8qEOOYAQADAgADcwADNAQ",
-				"cardPower": 600,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "400"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			},
-			{
-				"cardName": "Чип",
-				"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
-				"cardPower": 320,
-				"cardSection": "Поддержка",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "580"
-			}
-		],
+		"inventory": [{
+			"cardName": "Чип",
+			"cardPhoto": "AgACAgIAAxkBAAIsYWX1yvhn6mExoNKGChWaQxtY1bksAALl2zEbaHCxS8z_naMD7xjKAQADAgADcwADNAQ",
+			"cardPower": 320,
+			"cardSection": "Поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "580"
+		},
+		{
+			"cardName": "Лолита",
+			"cardPhoto": "AgACAgIAAxkBAAIwrWYB1jsEsT-3ph2PKOWfesRzrm5cAAKP1zEbg_IRSLg0rR-gl0vkAQADAgADcwADNAQ",
+			"cardPower": 350,
+			"cardSection": "Поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "740"
+		},
+		{
+			"cardName": "Атлас",
+			"cardPhoto": "AgACAgIAAxkBAAIwvmYB1ocM9VWa0vBYXDgaayAGbquMAAKR1zEbg_IRSD-abrLxvg56AQADAgADcwADNAQ",
+			"cardPower": 300,
+			"cardSection": "Поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "700"
+		},
+		{
+			"cardName": "Хилос",
+			"cardPhoto": "AgACAgIAAxkBAAIwz2YB1sq9EbELhAnli_th-i6a3cWOAAKT1zEbg_IRSI0rUoS2ArxSAQADAgADcwADNAQ",
+			"cardPower": 400,
+			"cardSection": "Поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "610"
+		},
+		{
+			"cardName": "Тигрил",
+			"cardPhoto": "AgACAgIAAxkBAAIxE2YB13VNSyE3C-BqTH6C9g8e9K47AALA1zEbg_IRSG70kT7ucfRtAQADAgADcwADNAQ",
+			"cardPower": 300,
+			"cardSection": "Поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "730"
+		},
+		{
+			"cardName": "Акай",
+			"cardPhoto": "AgACAgIAAxkBAAI272YHz3ovoJbcboLbJzh1Hsme8J9aAAJX1DEb4-ZBSHk8XduoJbosAQADAgADcwADNAQ",
+			"cardPower": 520,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "500"
+		},
+		{
+			"cardName": "Франко",
+			"cardPhoto": "AgACAgIAAxkBAAI3AAFmB8_sud8WzlZ5F1vey7FVKBJ6dwACW9QxG-PmQUgy9ZA1KISxUgEAAwIAA3MAAzQE",
+			"cardPower": 500,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "520"
+		},
+		{
+			"cardName": "Хуфра",
+			"cardPhoto": "AgACAgIAAxkBAAI3EWYH0FYay1WgtD-jAxZmzKRz_qmxAAJd1DEb4-ZBSCagNmWzdn1QAQADAgADcwADNAQ",
+			"cardPower": 430,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "600"},
+		{
+			"cardName": "Хильда",
+			"cardPhoto": "AgACAgIAAxkBAAI3ImYH0Kd_VfWzJE9tnmTUJTfW0nnRAAJf1DEb4-ZBSDKLfNlv_FmoAQADAgADcwADNAQ",
+			"cardPower": 550,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "450"
+		},
+		{
+			"cardName": "Белерик",
+			"cardPhoto": "AgACAgIAAxkBAAI3M2YH0QXhuoDMgGyEvkeeI2siN61KAAJh1DEb4-ZBSM0cX5klLUFaAQADAgADcwADNAQ",
+			"cardPower": 450,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "600"
+		},
+		{
+			"cardName": "Матильда",
+			"cardPhoto": "AgACAgIAAxkBAAI3SWYH0fx5zTPjo5HXGq111fNpe7jeAAJr1DEb4-ZBSBMKLE7jKx5XAQADAgADcwADNAQ",
+			"cardPower": 550,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "450"
+		},
+		{
+			"cardName": "Ангела",
+			"cardPhoto": "AgACAgIAAxkBAAI3jWYH4kdnd3JtHvgeMDxBZAzqagyqAAK81DEb4-ZBSCMdGtFE2n5AAQADAgADcwADNAQ",
+			"cardPower": 500,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "420"
+		},
+		{
+			"cardName": "Флорин",
+			"cardPhoto": "AgACAgIAAxkBAAI3oGYH5KXa7hOaw1scjDFm7ZGDE4l3AALO1DEb4-ZBSJ3bdsjkYW14AQADAgADcwADNAQ",
+			"cardPower": 320,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "590"
+		},
+		{
+			"cardName": "Кармила",
+			"cardPhoto": "AgACAgIAAxkBAAI3s2YH5RNN0d-Ylq8WFhhy-Uk5K0RWAALQ1DEb4-ZBSOy21X5MPSB4AQADAgADcwADNAQ",
+			"cardPower": 460,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "550"
+		},
+		{
+			"cardName": "Эстес",
+			"cardPhoto": "AgACAgIAAxkBAAI3xGYH5Z7wEhVCQK49UtoAAbEzyt8uvgAC1dQxG-PmQUhaF6LB2g903AEAAwIAA3MAAzQE",
+			"cardPower": 390,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "620"
+		},
+		{
+			"cardName": "Рафаэль",
+			"cardPhoto": "AgACAgIAAxkBAAI362YH690qI2pbTr2zq8HHexYJEkmJAAL_1DEb4-ZBSCH-tgJNeGvsAQADAgADcwADNAQ",
+			"cardPower": 480,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "540"
+		},
+		{
+			"cardName": "Кайя",
+			"cardPhoto": "AgACAgIAAxkBAAI4F2YH7adhNsQ_A4bFts44fcRarRLDAAIQ1TEb4-ZBSPkpB0SRP4JaAQADAgADcwADNAQ",
+			"cardPower": 450,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "600"
+		},
+		{
+			"cardName": "Минотавр",
+			"cardPhoto": "AgACAgIAAxkBAAI4KGYH7e6sHk1TyxnksLdC0aQxA5x3AAIT1TEb4-ZBSGWYpOOkCM8yAQADAgADcwADNAQ",
+			"cardPower": 400,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "650"
+		},
+		{
+			"cardName": "Джонсон",
+			"cardPhoto": "AgACAgIAAxkBAAI4OWYH7h3zr7Ih_Gc1l9CM8gYZAm8CAAIV1TEb4-ZBSAzk4tfZmSk6AQADAgADcwADNAQ",
+			"cardPower": 450,
+			"cardSection": "поддержка",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "600"
+		},
+		{
+			"cardName": "Беатрис",
+			"cardPhoto": "AgACAgIAAxkBAAI4ZGYH9nOWo9i17xLDVBX5pCv3UyRtAAI41TEb4-ZBSIRxdB0usjH2AQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Клауд",
+			"cardPhoto": "AgACAgIAAxkBAAI4eWYH9rQhVWfdFHhmAAFVgkXz5BiE0gACOdUxG-PmQUje6-EZzTMG2AEAAwIAA3MAAzQE",
+			"cardPower": 700,
+			"cardSection": "стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Клинт",
+			"cardPhoto": "AgACAgIAAxkBAAI4imYH93E3q_E7l6v7Gd5xCM48l1CEAAJB1TEb4-ZBSJbZOXE7MFFxAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Броуди",
+			"cardPhoto": "AgACAgIAAxkBAAI4tWYH_ZMopbHh8UUTl3C2jOQG8LjFAAJd1TEb4-ZBSIyuTzo0lQG7AQADAgADcwADNAQ",
+			"cardPower": 740,
+			"cardSection": "стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Бруно",
+			"cardPhoto": "AgACAgIAAxkBAAI4yGYH_oFdQjyckGQKbOd1SxGjR4n7AAJi1TEb4-ZBSO8taqNfvok5AQADAgADcwADNAQ",
+			"cardPower": 730,
+			"cardSection": "стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Иритель",
+			"cardPhoto": "AgACAgIAAxkBAAI43WYH_7AiNjU5V93HUFoOi1gagTHZAAJr1TEb4-ZBSMuPrJYl6jLWAQADAgADcwADNAQ",
+			"cardPower": 650,
+			"cardSection": "стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Кэрри",
+			"cardPhoto": "AgACAgIAAxkBAAI632YIPmMtZb7s-chErDCvj6W3zj-qAAKc1zEb4-ZBSE_TNqF57YLQAQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Кимми",
+			"cardPhoto": "AgACAgIAAxkBAAI7hWYIRcISsgfrqIXvk2ReBRFVXLUwAAK91zEb4-ZBSP0DbToLTWlTAQADAgADcwADNAQ",
+			"cardPower": 610,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Ханаби",
+			"cardPhoto": "AgACAgIAAxkBAAI7r2YIR0o8Qq-sBsxQdZiA7ZSk-HljAALB1zEb4-ZBSHJEQutf13wyAQADAgADcwADNAQ",
+			"cardPower": 680,
+			"cardSection": "стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Иксия",
+			"cardPhoto": "AgACAgIAAxkBAAI7xGYIR7Tb3UxgmzD2J5Vx4f4jRdQlAALC1zEb4-ZBSML9GROVhX-MAQADAgADcwADNAQ",
+			"cardPower": 740,
+			"cardSection": "стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Лейла",
+			"cardPhoto": "AgACAgIAAxkBAAI71WYIR--vJyhNebfwPumI1f8_JhOGAALK1zEb4-ZBSJWnq6vjVrBeAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "250"
+		},
+		{
+			"cardName": "Лесли",
+			"cardPhoto": "AgACAgIAAxkBAAI_0GYK6mtlPvryU2U8_mEGUcLPUklHAAKi4DEbYOxRSMrp0GaGzm78AQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Мелисса",
+			"cardPhoto": "AgACAgIAAxkBAAI_52YK6rH7IusktsO_LVHyOGcQgLO_AAKh4DEbYOxRSIPBilL2jncWAQADAgADcwADNAQ",
+			"cardPower": 740,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Мия",
+			"cardPhoto": "AgACAgIAAxkBAAJAAWYK6xeIFor3gXWQ-rbo46N3l7hpAAKg4DEbYOxRSK_9bby1zgpXAQADAgADcwADNAQ",
+			"cardPower": 710,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "280"
+		},
+		{
+			"cardName": "Москов",
+			"cardPhoto": "AgACAgIAAxkBAAJAGmYK66-dGDNql144MVQIPbtnljrBAAIH2TEbtc5ZSHuaqD66AxUcAQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "290"
+		},
+		{
+			"cardName": "Натан",
+			"cardPhoto": "AgACAgIAAxkBAAJAK2YK7E1QRzYMggledHs2S6n6cvZYAAIJ2TEbtc5ZSDGANt41fJyAAQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Пополь и Купа",
+			"cardPhoto": "AgACAgIAAxkBAAJAW2YK7YH2YHW-LXSeg0wCEbNhBHesAAIM2TEbtc5ZSCQIp6NAR2eoAQADAgADcwADNAQ",
+			"cardPower": 680,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "330"
+		},
+		{
+			"cardName": "ВанВан",
+			"cardPhoto": "AgACAgIAAxkBAAJAgWYK7ePGZWPNEieEMfHAcgc_EJO5AAIN2TEbtc5ZSNCRy1WWbYB2AQADAgADcwADNAQ",
+			"cardPower": 750,
+			"cardSection": "Стрелок",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Грейнджер",
+			"cardPhoto": "AgACAgIAAxkBAAJBFGYK9xdrvLMoV-N2_9KR10GqUBPRAAI02TEbtc5ZSBxcrDBsYwulAQADAgADcwADNAQ",
+			"cardPower": 740,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Роджер",
+			"cardPhoto": "AgACAgIAAxkBAAJBJWYK92yBZGG2OliKbjycoaWRTzzKAAI32TEbtc5ZSHWXi5npH23KAQADAgADcwADNAQ",
+			"cardPower": 710,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "340"
+		},
+		{
+			"cardName": "Эймон",
+			"cardPhoto": "AgACAgIAAxkBAAJBNmYK9906HXwXEG5y3ONlRKTXWky6AAI42TEbtc5ZSPkq1QABZDcmHQEAAwIAA3MAAzQE",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Бальмонд",
+			"cardPhoto": "AgACAgIAAxkBAAJBdWYK-j1-krPizcViPtaDV7292GuRAAJG2TEbtc5ZSJxwqcRlKEakAQADAgADcwADNAQ",
+			"cardPower": 560,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "450"
+		},
+		{
+			"cardName": "Бартс",
+			"cardPhoto": "AgACAgIAAxkBAAJBlGYK-n0npyc6dbcOV0i3jfHBctKBAAJI2TEbtc5ZSOToaeRK3hgJAQADAgADcwADNAQ",
+			"cardPower": 550,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "500"
+		},
+		{
+			"cardName": "Алукард",
+			"cardPhoto": "AgACAgIAAxkBAAJBpWYK-sJTosGiIvBsVWfIA5mLVwY7AAJJ2TEbtc5ZSFZ0aw6EjsBdAQADAgADcwADNAQ",
+			"cardPower": 650,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Аулус",
+			"cardPhoto": "AgACAgIAAxkBAAJBuGYK-wR1vls9JgoxOQOiD9YcAAHCWgACS9kxG7XOWUgWZHJVpQhPfgEAAwIAA3MAAzQE",
+			"cardPower": 650,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Баксий",
+			"cardPhoto": "AgACAgIAAxkBAAJBzmYK-7Qt2nLM2Y7YAAF1FbXksDj4RAACTNkxG7XOWUiULqySlGIzewEAAwIAA3MAAzQE",
+			"cardPower": 450,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "550"
+		},
+		{
+			"cardName": "Фанни",
+			"cardPhoto": "AgACAgIAAxkBAAJB4WYK_CT4wB62F9EBZauItDSJ3nm_AAJO2TEbtc5ZSM5qFymOC2qQAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Фредрин",
+			"cardPhoto": "AgACAgIAAxkBAAJB8mYK_GJM1798T8uQ_6JiPB75pXfKAAJR2TEbtc5ZSIw5nu7MEfY9AQADAgADcwADNAQ",
+			"cardPower": 470,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "530"
+		},
+		{
+			"cardName": "Госсен",
+			"cardPhoto": "AgACAgIAAxkBAAJCBWYK_N8cti-ZBaAyehvtWeqH0cYkAAJW2TEbtc5ZSIKJQNJtu3MLAQADAgADcwADNAQ",
+			"cardPower": 660,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "340"
+		},
+		{
+			"cardName": "Ханзо",
+			"cardPhoto": "AgACAgIAAxkBAAJCG2YK_h-c3ZNLIji1qcGpQTg8jeldAAJb2TEbtc5ZSPanyIfIuXh1AQADAgADcwADNAQ",
+			"cardPower": 750,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "250"
+		},
+		{
+			"cardName": "Харли",
+			"cardPhoto": "AgACAgIAAxkBAAJCO2YK_696ltsBdeskTyJhySk3wg_YAAJh2TEbtc5ZSOZMLI4PNcSvAQADAgADcwADNAQ",
+			"cardPower": 680,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Хелкарт",
+			"cardPhoto": "AgACAgIAAxkBAAJCkWYLBqjC22GeInfATEKu7gJipoHNAAKh2TEbtc5ZSL7W2ykBuzUKAQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Харит",
+			"cardPhoto": "AgACAgIAAxkBAAJComYLBuNGytcFI2TGORnkN7zER3HnAAKi2TEbtc5ZSKTAZYreXL1vAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Кусака",
+			"cardPhoto": "AgACAgIAAxkBAAJCs2YLBxaZcb0vR1DWmQcpoVk6FfegAAKj2TEbtc5ZSDNO7G0DfUEqAQADAgADcwADNAQ",
+			"cardPower": 650,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Джой",
+			"cardPhoto": "AgACAgIAAxkBAAJCxGYLB0L3gOVpR9bZnzZDBsXOFzrpAAKk2TEbtc5ZSF-C8QO6pSGWAQADAgADcwADNAQ",
+			"cardPower": 680,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Джулиан",
+			"cardPhoto": "AgACAgIAAxkBAAJFiGYOdNmmsPux9gT8qxo8nEgoR4ZZAAID1TEbtvR5SNcKZaI2njYuAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Карина",
+			"cardPhoto": "AgACAgIAAxkBAAJFmWYOdV-X4_bbH3Acd-I4NGxku_xZAAIE1TEbtvR5SO8-OP26dDOIAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "340"
+		},
+		{
+			"cardName": "Ланселот",
+			"cardPhoto": "AgACAgIAAxkBAAJFrGYOdcgzAAH1wUt2S9eZCGOjKTnNaQACB9UxG7b0eUjzGJMBMv-pXAEAAwIAA3MAAzQE",
+			"cardPower": 690,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "340"
+		},
+		{
+			"cardName": "Леоморд",
+			"cardPhoto": "AgACAgIAAxkBAAJFv2YOdg5hLuSqfoiz8YeenJZZ-FtYAAII1TEbtvR5SNc2ZJezq5ZpAQADAgADcwADNAQ",
+			"cardPower": 650,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "360"
+		},
+		{
+			"cardName": "Линг",
+			"cardPhoto": "AgACAgIAAxkBAAJKy2YVClLGR3bWECDUlhqgw3r3xoCbAAKZ2jEbTHqpSH9KzjVDPG9KAQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Мартис",
+			"cardPhoto": "AgACAgIAAxkBAAJK3GYVCqWQkEfSp3QvYseIyGcbb0EkAAKc2jEbTHqpSJNb0st28LjBAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Наталья",
+			"cardPhoto": "AgACAgIAAxkBAAJK7WYVCup4s8U7Ndg_XEIm1miFsu46AAKg2jEbTHqpSEwtV8HQbzLmAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Сабер",
+			"cardPhoto": "AgACAgIAAxkBAAJVDmYX9Vb3bHJsrEEgcMlIpBATr8_SAAL72TEbskLBSFxs2G03ubN4AQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Инь",
+			"cardPhoto": "AgACAgIAAxkBAAJVLmYX9Zh5u9gGOfYT2X16WYzqMCkCAAL_2TEbskLBSGxhCc288LKaAQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "720",
+			"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
+			"cardPower": 740,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "720",
+			"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
+			"cardPower": 740,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Альфа",
+			"cardPhoto": "AgACAgIAAxkBAAJWNmYX9rOPcaG6sNF_hEIuKRhTfA5aAAIC2jEbskLBSL5-yIdY_7mBAQADAgADcwADNAQ",
+			"cardPower": 600,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "400"
+		},
+		{
+			"cardName": "Нолан",
+			"cardPhoto": "AgACAgIAAxkBAAJWb2YX9ulPJuhnFagbcClS2AABUaTnGAACB9oxG7JCwUjEE-j1dlZohAEAAwIAA3MAAzQE",
+			"cardPower": 730,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "310"
+		},
+		{
+			"cardName": "Сан",
+			"cardPhoto": "AgACAgIAAxkBAAJW-GYX9yc8SoxxRtpzjoWcQ3WpcLacAAII2jEbskLBSPhvphxCwQPjAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Бэйн",
+			"cardPhoto": "AgACAgIAAxkBAAJXX2YX92quGXnrsvMpMCk1b74hTcEcAAIM2jEbskLBSDyiB2obrG6qAQADAgADcwADNAQ",
+			"cardPower": 680,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "700",
+			"cardPhoto": "AgACAgIAAxkBAAJXX2YX92quGXnrsvMpMCk1b74hTcEcAAIM2jEbskLBSDyiB2obrG6qAQADAgADcwADNAQ",
+			"cardPower": 680,
+			"cardSection": "Лесник",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Алиса",
+			"cardPhoto": "AgACAgIAAxkBAAJsUWYebx3gXaPINj4tzEglsE-JbvjOAALz1TEbdwrxSH7IZyRHEd5tAQADAgADcwADNAQ",
+			"cardPower": 500,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "500"
+		},
+		{
+			"cardName": "Аврора",
+			"cardPhoto": "AgACAgIAAxkBAAJsb2Yeb_mG7qCLsdeil-I1ioprOmrfAAL51TEbdwrxSL3gD9LG_rpvAQADAgADcwADNAQ",
+			"cardPower": 650,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Чан’Э",
+			"cardPhoto": "AgACAgIAAxkBAAJsh2YecEKJ8OdqNDznpIBHT4wc76AlAAL91TEbdwrxSF0Bg3U1_rxiAQADAgADcwADNAQ",
+			"cardPower": 670,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Циклоп",
+			"cardPhoto": "AgACAgIAAxkBAAJsrWYec4XbDOp4TTuTwmrCpzHGJbqgAAIJ1jEbdwrxSPFC6YMEMwq0AQADAgADcwADNAQ",
+			"cardPower": 650,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "330"
+		},
+		{
+			"cardName": "Сесилион",
+			"cardPhoto": "AgACAgIAAxkBAAJsxWYec7wO3ll8fICu-IDFWCwzZdNVAAIL1jEbdwrxSAkr0bHK5wABaAEAAwIAA3MAAzQE",
+			"cardPower": 700,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "320"
+		},
+		{
+			"cardName": "Эйдора",
+			"cardPhoto": "AgACAgIAAxkBAAJtdGYe5lzWYFmpg6YvdxVzaGxyGTfyAAIJ2TEbdwr5SNx0yyGA-uBVAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "280"
+		},
+		{
+			"cardName": "Фарамис",
+			"cardPhoto": "AgACAgIAAxkBAAJtjGYe5vNKm6S1NpeGKS992pPgOyueAAIK2TEbdwr5SJrQnQbr0hQ9AQADAgADcwADNAQ",
+			"cardPower": 650,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "400"
+		},
+		{
+			"cardName": "Горд",
+			"cardPhoto": "AgACAgIAAxkBAAJtpGYe53wQEFtFjq7NAAEa9svlsxIf0QACDNkxG3cK-UgOCwPSokn20gEAAwIAA3MAAzQE",
+			"cardPower": 630,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "340"
+		},
+		{
+			"cardName": "Кадита",
+			"cardPhoto": "AgACAgIAAxkBAAJtvGYe59QUmBOgvsRE4WYVLfzvB75sAAIN2TEbdwr5SCeT3EmeFCOhAQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Кагура",
+			"cardPhoto": "AgACAgIAAxkBAAJt12Ye6Lx3Aoweeqd1dFJCfDE9e7yeAAIO2TEbdwr5SOMYKNlzyWJ2AQADAgADcwADNAQ",
+			"cardPower": 680,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "330"
+		},
+		{
+			"cardName": "Люнокс",
+			"cardPhoto": "AgACAgIAAxkBAAJt72Ye6b5B_zCpoBAPlBPVrezrfV9_AAIS2TEbdwr5SPcxu1XqTQ5VAQADAgADcwADNAQ",
+			"cardPower": 690,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "340"
+		},
+		{
+			"cardName": "Ло Йи",
+			"cardPhoto": "AgACAgIAAxkBAAJuCmYe6haTD0B1V2mkPrNmtBuTZrbHAAIU2TEbdwr5SAz2JJt7rQ32AQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "330"
+		},
+		{
+			"cardName": "Нана",
+			"cardPhoto": "AgACAgIAAxkBAAJuSGYe6zWA4SeGngaRw7n_w4VOPPHnAAIZ2TEbdwr5SBZJQLOqIrlwAQADAgADcwADNAQ",
+			"cardPower": 670,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Новария",
+			"cardPhoto": "AgACAgIAAxkBAAJuZmYe67OzlvW5zNLy6qEjzSYUWznEAAIc2TEbdwr5SBcy257K-Pt0AQADAgADcwADNAQ",
+			"cardPower": 700,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Одетта",
+			"cardPhoto": "AgACAgIAAxkBAAJue2Ye7CQj3Mf9MgpuJVl6boJKVZO9AAId2TEbdwr5SChl-bKKGPZVAQADAgADcwADNAQ",
+			"cardPower": 650,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "360"
+		},
+		{
+			"cardName": "Фаша",
+			"cardPhoto": "AgACAgIAAxkBAAJuk2Ye7F6BO7Scy1x0L-yRx8XByRcUAAIf2TEbdwr5SMnmSgSKlhJSAQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Вейл",
+			"cardPhoto": "AgACAgIAAxkBAAJuq2Ye7KDwJm5ToSXf8Ebnql8zsDeYAAIg2TEbdwr5SF3jdOosa5pYAQADAgADcwADNAQ",
+			"cardPower": 720,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "300"
+		},
+		{
+			"cardName": "Валентина",
+			"cardPhoto": "AgACAgIAAxkBAAJuxmYe7NTuF6Rar5uFaviCR6Dgo9yuAAIh2TEbdwr5SE3X7lDrqcezAQADAgADcwADNAQ",
+			"cardPower": 670,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "350"
+		},
+		{
+			"cardName": "Валир",
+			"cardPhoto": "AgACAgIAAxkBAAJu5WYe7VZSo1bdrk6CUIFMhgpbBXwhAAIi2TEbdwr5SKA1tp8qEOOYAQADAgADcwADNAQ",
+			"cardPower": 600,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "400"
+		},
+		{
+			"cardName": "Ксавьер",
+			"cardPhoto": "AgACAgIAAxkBAAJvFWYe7fZJcqgGGgJd2gABEaG9Oe0QfgACJNkxG3cK-UiU5sIElFgXxgEAAwIAA3MAAzQE",
+			"cardPower": 710,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "310"
+		},
+		{
+			"cardName": "Ив",
+			"cardPhoto": "AgACAgIAAxkBAAJvMGYe7mDDN5s7AxJ5vUuilAsIsnD1AAIl2TEbdwr5SJD03qwgOlJQAQADAgADcwADNAQ",
+			"cardPower": 600,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "400"
+		},
+		{
+			"cardName": "Заск",
+			"cardPhoto": "AgACAgIAAxkBAAJvS2Ye7136DAnMmeYGR2dvXS26zA6ZAAIo2TEbdwr5SOyk6AHaigGOAQADAgADcwADNAQ",
+			"cardPower": 600,
+			"cardSection": "Маг",
+			"cardRarity": "5",
+			"cardDropChance": "50",
+			"cardDeffence": "410"
+		}],
 		"matchInventory": [],
 		"isAdmin": true,
 		"isWaiting": true,

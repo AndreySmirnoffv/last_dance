@@ -584,15 +584,6 @@
 		"cardDeffence": "320"
 	},
 	{
-		"cardName": "Дариус",
-		"cardPhoto": "AgACAgIAAxkBAAJVUWYX9emNhCiRJNeZDpd2p07N7ycOAAIB2jEbskLBSJGdVYiMdRQcAQADAgADcwADNAQ",
-		"cardPower": 740,
-		"cardSection": "Лесник",
-		"cardRarity": "5",
-		"cardDropChance": "50",
-		"cardDeffence": "320"
-	},
-	{
 		"cardName": "Альфа",
 		"cardPhoto": "AgACAgIAAxkBAAJWNmYX9rOPcaG6sNF_hEIuKRhTfA5aAAIC2jEbskLBSL5-yIdY_7mBAQADAgADcwADNAQ",
 		"cardPower": 600,
