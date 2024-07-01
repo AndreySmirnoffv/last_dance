@@ -24,20 +24,25 @@ async function myCards(bot, msg) {
   const userInventory = db.find((user) => user?.username === msg.from.username);
 
   if (userInventory.length === 0) {
-    return bot.sendMessage(msg.message.chat.id, "У вас нет карт в инвентаре. Попробуйте получить карты сначала.");
+    return await bot.sendMessage(msg.message.chat.id, "У вас нет карт в инвентаре. Попробуйте получить карты сначала.");
   } else {
-    for (const card of userInventory?.inventory) {
-      const keyboard = {
-        inline_keyboard: [
-            [{ text: 'Добавить в инвентарь матча', callback_data: 'addToMatchInventory' }],
-        ],
-        resize_keyboard: true
-      };
-      await bot.sendPhoto(msg.message.chat.id, card.cardPhoto, {
-        caption: `🦠 ${card.cardName}\n🔮 Редкость: ${card.cardRarity}\nАтака: ${card.cardPower || "Не указана"}\nЗащита: ${card.cardDeffence || "Не указана"}`,
-        reply_markup: keyboard
-      });
-  }
+    let currentIndex = 0
+    await bot.sendPhoto(msg.message.chat.id, cards[currentIndex].cardPhoto, {
+      reply_markup: {
+        inline_keyboard: [[{text: "->", callback_data: "next_card"}]]
+      }
+    })
+    if (msg.data === 'next_card'){
+      console.log("next card")
+      const card = userInventory.inventory[currentIndex]
+      await bot.sendPhoto(chatId, card.cardPhoto, {
+        caption: `Название: ${card.cardName}\nМощность: ${card.cardPower}\nСекция: ${card.cardSection}\nРедкость: ${card.cardRarity}\nШанс выпадения: ${card.cardDropChance}\nЗащита: ${card.cardDeffence}`,
+        reply_markup: {
+            inline_keyboard: [[{ text: "->", callback_data: "next_card" }]]
+        }
+    });
+    currentIndex = (currentIndex + 1) % inventory.length
+    }
   }
 }
 

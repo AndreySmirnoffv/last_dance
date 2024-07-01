@@ -1674,6 +1674,50 @@
 		"looseMatches": 0
 	},
 	{
+		"id": 1161314514,
+		"username": "Garfi_ld",
+		"first_name": "Garfild",
+		"balance": 2,
+		"rating": 40,
+		"inventory": [
+			{
+				"cardName": "Сабер",
+				"cardPhoto": "AgACAgIAAxkBAAJVDmYX9Vb3bHJsrEEgcMlIpBATr8_SAAL72TEbskLBSFxs2G03ubN4AQADAgADcwADNAQ",
+				"cardPower": 700,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			},
+			{
+				"cardName": "Одетта",
+				"cardPhoto": "AgACAgIAAxkBAAJue2Ye7CQj3Mf9MgpuJVl6boJKVZO9AAId2TEbdwr5SChl-bKKGPZVAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "Маг",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "360"
+			},
+			{
+				"cardName": "Инь",
+				"cardPhoto": "AgACAgIAAxkBAAJVLmYX9Zh5u9gGOfYT2X16WYzqMCkCAAL_2TEbskLBSGxhCc288LKaAQADAgADcwADNAQ",
+				"cardPower": 720,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "300"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastActionTime": 1715347049856,
+		"lastCardUseTime": 1715347047709
+	},
+	{
 		"username": "mikuhtsn",
 		"first_name": "༄",
 		"id": 6590390156,
@@ -2211,50 +2255,6 @@
 		"lastCardUseTime": 1713790310876
 	},
 	{
-		"id": 1161314514,
-		"username": "Garfi_ld",
-		"first_name": "Garfild",
-		"balance": 2,
-		"rating": 40,
-		"inventory": [
-			{
-				"cardName": "Сабер",
-				"cardPhoto": "AgACAgIAAxkBAAJVDmYX9Vb3bHJsrEEgcMlIpBATr8_SAAL72TEbskLBSFxs2G03ubN4AQADAgADcwADNAQ",
-				"cardPower": 700,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			},
-			{
-				"cardName": "Одетта",
-				"cardPhoto": "AgACAgIAAxkBAAJue2Ye7CQj3Mf9MgpuJVl6boJKVZO9AAId2TEbdwr5SChl-bKKGPZVAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Маг",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "360"
-			},
-			{
-				"cardName": "Инь",
-				"cardPhoto": "AgACAgIAAxkBAAJVLmYX9Zh5u9gGOfYT2X16WYzqMCkCAAL_2TEbskLBSGxhCc288LKaAQADAgADcwADNAQ",
-				"cardPower": 720,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "300"
-			}
-		],
-		"matchInventory": [],
-		"isAdmin": false,
-		"isWaiting": true,
-		"isMatch": false,
-		"wonMatches": 0,
-		"looseMatches": 0,
-		"lastActionTime": 1715347049856,
-		"lastCardUseTime": 1715347047709
-	},
-	{
 		"username": "VesTNIk023",
 		"first_name": "𝕍𝕖𝕤𝕋𝕟𝕀𝕂",
 		"id": 1656527622,
@@ -2678,6 +2678,41 @@
 		"looseMatches": 0,
 		"lastActionTime": 1713974519561,
 		"lastCardUseTime": 1713974505785
+	},
+	{
+		"username": "Fillip1234",
+		"first_name": "\"^\"",
+		"id": 1459003366,
+		"balance": 1,
+		"rating": 10,
+		"inventory": [
+			{
+				"cardName": "Мелисса",
+				"cardPhoto": "AgACAgIAAxkBAAI_52YK6rH7IusktsO_LVHyOGcQgLO_AAKh4DEbYOxRSIPBilL2jncWAQADAgADcwADNAQ",
+				"cardPower": 740,
+				"cardSection": "Стрелок",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "320"
+			},
+			{
+				"cardName": "Кусака",
+				"cardPhoto": "AgACAgIAAxkBAAJCs2YLBxaZcb0vR1DWmQcpoVk6FfegAAKj2TEbtc5ZSDNO7G0DfUEqAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "Лесник",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "350"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": true,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastCardUseTime": 1715336025393,
+		"lastActionTime": 1715336083282
 	},
 	{
 		"username": "bostonBeats",
@@ -4381,41 +4416,6 @@
 		"wonMatches": 0,
 		"looseMatches": 0,
 		"lastCardUseTime": 1713895336329
-	},
-	{
-		"username": "Fillip1234",
-		"first_name": "\"^\"",
-		"id": 1459003366,
-		"balance": 1,
-		"rating": 10,
-		"inventory": [
-			{
-				"cardName": "Мелисса",
-				"cardPhoto": "AgACAgIAAxkBAAI_52YK6rH7IusktsO_LVHyOGcQgLO_AAKh4DEbYOxRSIPBilL2jncWAQADAgADcwADNAQ",
-				"cardPower": 740,
-				"cardSection": "Стрелок",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "320"
-			},
-			{
-				"cardName": "Кусака",
-				"cardPhoto": "AgACAgIAAxkBAAJCs2YLBxaZcb0vR1DWmQcpoVk6FfegAAKj2TEbtc5ZSDNO7G0DfUEqAQADAgADcwADNAQ",
-				"cardPower": 650,
-				"cardSection": "Лесник",
-				"cardRarity": "5",
-				"cardDropChance": "50",
-				"cardDeffence": "350"
-			}
-		],
-		"matchInventory": [],
-		"isAdmin": false,
-		"isWaiting": true,
-		"isMatch": false,
-		"wonMatches": 0,
-		"looseMatches": 0,
-		"lastCardUseTime": 1715336025393,
-		"lastActionTime": 1715336083282
 	},
 	{
 		"username": "Beren_r",
@@ -7266,5 +7266,31 @@
 		"looseMatches": 0,
 		"lastActionTime": 0,
 		"lastCardUseTime": 1715348294572
+	},
+	{
+		"id": 1308614540,
+		"username": "Knyaaaz",
+		"first_name": "ㅤ",
+		"balance": 0,
+		"rating": null,
+		"inventory": [
+			{
+				"cardName": "Одетта",
+				"cardPhoto": "AgACAgIAAxkBAAJue2Ye7CQj3Mf9MgpuJVl6boJKVZO9AAId2TEbdwr5SChl-bKKGPZVAQADAgADcwADNAQ",
+				"cardPower": 650,
+				"cardSection": "Маг",
+				"cardRarity": "5",
+				"cardDropChance": "50",
+				"cardDeffence": "360"
+			}
+		],
+		"matchInventory": [],
+		"isAdmin": false,
+		"isWaiting": false,
+		"isMatch": false,
+		"wonMatches": 0,
+		"looseMatches": 0,
+		"lastActionTime": 0,
+		"lastCardUseTime": 1719840404969
 	}
 ]
